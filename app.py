@@ -645,3 +645,216 @@ if st.button("Generate My Career Report"):
 
     if "Creativity" in strengths:
         reasons.append(
+            "You enjoy creating new ideas."
+        )
+
+    for reason in reasons:
+        st.write("✅", reason)
+
+    # =========================
+    # UNIVERSITYS
+    # =========================
+
+    st.header("🎓 University Recommendations")
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+
+        st.subheader("Dream")
+
+        for uni in data["dream"]:
+            st.write("⭐", uni)
+
+    with col2:
+
+        st.subheader("Strong Options")
+
+        for uni in data["strong"]:
+            st.write("🎯", uni)
+
+    with col3:
+
+        st.subheader("Affordable")
+
+        for uni in data["affordable"]:
+            st.write("💡", uni)
+
+    # =========================
+    # ROADMAP
+    # =========================
+
+    st.header("📚 Success Roadmap")
+
+    roadmap = [
+
+        "Next 3 Months: Learn fundamentals",
+
+        "Next 6 Months: Build 2-3 projects",
+
+        "Next 12 Months: Join competitions and strengthen portfolio",
+
+        "University Phase: Specialize and gain practical experience"
+
+    ]
+
+    for step in roadmap:
+        st.write("✅", step)
+
+    # =========================
+    # SKILLS
+    # =========================
+
+    st.header("🛠 Skills To Focus On")
+
+    for skill in data["skills"]:
+        st.write("📌", skill)
+
+    # =========================
+    # RESOURCES
+    # =========================
+
+    st.header("🌐 Learning Resources")
+
+    for resource in data["resources"]:
+        st.write("🔗", resource)
+
+    # =========================
+    # PROJECTS
+    # =========================
+
+    st.header("🚀 Suggested Portfolio Projects")
+
+    for project in data["projects"]:
+        st.write("🚀", project)
+
+    # =========================
+    # OPPORTUNITIES
+    # =========================
+
+    st.header("🏆 Competitions & Opportunities")
+
+    for opportunity in data["opportunities"]:
+        st.write("⭐", opportunity)
+
+    # =========================
+    # STRENGTH IMPROVEMENT
+    # =========================
+
+    st.header("💪 Improve Your Strengths")
+
+    tips = {
+
+        "Problem Solving":
+        "Solve real-world problems and projects.",
+
+        "Creativity":
+        "Design, write, build, and experiment.",
+
+        "Leadership":
+        "Lead clubs, teams, and events.",
+
+        "Communication":
+        "Practice public speaking and writing.",
+
+        "Analytical Thinking":
+        "Analyze case studies and solve puzzles.",
+
+        "Teamwork":
+        "Work on collaborative projects."
+    }
+
+    for strength in strengths:
+
+        if strength in tips:
+
+            st.write(
+                f"**{strength}:** {tips[strength]}"
+            )
+
+    # =========================
+    # SUBJECT INTEREST
+    # =========================
+
+    st.header("📖 Show Interest In Your Subjects")
+
+    subject_tips = {
+
+        "Computer Science":
+        "Build projects and create a GitHub portfolio.",
+
+        "Mathematics":
+        "Join competitions and solve advanced problems.",
+
+        "Physics":
+        "Participate in science fairs and experiments.",
+
+        "Biology":
+        "Read research and join science clubs.",
+
+        "Business":
+        "Start mini-business projects and study startups.",
+
+        "Art":
+        "Build a portfolio and publish your work."
+    }
+
+    for subject in subjects:
+
+        if subject in subject_tips:
+
+            st.write(
+                f"**{subject}:** {subject_tips[subject]}"
+            )
+
+    # =========================
+    # PERSONALIZED ADVICE
+    # =========================
+
+    st.header("💡 Personalized Advice")
+
+    advice = []
+
+    if "Programming" in weaknesses:
+        advice.append(
+            "Practice coding consistently every week."
+        )
+
+    if "Time Management" in weaknesses:
+        advice.append(
+            "Use a planner and set weekly goals."
+        )
+
+    if "Public Speaking" in weaknesses:
+        advice.append(
+            "Join debates and presentations."
+        )
+
+    if "Confidence" in weaknesses:
+        advice.append(
+            "Take on small leadership opportunities."
+        )
+
+    if len(advice) == 0:
+        advice.append(
+            "Keep building projects and exploring opportunities."
+        )
+
+    for item in advice:
+        st.write("✅", item)
+
+    # =========================
+    # GOAL SECTION
+    # =========================
+
+    if goal:
+
+        st.header("🎯 Your Goal")
+
+        st.info(
+            f"Your goal is '{goal}'. Focus your skills, projects, and learning activities around this objective."
+        )
+
+        st.success(
+            "PathPilot recommends building a portfolio aligned with this goal."
+        )
