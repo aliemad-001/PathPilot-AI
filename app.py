@@ -1,3 +1,4 @@
+```python
 import streamlit as st
 
 st.set_page_config(
@@ -7,9 +8,11 @@ st.set_page_config(
 )
 
 st.title("🎓 PathPilot AI")
-st.subheader("Personalized Career Guidance for Students")
+st.subheader("Your Personalized Career Mentor")
 
 st.markdown("---")
+
+# Basic Information
 
 grade = st.selectbox(
     "What grade are you in?",
@@ -32,7 +35,7 @@ subjects = st.multiselect(
 )
 
 interest = st.selectbox(
-    "Which area interests you most?",
+    "Which area interests you the most?",
     [
         "Technology",
         "Business",
@@ -58,13 +61,68 @@ goal = st.text_input(
     "What is your dream career or goal?"
 )
 
-if st.button("Generate Career Plan"):
+# New Personalized Questions
+
+st.markdown("---")
+st.markdown("## Tell us more about yourself")
+
+strengths = st.multiselect(
+    "What are your strengths?",
+    [
+        "Problem Solving",
+        "Creativity",
+        "Leadership",
+        "Communication",
+        "Analytical Thinking",
+        "Teamwork"
+    ]
+)
+
+weaknesses = st.multiselect(
+    "What skills would you like to improve?",
+    [
+        "Public Speaking",
+        "Programming",
+        "Mathematics",
+        "Time Management",
+        "Confidence",
+        "Writing"
+    ]
+)
+
+activities = st.multiselect(
+    "What activities do you enjoy?",
+    [
+        "Coding",
+        "Building Projects",
+        "Reading",
+        "Research",
+        "Sports",
+        "Business",
+        "Teaching",
+        "Designing"
+    ]
+)
+
+leadership = st.selectbox(
+    "Do you enjoy leading teams?",
+    [
+        "Yes",
+        "Sometimes",
+        "No"
+    ]
+)
+
+if st.button("Generate Career Report"):
 
     careers = []
     universities = []
     skills = []
 
+    # Technology Path
+
     if interest == "Technology":
+
         careers = [
             "AI Engineer",
             "Software Engineer",
@@ -87,7 +145,10 @@ if st.button("Generate Career Plan"):
             "Building Projects"
         ]
 
+    # Business Path
+
     elif interest == "Business":
+
         careers = [
             "Entrepreneur",
             "Product Manager",
@@ -110,7 +171,10 @@ if st.button("Generate Career Plan"):
             "Startup Skills"
         ]
 
+    # Healthcare Path
+
     elif interest == "Healthcare":
+
         careers = [
             "Doctor",
             "Researcher",
@@ -128,25 +192,145 @@ if st.button("Generate Career Plan"):
             "Communication"
         ]
 
+    # Education Path
+
+    elif interest == "Education":
+
+        careers = [
+            "Teacher",
+            "Professor",
+            "Education Consultant"
+        ]
+
+        universities = [
+            "Harvard",
+            "Oxford",
+            "LUMS"
+        ]
+
+        skills = [
+            "Communication",
+            "Teaching",
+            "Leadership"
+        ]
+
+    # Engineering Path
+
+    elif interest == "Engineering":
+
+        careers = [
+            "Mechanical Engineer",
+            "Electrical Engineer",
+            "Civil Engineer"
+        ]
+
+        universities = [
+            "MIT",
+            "NUST",
+            "UET"
+        ]
+
+        skills = [
+            "Physics",
+            "Mathematics",
+            "Design Thinking"
+        ]
+
+    # Creative Arts Path
+
+    else:
+
+        careers = [
+            "Graphic Designer",
+            "Animator",
+            "Content Creator"
+        ]
+
+        universities = [
+            "RISD",
+            "NCA",
+            "AIVA"
+        ]
+
+        skills = [
+            "Creativity",
+            "Design",
+            "Communication"
+        ]
+
     st.success("Your Personalized Career Report")
 
-    st.markdown("## Career Matches")
+    # Student Profile
+
+    st.markdown("## 👤 Student Profile")
+
+    profile = []
+
+    if "Problem Solving" in strengths:
+        profile.append("Strong problem solver")
+
+    if "Creativity" in strengths:
+        profile.append("Creative thinker")
+
+    if "Leadership" in strengths:
+        profile.append("Natural leader")
+
+    if "Analytical Thinking" in strengths:
+        profile.append("Analytical mindset")
+
+    if leadership == "Yes":
+        profile.append("Shows leadership potential")
+
+    if "Coding" in activities:
+        profile.append("Enjoys technology and building solutions")
+
+    if profile:
+        for item in profile:
+            st.write("✅", item)
+
+    # Career Matches
+
+    st.markdown("## 🚀 Career Matches")
 
     for career in careers:
-        st.write("✅", career)
+        st.write("🎯", career)
 
-    st.markdown("## Recommended Universities")
+    # Universities
+
+    st.markdown("## 🎓 Recommended Universities")
 
     for uni in universities:
-        st.write("🎓", uni)
+        st.write("🏛️", uni)
 
-    st.markdown("## Skills Roadmap")
+    # Skills Roadmap
+
+    st.markdown("## 📚 Skills Roadmap")
 
     for skill in skills:
-        st.write("📚", skill)
+        st.write("📌", skill)
 
-    st.markdown("## Advice")
+    # Areas for Improvement
+
+    if weaknesses:
+
+        st.markdown("## 📈 Areas for Growth")
+
+        for weakness in weaknesses:
+            st.write("🔹 Improve:", weakness)
+
+    # Advice
+
+    st.markdown("## 💡 Personalized Advice")
 
     st.info(
-        f"Based on your interest in {interest}, you should focus on building relevant skills and projects. Start early and explore opportunities related to your goals."
+        f"""
+Based on your interest in {interest}, strengths, and activities,
+you should focus on building practical skills, creating projects,
+and exploring opportunities related to your chosen field.
+
+Keep learning consistently and stay curious.
+"""
     )
+
+    st.balloons()
+```
