@@ -14,12 +14,12 @@ st.set_page_config(
 custom_css = """
 <style>
     .stApp {
-        background-color: #0F172A;
+        background-color: #91D7FA;
         color: #F8FAFC;
     }
     [data-testid="stMetricBorderDiv"], .stElementContainer div[data-style="border"] {
-        background-color: #1E293B !important;
-        border: 1px solid #334155 !important;
+        background-color: #2C4A59 !important;
+        border: 1px solid ##335055 !important;
         border-radius: 16px !important;
         padding: 20px !important;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
@@ -27,7 +27,7 @@ custom_css = """
     [data-testid="stMetricValue"] {
         font-size: 32px;
         font-weight: 800;
-        color: #8B5CF6;
+        color: ##5CA4F6;
     }
 </style>
 """
@@ -810,7 +810,7 @@ if not st.session_state.report_generated:
             interest = st.selectbox("Main Interest Core Focus Area", list(PATHWAYS.keys()), index=0)
             goal = st.text_input("What is your North Star Dream Career or Goal? (e.g., Build an AI SaaS, Eradicate Disease)")
         
-        if st.button("Continue ➡️", use_container_width=True):
+        if st.button("Continue", use_container_width=True):
             if goal.strip() == "":
                 st.warning("Please outline your target North Star Dream Career or Goal to initialize routing.")
             else:
@@ -834,11 +834,11 @@ if not st.session_state.report_generated:
         
         col_back, col_next = st.columns(2)
         with col_back:
-            if st.button("⬅️ Back", use_container_width=True):
+            if st.button("Back", use_container_width=True):
                 st.session_state.step = 1
                 st.rerun()
         with col_next:
-            if st.button("Continue ➡️", use_container_width=True):
+            if st.button("Continue", use_container_width=True):
                 st.session_state.subjects = subjects
                 st.session_state.strengths = strengths
                 st.session_state.weaknesses = weaknesses
@@ -849,7 +849,7 @@ if not st.session_state.report_generated:
     # Step 3: EXTENSION MODULE - Personality Mode Route Selection
     elif st.session_state.step == 3:
         with st.container(border=True):
-            st.markdown("#### 🧩 Personality Intelligence Engine Activation")
+            st.markdown("#### Personality Intelligence Engine Activation")
             st.write("Unlock dynamic archetype behavioral profiling to refine your mentoring metrics.")
             
             p_route = st.radio("Choose onboarding method:", [
@@ -860,7 +860,7 @@ if not st.session_state.report_generated:
             
         col_back, col_next = st.columns(2)
         with col_back:
-            if st.button("⬅️ Back", use_container_width=True):
+            if st.button(" Back", use_container_width=True):
                 st.session_state.step = 2
                 st.rerun()
         with col_next:
@@ -1010,7 +1010,7 @@ if st.session_state.report_generated:
         col_c1, col_c2 = st.columns([1, 1])
         with col_c1:
             with st.container(border=True):
-                st.markdown("🎯 #### Primary Vector Match Resolution")
+                st.markdown("🎯 ##### Primary Vector Match Resolution")
                 st.metric(label="Calculated Profile Match Index", value=f"{top_score}% Confidence")
                 st.markdown(f"**Top Recommended Target Path:** `{top_career}`")
                 st.markdown(f"**North Star Mission Alignment Tag:** *\"{st.session_state.goal}\"*")
@@ -1022,14 +1022,14 @@ if st.session_state.report_generated:
         
         with col_c2:
             with st.container(border=True):
-                st.markdown("🚀 #### Top Integrated Competitive Match Vectors")
+                st.markdown("🚀 ###### Top Integrated Competitive Match Vectors")
                 st.caption("Baseline metrics altered dynamically by deep-dive personality weights maps")
                 for career, score in final_ranked_careers[:3]:
                     st.markdown(f"**{career}** • Evaluation Score: `{score}`")
                     st.progress(min(score, 100) / 100)
 
             with st.container(border=True):
-                st.markdown("🏆 #### Profile Milestone Credentials Status")
+                st.markdown("🏆 ###### Profile Milestone Credentials Status")
                 col_m1, col_m2 = st.columns(2)
                 with col_m1: st.markdown("🏅 **AI Pioneer Match**\n\n`ACTIVE`")
                 with col_m2: st.markdown(f"🔥 **{p_meta['title']} Badge**\n\n`UNLOCKED`")
@@ -1038,7 +1038,7 @@ if st.session_state.report_generated:
         col_p1, col_p2 = st.columns([1, 1])
         with col_p1:
             with st.container(border=True):
-                st.markdown(f"### 🎯 Archetype Profile: {p_code} — {p_meta['title']}")
+                st.markdown(f"#### 🎯 Archetype Profile: {p_code} — {p_meta['title']}")
                 st.metric(label="Archetype Detection Alignment Confidence", value=f"{st.session_state.p_confidence}%")
                 st.write(f"**Diagnostic Pipeline Log:** *{st.session_state.p_rationale}*")
             
@@ -1060,7 +1060,7 @@ if st.session_state.report_generated:
                     st.markdown(f"📈 *{b_career}:* **+{b_val} Weight Target Modifier**")
 
             with st.container(border=True):
-                st.markdown("🎨 #### Targeted Portfolio Project Directives")
+                st.markdown("🎨 ##### Targeted Portfolio Project Directives")
                 st.caption(f"Bespoke validation prompts explicitly customized for a **{p_code}** tracking **{st.session_state.interest}** paths:")
                 for project in p_diverse["projects"]:
                     st.markdown(f"🚀 **{project}**")
@@ -1087,7 +1087,7 @@ if st.session_state.report_generated:
                 for uni in interest_data["affordable"]: st.markdown(f"💡 `{uni}`")
 
             with st.container(border=True):
-                st.markdown("🌐 #### Curated Open Learning Resource Vectors")
+                st.markdown("🌐 ## Curated Open Learning Resource Vectors")
                 for res in interest_data["resources"]:
                     st.markdown(f"🔗 *[{res} Portal Connection Link](https://www.google.com/search?q={res.replace(' ', '+')}+course)*")
 
