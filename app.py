@@ -802,8 +802,8 @@ PATHWAYS = {
 st.markdown(
     """
     <div style="text-align: center; margin-bottom: 20px;">
-        <h1 style="margin-bottom: 0px; padding-bottom: 0px; color: #1E293B;">HELP AI</h1>
-        <h3 style="margin-top: 5px; font-weight: 500; color: #475569;">Higher Education Learning Path</h3>
+        <h1 style="margin-bottom: 0px; padding-bottom: 0px; color: #F8FAFC;">HELP AI</h1>
+        <h3 style="margin-top: 5px; font-weight: 500; color: #F8FAFC;">Higher Education Learning Path</h3>
     </div>
     """,
     unsafe_allow_html=True
