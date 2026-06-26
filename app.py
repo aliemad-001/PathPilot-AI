@@ -1193,7 +1193,7 @@ Higher Education Learning Path
 Helping students discover careers,
 universities and opportunities with AI.
 
-Built using Python & Streamlit
+Built using Python (with help from LLM's) & Streamlit with love 🤍
 
 </center>
 """,
