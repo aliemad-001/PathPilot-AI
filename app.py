@@ -16,7 +16,7 @@ custom_css = """
 <style>
     .stApp {
         background-color: #0F172A;
-        color: #1F2937;
+        color: #F8FAFC;
     }
     div.stButton > button {
         background-color: #5CB8E6 !important;
