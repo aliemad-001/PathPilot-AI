@@ -5,10 +5,10 @@ import time
 # COLOR SYSTEM & MODERN UI CONFIGURATION (Pure Native Engine)
 # ==============================================================================
 st.set_page_config(
-    page_title="PathPilot AI",
+    page_title="HELP AI",
     page_icon="🎓",
-    layout="wide",
-    initial_sidebar_state="collapsed"
+    layout="wide"
+)
 )
 
 custom_css = """
@@ -784,9 +784,22 @@ PATHWAYS = {
 # ==============================================================================
 col_logo, col_title = st.columns([1, 11])
 with col_title:
-    st.title("🎓 PathPilot AI")
-    st.caption("⚡ Your Intelligent AI Career Success Mentor • Built for GenZ Builders")
-st.markdown("---")
+    st.title(" HELP AI")
+    st.subheader("Higher Education Learning Path")
+st.markdown("""
+### Helping Students Discover Their Future with AI
+
+HELP AI analyzes your interests, strengths, personality, and goals to recommend:
+
+- 🎓 Careers
+- 🏫 Universities
+- 📚 Skills to Learn
+- 🚀 Projects
+- 🌍 Opportunities
+- 💡 Personalized Guidance
+
+Start your journey below.
+""")
 
 # ==============================================================================
 # CORE WORKFLOW ROUTING ENGINE
