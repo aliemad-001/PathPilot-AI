@@ -52,690 +52,818 @@ st.html(custom_css)
 # ==============================================================================
 PERSONALITY_REGISTRY = {
     "INTJ": {
-        "title": "Architect", "strengths": ["Strategic", "Logical", "Independent", "Determined"], "growth": ["Arrogant", "Overthinker", "Dismissive of Emotions"],
+        "title": "The Planner", 
+        "strengths": ["Great at planning", "Logical thinker", "Works well alone", "Never gives up"], 
+        "growth": ["Can seem a bit stubborn", "Overthinks simple things", "Forgets to think about feelings"],
         "questions": [
-            "Do you prioritize macro long-term strategy planning over short-term execution?",
-            "Do you vastly prefer working strictly independently over group collaborations?",
-            "Do logic and optimization strategy games deeply interest you?",
-            "Is process efficiency your ultimate standard metric for success?",
-            "Would you rather design the structural layout of a system than manage its people?"
+            "Do you prefer focusing on big, long-term plans rather than small day-to-day tasks?",
+            "Do you prefer working completely by yourself instead of in a group?",
+            "Do you love strategy games, logic puzzles, or finding shortcuts?",
+            "Is making a process run perfectly the most important goal for you?",
+            "Would you rather design a master blueprint than manage a team of people?"
         ],
         "universities": ["MIT", "Stanford", "ETH Zurich", "Carnegie Mellon"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"AI Engineer": 10, "Software Engineer": 8, "Data Scientist": 9, "Cybersecurity Specialist": 7},
-                "roadmap": ["Phase 1: Deep-dive into Discrete Math & Compiler Design Foundations", "Phase 2: Construct isolated scalable microservice backends", "Phase 3: Architect robust zero-trust security layers", "Phase 4: Deploy enterprise-tier autonomous cloud clusters"],
-                "projects": ["Distributed Neural Network Architecture", "Cryptographic Consensus Core Simulation"]
+                "roadmap": [
+                    "Phase 1: Learn the basics of logic, coding foundations, and Python.", 
+                    "Phase 2: Build a few small automation apps and backend programs by yourself.", 
+                    "Phase 3: Create secure system networks and learn how encryption works.", 
+                    "Phase 4: Set up automated cloud computing clusters online."
+                ],
+                "projects": ["Build an AI Neural Network Blueprint", "Create a Private Code-Based Hacking Defense Center"]
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Product Manager": 8, "Entrepreneur": 6},
-                "roadmap": ["Phase 1: Analyze advanced market volatility datasets", "Phase 2: Build quantitative predictive econometric tracking sandboxes", "Phase 3: Structure structural risk optimization audits", "Phase 4: Design macro-scale operational corporate strategies"],
-                "projects": ["Automated Algorithmic Arbitrage Engine", "Predictive Corporate Competitor Analysis Core"]
+                "roadmap": [
+                    "Phase 1: Read up on charts, finance, and how store sales numbers change.", 
+                    "Phase 2: Use spreadsheets to practice predicting sales for an imaginary startup.", 
+                    "Phase 3: Map out systemic corporate growth models and company safety checks.", 
+                    "Phase 4: Design a master operational plan for a mock tech business launch."
+                ],
+                "projects": ["Create a Smart Market Tracker Spreadsheet", "Write a Multi-Year Business Strategy Plan"]
             },
             "Healthcare": {
                 "bonus": {"Medical Researcher": 10, "Doctor": 7, "Pharmacist": 6},
-                "roadmap": ["Phase 1: Master complex quantitative genomic parsing rules", "Phase 2: Run clinical trial data simulation pipelines", "Phase 3: Build diagnostic optimization tools for laboratories", "Phase 4: Publish predictive pathological structural models"],
-                "projects": ["Genomic Sequencing Variant Mapping Pipeline", "Computational Molecular Interaction Sandbox"]
+                "roadmap": [
+                    "Phase 1: Study biology data, cell blueprints, and basic DNA code patterns.", 
+                    "Phase 2: Use a simulator to see how health records are handled securely.", 
+                    "Phase 3: Design a step-by-step layout program to speed up hospital labs.", 
+                    "Phase 4: Complete a study on tracing the speed of new illness variants."
+                ],
+                "projects": ["Design a Digital DNA Code Mapping Model", "Build a Hospital Lab Tracking Simulator"]
             },
             "Education": {
                 "bonus": {"Education Consultant": 10, "Professor": 8, "Teacher": 5},
-                "roadmap": ["Phase 1: Deconstruct structural learning analytics frameworks", "Phase 2: Standardize adaptive instructional assessment rules", "Phase 3: Architect scalable multi-district curriculum metrics", "Phase 4: Launch systemic educational optimization consultancies"],
-                "projects": ["Data-Driven Adaptive Learning System Engine", "Institutional Curricular Alignment Sandbox"]
+                "roadmap": [
+                    "Phase 1: Explore studies about how students learn and complete school tasks.", 
+                    "Phase 2: Plan an automated testing model that adapts to student grades.", 
+                    "Phase 3: Design a new digital study checklist for multiple schools to use.", 
+                    "Phase 4: Launch your own plan to show schools how to improve student scores."
+                ],
+                "projects": ["Build an Adaptive Student Learning App", "Design a School District Report Card System"]
             },
             "Engineering": {
                 "bonus": {"Electrical Engineer": 10, "Mechanical Engineer": 8, "Civil Engineer": 7},
-                "roadmap": ["Phase 1: Analyze high-level finite element structural models", "Phase 2: Program hardware register-level industrial routing steps", "Phase 3: Optimize automated load tolerances under systemic strain", "Phase 4: Direct macro-scale smart infrastructure setups"],
-                "projects": ["Smart Traffic Grid Infrastructure Simulator", "Finite Element Structural Stress Analyzer"]
+                "roadmap": [
+                    "Phase 1: Look at computer models showing weight limits for structural parts.", 
+                    "Phase 2: Learn how to program microcontrollers and circuit board logic lines.", 
+                    "Phase 3: Run structural strain test designs using software on a laptop.", 
+                    "Phase 4: Design blueprints for a large-scale automated infrastructure layout."
+                ],
+                "projects": ["Create a Smart Traffic Infrastructure Simulator", "Build a Software Stress-Tester for Bridges"]
             },
             "Creative Arts": {
                 "bonus": {"Graphic Designer": 10, "Animator": 7, "Content Creator": 5},
-                "roadmap": ["Phase 1: Study underlying design systems & geometric layout laws", "Phase 2: Systematize programmatic visual vector patterns", "Phase 3: Architect comprehensive interactive digital UI guidelines", "Phase 4: Launch technical spatial design framework agencies"],
-                "projects": ["Scalable Dynamic UI Design Token System", "Procedural Vector Geometry Blueprint Engine"]
+                "roadmap": [
+                    "Phase 1: Learn the hidden grid rules and geometry behind clean design systems.", 
+                    "Phase 2: Write short design scripts to auto-generate vector icons and patterns.", 
+                    "Phase 3: Create an official user interface design book for your favorite apps.", 
+                    "Phase 4: Design complete digital interactive prototypes for tech clients."
+                ],
+                "projects": ["Design a Universal Mobile UI Token Theme", "Build a Code-Driven Art Pattern Builder"]
             }
         }
     },
     "INTP": {
-        "title": "Logician", "strengths": ["Analytical", "Original", "Open-Minded", "Objective"], "growth": ["Disconnected", "Condescending", "Loathe Rules"],
+        "title": "The Thinker", 
+        "strengths": ["Deeply analytical", "Highly original", "Open-minded", "Fair and honest"], 
+        "growth": ["Can feel a bit disconnected", "Might sound critical", "Does not like strict rules"],
         "questions": [
-            "Do you find yourself constantly analyzing abstract theoretical frameworks?",
-            "Do you value conceptual originality more than structural convention?",
-            "Are you comfortable pivoting projects mid-way if a more interesting problem appears?",
-            "Do you look for underlying logical fallacies during routine debates?",
-            "Would you prefer discovering a new principle over building a commercial application?"
+            "Do you find yourself constantly trying to figure out how big, abstract ideas work?",
+            "Do you care more about coming up with brand-new ideas than following old rules?",
+            "Are you happy to switch projects halfway if you discover a more interesting puzzle?",
+            "Do you naturally spot logic mistakes or weak points when people argue?",
+            "Would you rather discover a new scientific rule than build a product to sell?"
         ],
         "universities": ["MIT", "Stanford", "ETH Zurich", "Carnegie Mellon"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"AI Engineer": 10, "Data Scientist": 9, "Software Engineer": 7, "Cybersecurity Specialist": 6},
-                "roadmap": ["Phase 1: Study functional programming languages & lambda calculus", "Phase 2: Build custom memory-safe compiler architectures", "Phase 3: Train alternative generative deep learning algorithms", "Phase 4: Author open-source abstract framework paradigms"],
-                "projects": ["Custom Memory-Safe Functional Language Compiler", "Autonomous Neural Hyperparameter Tuning Core"]
+                "roadmap": [
+                    "Phase 1: Dive into computer science code theory and functional logic rules.", 
+                    "Phase 2: Build a mini coding language engine to learn how code runs.", 
+                    "Phase 3: Experiment with training new and different types of AI systems.", 
+                    "Phase 4: Write your own open-source code libraries for other programmers to use."
+                ],
+                "projects": ["Create Your Own Mini Coding Language Engine", "Build an AI Auto-Tuning Code Module"]
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Product Manager": 7, "Entrepreneur": 5},
-                "roadmap": ["Phase 1: Deconstruct macroeconomic game theory models", "Phase 2: Develop independent market structural simulators", "Phase 3: Audit complex decentralized micro-transaction ledger formats", "Phase 4: Formulate innovative algorithmic business optimization metrics"],
-                "projects": ["Algorithmic Game Theory Market Matrix", "Decentralized Token Economic Flow Sandbox"]
+                "roadmap": [
+                    "Phase 1: Study economic patterns and game strategy concepts.", 
+                    "Phase 2: Build a model simulation to see how prices shift in a digital store.", 
+                    "Phase 3: Look at how blockchain data ledgers verify records safely.", 
+                    "Phase 4: Think up totally new models for running and funding future tech setups."
+                ],
+                "projects": ["Build a Game Theory Strategy Simulator", "Design a Digital Coin Economic System Map"]
             },
             "Healthcare": {
                 "bonus": {"Medical Researcher": 10, "Pharmacist": 8, "Doctor": 5},
-                "roadmap": ["Phase 1: Audit massive cellular data correlation matrices", "Phase 2: Simulate theoretical biochemical compounding dynamics", "Phase 3: Code advanced epidemiological mutation tracking loops", "Phase 4: Deliver first-principles scientific breakthroughs"],
-                "projects": ["Biochemical Compounding Affinity Core Simulator", "Epidemiological Mutation Spread Blueprint"]
+                "roadmap": [
+                    "Phase 1: Study huge tables of clinical cell data to look for patterns.", 
+                    "Phase 2: Map out how different molecules change when mixed together.", 
+                    "Phase 3: Write code logic that predicts how an illness can change over time.", 
+                    "Phase 4: Present completely fresh scientific theories on cellular health."
+                ],
+                "projects": ["Build a Chemical Compounding Mixer Simulator", "Create an Illness Variation Tracking Map"]
             },
             "Education": {
                 "bonus": {"Professor": 10, "Education Consultant": 8, "Teacher": 5},
-                "roadmap": ["Phase 1: Research underlying cognitive processing theories", "Phase 2: Analyze algorithmic knowledge gap detection models", "Phase 3: Formulate abstract pedagogical tracking taxonomies", "Phase 4: Direct alternative logic training institutions"],
-                "projects": ["Algorithmic Student Knowledge Gap Mapper", "Cognitive Taxonomical Framework Tracker"]
+                "roadmap": [
+                    "Phase 1: Study how the brain captures information and solves mental blocks.", 
+                    "Phase 2: Build a program that calculates exactly where a student got confused.", 
+                    "Phase 3: Create a clean framework chart of learning skills for schools.", 
+                    "Phase 4: Start an independent logic training bootcamp class online."
+                ],
+                "projects": ["Build a Student Learning Gap Map Application", "Design a Brain-Based Study Skill Tracker"]
             },
             "Engineering": {
                 "bonus": {"Electrical Engineer": 10, "Mechanical Engineer": 8, "Civil Engineer": 6},
-                "roadmap": ["Phase 1: Deconstruct thermodynamics and fundamental field theories", "Phase 2: Code low-level physical micro-sensor firmware array maps", "Phase 3: Simulate unconventional experimental layout models", "Phase 4: Pioneer foundational material engineering mechanics"],
-                "projects": ["Bare-Metal Sensor Array Firmware Controller", "Thermodynamic Flow Simulation Array Engine"]
+                "roadmap": [
+                    "Phase 1: Learn about physical energy, heat rules, and waves from first principles.", 
+                    "Phase 2: Code your own low-level chip program instructions for sensor devices.", 
+                    "Phase 3: Simulate untraditional product designs using virtual spaces.", 
+                    "Phase 4: Test out brand-new material compounds to see how they handle stress."
+                ],
+                "projects": ["Write Code for a Custom Sensor Controller Box", "Build a Virtual Energy-Flow Simulation Test"]
             },
             "Creative Arts": {
                 "bonus": {"Animator": 10, "Graphic Designer": 7, "Content Creator": 6},
-                "roadmap": ["Phase 1: Study mathematical fractals and procedural generation laws", "Phase 2: Build automated physics engines for interactive media", "Phase 3: Script custom shading pipelines for graphics engines", "Phase 4: Consult on technical visual generation software stacks"],
-                "projects": ["Procedural Graphic Generation Canvas Sandbox", "Custom Physics-Driven Motion Shader Module"]
+                "roadmap": [
+                    "Phase 1: Discover how geometry rules create endless algorithmic patterns.", 
+                    "Phase 2: Code your own mini physics rule tools for cartoon motion frames.", 
+                    "Phase 3: Write rendering filters to change shadows and lighting in graphics.", 
+                    "Phase 4: Act as a master consultant on art generation engine code platforms."
+                ],
+                "projects": ["Code an Automatic Math-Based Pattern Canvas", "Build a Custom Motion Physics Animation Tool"]
             }
         }
     },
     "ENTJ": {
-        "title": "Commander", "strengths": ["Efficient", "Energetic", "Confident", "Strong-Willed"], "growth": ["Stubborn", "Dominant", "Intolerant"],
+        "title": "The Captain", 
+        "strengths": ["Highly organized", "Full of energy", "Confident", "Strong leader"], 
+        "growth": ["Can be strict", "Likes to control things", "Becomes impatient easily"],
         "questions": [
-            "Do you effortlessly take command of team structures when bottlenecks occur?",
-            "Are you motivated by maximizing competitive market efficiency?",
-            "Do you find managing human capital and deadlines highly rewarding?",
-            "Is execution velocity more important to you than absolute perfection?",
-            "Do you actively design optimization roadmaps for your career daily?"
+            "Do you naturally step up and guide a group when an assignment gets stuck?",
+            "Are you driven by competing and winning in a fast-moving market?",
+            "Do you find it rewarding to manage deadlines and assign tasks to teammates?",
+            "Is finishing a project quickly more important to you than making it 100% flawless?",
+            "Do you actively plan out your next educational steps and career milestones every single day?"
         ],
         "universities": ["Stanford", "Wharton", "LUMS", "IBA"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Product Manager": 10, "Cybersecurity Specialist": 8, "Software Engineer": 7, "AI Engineer": 6},
-                "roadmap": ["Phase 1: Direct multi-engineer tech workspace agile sprints", "Phase 2: Standardize global enterprise software deployment SLAs", "Phase 3: Supervise cross-platform systems scaling audits", "Phase 4: Command enterprise-tier engineering organizations globally"],
-                "projects": ["Multi-Tenant Scalable Operations Orchestrator", "Enterprise Tech Infrastructure Performance Deck"]
+                "roadmap": [
+                    "Phase 1: Lead a group of youth programmers inside a coding club project.", 
+                    "Phase 2: Set strict code safety and release standards for your app builds.", 
+                    "Phase 3: Supervise how apps are updated and kept running under heavy use.", 
+                    "Phase 4: Manage a real development team to deploy major software platforms globally."
+                ],
+                "projects": ["Build a Multi-User Project Planner Tool", "Design a Tech Infrastructure Performance Report"]
             },
             "Business": {
                 "bonus": {"Entrepreneur": 10, "Product Manager": 9, "Business Analyst": 8, "Marketing Manager": 7},
-                "roadmap": ["Phase 1: Evaluate tech startup seed capitalization runways", "Phase 2: Negotiate enterprise strategic vendor agreements", "Phase 3: Execute target user acquisition market offensives", "Phase 4: Scale full corporate enterprise frameworks toward market dominance"],
-                "projects": ["Venture Seed Capital Runway Optimization Deck", "Strategic Market Penetration Deployment Matrix"]
+                "roadmap": [
+                    "Phase 1: Research how startups raise money and plan their cash runways.", 
+                    "Phase 2: Practice pitching and writing deals with real-world target sponsors.", 
+                    "Phase 3: Launch a major customer growth campaign for a small store or project.", 
+                    "Phase 4: Build your own full corporate enterprise to scale up in the market."
+                ],
+                "projects": ["Create a Startup Cash Runway Pitch Deck", "Design a Market Expansion Launch Matrix"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Medical Researcher": 8, "Pharmacist": 6},
-                "roadmap": ["Phase 1: Supervise hospital resource distribution logistics", "Phase 2: Enforce clinical compliance and output standards", "Phase 3: Lead multi-disciplinary specialized surgical cohorts", "Phase 4: Direct regional healthcare delivery infrastructure networks"],
-                "projects": ["Integrated Healthcare Operations Routing Core", "Clinical Compliance Risk Mitigation Architecture"]
+                "roadmap": [
+                    "Phase 1: Manage schedules and medicine supply counts for a mockup clinic.", 
+                    "Phase 2: Ensure all laboratory safety checks are met perfectly during tests.", 
+                    "Phase 3: Lead an emergency team simulation to coordinate doctors in a crisis.", 
+                    "Phase 4: Direct a full network of public regional clinics and health workers."
+                ],
+                "projects": ["Build a Clinic Staff Schedule Routing Core", "Design a Hospital Compliance Audit System"]
             },
             "Education": {
                 "bonus": {"Education Consultant": 10, "Professor": 8, "Teacher": 6},
-                "roadmap": ["Phase 1: Direct institutional educational budget frameworks", "Phase 2: Enforce systemic performance tracking standard criteria", "Phase 3: Command regional university administrative operations networks", "Phase 4: Restructure national educational system deployment models"],
-                "projects": ["Regional Institutional Educational Budget Manager", "Systemic Academic Performance Metric Grid"]
+                "roadmap": [
+                    "Phase 1: Structure budget blueprints and spending balances for a virtual school.", 
+                    "Phase 2: Enforce high test score goals across digital classroom groups.", 
+                    "Phase 3: Direct team building workshops for student body organizers.", 
+                    "Phase 4: Lead an entire university group or regional school network system."
+                ],
+                "projects": ["Build a Virtual School Budget Tracker App", "Design an Academic Performance Score Grid"]
             },
             "Engineering": {
                 "bonus": {"Civil Engineer": 10, "Mechanical Engineer": 8, "Electrical Engineer": 7},
-                "roadmap": ["Phase 1: Manage multi-million scale physical construction frameworks", "Phase 2: Enforce industrial factory manufacturing efficiency metrics", "Phase 3: Lead large-scale field engineering deployment teams", "Phase 4: Command international civil or mechanical infrastructure consortia"],
-                "projects": ["Industrial Manufacturing Efficiency Router Core", "Macro Civil Infrastructure Lifecycle Tracking Suite"]
+                "roadmap": [
+                    "Phase 1: Supervise timelines for a large building development sandbox project.", 
+                    "Phase 2: Put manufacturing speed targets into action for factory product builds.", 
+                    "Phase 3: Lead a big crew of junior mechanics or field builders on a challenge.", 
+                    "Phase 4: Direct a multinational structural infrastructure engineering project."
+                ],
+                "projects": ["Design a Factory Line Speed Optimization Tool", "Build an Infrastructure Lifecycle Asset Matrix"]
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Marketing Manager": 9, "Graphic Designer": 6},
-                "roadmap": ["Phase 1: Establish large-scale creative content production studios", "Phase 2: Direct major corporate marketing campaign frameworks", "Phase 3: Manage comprehensive studio brand ecosystem portfolios", "Phase 4: Dominate global media agency monetization networks"],
-                "projects": ["Scalable Creative Studio Asset Pipeline Tracker", "Corporate Content Campaign Monetization Blueprint"]
+                "roadmap": [
+                    "Phase 1: Launch your own high-volume content creator group and studio space.", 
+                    "Phase 2: Manage major advertising campaign graphics for student festivals.", 
+                    "Phase 3: Handle total visual brand rules for a collection of dynamic brands.", 
+                    "Phase 4: Command a world-class creative agency network or movie house."
+                ],
+                "projects": ["Design a Creative Studio Media Production Tracker", "Build a Multi-Channel Brand Asset Monetization Plan"]
             }
         }
     },
     "ENTP": {
-        "title": "Debater", "strengths": ["Innovative", "Curious", "Fast Learner", "Entrepreneurial"], "growth": ["Inconsistent", "Dislikes Routine", "Argumentative"],
+        "title": "The Inventor", 
+        "strengths": ["Very creative", "Super curious", "Learns quickly", "Startup mindset"], 
+        "growth": ["Gets bored with routines", "Hates repetitive tasks", "Argues a lot"],
         "questions": [
-            "Do you enjoy challenging conventional wisdom and debating radical concepts?",
-            "Would you rather assume the risk of building a startup than joining an established firm?",
-            "How deep is your intrinsic interest in artificial intelligence ecosystem evolution?",
-            "Do you enjoy dissecting highly complex, ambiguous problems?",
-            "Do you struggle with standard routine operational tasks once conceptual loops are closed?"
+            "Do you love questioning old rules and debating wild, unusual ideas?",
+            "Would you rather start an experimental startup than work at an established company?",
+            "Are you excited to discover how Artificial Intelligence is changing the world?",
+            "Do you enjoy taking apart confusing, complicated problems to solve them your way?",
+            "Do you struggle to finish daily tasks once the creative part is done?"
         ],
         "universities": ["Stanford", "Wharton", "LUMS", "IBA"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Entrepreneur": 10, "AI Engineer": 9, "Software Engineer": 7, "Data Scientist": 6},
-                "roadmap": ["Phase 1: Rapidly deploy dynamic front-to-back Python prototypes", "Phase 2: Build 5 intersecting functional AI product wrappers", "Phase 3: Pitches disruptive technology concepts in hackathons", "Phase 4: Incubate cross-platform autonomous product SaaS labs"],
-                "projects": ["AI Automated Startup Idea Validator Node", "Real-Time Gamified Student Planner Network"]
+                "roadmap": [
+                    "Phase 1: Code quick app ideas using Python.", 
+                    "Phase 2: Launch 5 fast AI web wrappers over a single weekend.", 
+                    "Phase 3: Pitch your unique ideas at high-energy hackathon tournaments.", 
+                    "Phase 4: Create an open software lab to build and launch automated applications."
+                ],
+                "projects": ["Build an AI-Powered Startup Name Validator App", "Create a Gamified Student Daily Study App"]
             },
             "Business": {
                 "bonus": {"Entrepreneur": 10, "Marketing Manager": 9, "Product Manager": 8, "Business Analyst": 6},
-                "roadmap": ["Phase 1: Draft growth hack loops using alternative channels", "Phase 2: Build interactive continuous business model builders", "Phase 3: Validate unique value monetization structures fast", "Phase 4: Scale modular, automated micro-venture ecosystems online"],
-                "projects": ["Alternative Growth Hack Loop Validator Engine", "Interactive Business Model Canvas Prototyper"]
+                "roadmap": [
+                    "Phase 1: Invent clever growth tricks using free online channels.", 
+                    "Phase 2: Build canvas sketches for weird and wild store monetization choices.", 
+                    "Phase 3: Test your ideas out on small audiences to see if they sell.", 
+                    "Phase 4: Run multiple small, automated digital micro-ventures simultaneously."
+                ],
+                "projects": ["Create a Growth-Hack Marketing Test Sandbox", "Design an Interactive Digital Business Canvas Tool"]
             },
             "Healthcare": {
                 "bonus": {"Medical Researcher": 10, "Doctor": 7, "Pharmacist": 5},
-                "roadmap": ["Phase 1: Ideate computational medical delivery software paths", "Phase 2: Launch digital alternative medical awareness applications", "Phase 3: Prototype user-friendly telehealth tracking portals", "Phase 4: Disrupt legacy diagnostic workflows with smart tech toolsets"],
-                "projects": ["Telehealth Application UI Wireframe Network", "Legacy Diagnostic Workflow Software Disrupter"]
+                "roadmap": [
+                    "Phase 1: Sketch ideas for mobile medical companion apps.", 
+                    "Phase 2: Set up alternative online channels to share clean health advice.", 
+                    "Phase 3: Build a quick, user-friendly video call portal for mock clinics.", 
+                    "Phase 4: Shake up old clinical systems by introducing fast digital tools."
+                ],
+                "projects": ["Design a Telehealth App User Experience Interface", "Build a Workflow Disruption Map for Old Clinics"]
             },
             "Education": {
                 "bonus": {"Education Consultant": 10, "Teacher": 8, "Professor": 6},
-                "roadmap": ["Phase 1: Build gamified digital learning interaction modules", "Phase 2: Host interactive global conceptual student panels", "Phase 3: Launch alternative educational content properties", "Phase 4: Scale alternative online micro-school tracking models"],
-                "projects": ["Gamified Quiz Application Software Blueprint", "Decentralized Micro-School Enrollment Portal"]
+                "roadmap": [
+                    "Phase 1: Build points-based quiz games for high school test revision.", 
+                    "Phase 2: Run an alternative student group panel debate program.", 
+                    "Phase 3: Start your own online edutainment channel or blog platform.", 
+                    "Phase 4: Scale your own virtual learning system to kids around the world."
+                ],
+                "projects": ["Build a Points-Based Interactive Study Quiz App", "Design a Virtual Alternative Micro-School Portal"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Electrical Engineer": 8, "Civil Engineer": 5},
-                "roadmap": ["Phase 1: Prototype rapid mechanical proof-of-concept models", "Phase 2: Integrate cheap microcontrollers into smart arrays", "Phase 3: Pitch innovative green renewable energy inventions", "Phase 4: Scale agile component manufacturing tech operations"],
-                "projects": ["Agile 3D Component Prototyping System", "Smart Microcontroller Environmental Collector"]
+                "roadmap": [
+                    "Phase 1: Make quick 3D prototype models for a fun new invention idea.", 
+                    "Phase 2: Connect simple microchip sensors to track indoor weather signs.", 
+                    "Phase 3: Enter green energy design concepts into science fairs.", 
+                    "Phase 4: Run an agile hardware lab focused on building fast design samples."
+                ],
+                "projects": ["Create a 3D Printing Prototyping Guide System", "Build an IoT Sensor Array Weather Tracker Box"]
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Graphic Designer": 8, "Animator": 7},
-                "roadmap": ["Phase 1: Launch multiple visual experimentation digital spaces", "Phase 2: Mix interactive generative script formats with media", "Phase 3: Coordinate modern immersive performance events online", "Phase 4: Consult on dynamic branding systems for startup tracks"],
-                "projects": ["Generative Media Scripting Sandbox Engine", "Immersive Startup Branding Design Token Suite"]
+                "roadmap": [
+                    "Phase 1: Create multiple digital profiles to share modern art ideas.", 
+                    "Phase 2: Write custom visual code scripts that mix code with art frames.", 
+                    "Phase 3: Run interactive digital show streams for youth artists.", 
+                    "Phase 4: Consult for fast-moving business tech setups on their creative branding."
+                ],
+                "projects": ["Build a Generative Code Art Playground Engine", "Design an Immersive Startup Brand Identity Token Set"]
             }
         }
     },
     "INFJ": {
-        "title": "Advocate", "strengths": ["Creative", "Insightful", "Principled", "Passionate"], "growth": ["Sensitive", "Extremely Private", "Perfectionist"],
+        "title": "The Counselor", "strengths": ["Creative", "Insightful", "Principled", "Passionate"], "growth": ["Sensitive", "Extremely Private", "Perfectionist"],
         "questions": [
-            "Does the positive social impact of your work matter significantly more than compensation?",
-            "Do you find yourself deeply attuned to the long-term motivations of others?",
-            "Do you possess an absolute core set of principles you refuse to compromise?",
-            "Do you prefer deep, singular mentorship interactions over broad crowds?",
-            "Are you driven to resolve structural human inequalities via systemic design?"
+            "Does helping people matter more to you than how much money you earn?",
+            "Can you easily feel what other people are planning or feeling long-term?",
+            "Do you have a deep set of morals that you refuse to break for any reason?",
+            "Do you prefer mentoring a single close friend over talking to a massive crowd?",
+            "Do you want to fix human unfairness using clever, systemic design plans?"
         ],
         "universities": ["Harvard", "Johns Hopkins", "Oxford", "Aga Khan University"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "Data Scientist": 8, "AI Engineer": 7, "Cybersecurity Specialist": 6},
-                "roadmap": ["Phase 1: Code ethical alternative open-source privacy frameworks", "Phase 2: Construct non-profit data tracking aggregation models", "Phase 3: Optimize user interface design paths for accessibility", "Phase 4: Manage engineering tracks at global human-centric platforms"],
-                "projects": ["Ethical Open-Source Privacy Guard Node", "Accessible Human-Centric UI Tracker Template"]
+                "roadmap": ["Phase 1: Code open-source privacy apps that protect user data safety.", "Phase 2: Build clean data charts for humanitarian and charity groups.", "Phase 3: Design app layouts that are accessible for people with disabilities.", "Phase 4: Lead software engineering teams at major non-profit organizations."],
+                "projects": ["Build an Open-Source Data Privacy Guard App", "Design an Accessible User Interface Template for Seniors"]
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Product Manager": 7, "Marketing Manager": 6},
-                "roadmap": ["Phase 1: Formulate social enterprise corporate charter rules", "Phase 2: Audit alternative sustainable fair-trade supply models", "Phase 3: Write comprehensive ethical organizational growth specs", "Phase 4: Direct impact investments networks globally"],
-                "projects": ["Social Enterprise Sustainability Flow Audit", "Ethical Capital Allocation Matrix Engine"]
+                "roadmap": ["Phase 1: Create a charter plan for a community-first charity store business.", "Phase 2: Study how ethical trade choices impact small community makers.", "Phase 3: Write growth guidelines focused on employee wellness and safety.", "Phase 4: Direct a global network focused on ethical social impact investments."],
+                "projects": ["Design a Fair-Trade Supply Flow Audit Sheet", "Build a Social Enterprise Investment Matrix Tracker"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Medical Researcher": 9, "Pharmacist": 6},
-                "roadmap": ["Phase 1: Train in holistic patient mental support methodologies", "Phase 2: Champion community-level disease prevention metrics", "Phase 3: Write comprehensive diagnostic empathy delivery systems", "Phase 4: Direct specialized care counseling institutions"],
-                "projects": ["Holistic Community Welfare Database Tracker", "Pathological Empathy-Driven Interaction Protocol"]
+                "roadmap": ["Phase 1: Study how to give warm, supportive mental guidance to patients.", "Phase 2: Help lead community health drives to prevent local illnesses.", "Phase 3: Write empathetic medical communication rules for hospital helpers.", "Phase 4: Manage your own specialized clinic focused on compassionate care."],
+                "projects": ["Create a Community Health Awareness Database Tracker", "Design a Patient Care Communication Strategy Plan"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 9, "Professor": 8},
-                "roadmap": ["Phase 1: Deploy individualized custom remedial tracking nodes", "Phase 2: Manage vulnerable student special education support frameworks", "Phase 3: Lead deep humanistic peer mentoring networks", "Phase 4: Author foundational educational equity reform papers"],
-                "projects": ["Remedial Student Progress Tracking Portal", "Humanistic Peer Mentoring System Framework"]
+                "roadmap": ["Phase 1: Build helpful custom study guides for students who are stuck.", "Phase 2: Design supportive learning tools for special education classrooms.", "Phase 3: Set up safe, supportive student peer mentoring groups in schools.", "Phase 4: Write research papers to make school funding more fair for everyone."],
+                "projects": ["Build a Student Progress Support Portal App", "Design a School Peer Mentoring Program Framework"]
             },
             "Engineering": {
                 "bonus": {"Civil Engineer": 10, "Mechanical Engineer": 7, "Electrical Engineer": 6},
-                "roadmap": ["Phase 1: Study eco-friendly sustainable green engineering codes", "Phase 2: Structural design layouts for clean water networks", "Phase 3: Audit rural public utility deployment safety metrics", "Phase 4: Oversee global structural infrastructure aid initiatives"],
-                "projects": ["Rural Clean Water Distribution Grid Mockup", "Eco-Friendly Structural Material Strain Auditor"]
+                "roadmap": ["Phase 1: Read up on eco-friendly green building rules and solar designs.", "Phase 2: Map out layout pipelines to bring fresh water to rural towns.", "Phase 3: Review public park structures to make sure they are totally safe.", "Phase 4: Direct international engineering relief operations around the world."],
+                "projects": ["Design a Rural Clean Water Pipe Grid Layout", "Build an Eco-Friendly Building Material Strain Checker"]
             },
             "Creative Arts": {
                 "bonus": {"Graphic Designer": 10, "Content Creator": 8, "Animator": 7},
-                "roadmap": ["Phase 1: Create intentional visual assets for advocacy groups", "Phase 2: Write thoughtful story treatments highlighting human conditions", "Phase 3: Build high-empathy UI user experience layouts", "Phase 4: Establish meaningful design consultancies supporting causes"],
-                "projects": ["Advocacy Visual Asset System Layout", "High-Empathy User Experience UI Wireframe"]
+                "roadmap": ["Phase 1: Create powerful poster designs for human rights charity groups.", "Phase 2: Write thoughtful story booklets about overcoming hard life events.", "Phase 3: Design welcoming app interface formats that feel calm and safe.", "Phase 4: Run an independent design studio that assists purposeful brands."],
+                "projects": ["Design a Visual Identity Asset Set for a Non-Profit", "Create a High-Empathy User Journey Wireframe App"]
             }
         }
     },
     "INFP": {
-        "title": "Mediator", "strengths": ["Empathetic", "Generous", "Imaginative", "Open-Minded"], "growth": ["Unrealistic", "Self-Isolating", "Vulnerable"],
+        "title": "The Dreamer", "strengths": ["Kind-hearted", "Generous", "Very imaginative", "Open-minded"], "growth": ["Can be unrealistic", "Stays alone too much", "Gets feelings hurt easily"],
         "questions": [
-            "Do you evaluate career tracks based on how closely they mirror your personal ideals?",
-            "Do you find creative writing or visual imagery highly therapeutic?",
-            "Do you require extensive solo deep-focus windows to recharge your output?",
-            "Are you highly sensitive to disharmony or aggressive competition?",
-            "Do you view raw technical tools as instruments for self-expression?"
+            "Do you choose your class tracks based on how well they match your personal morals?",
+            "Do you find creative storytelling, poetry, or sketching deeply comforting?",
+            "Do you need lots of quiet, alone time to recharge your mental battery?",
+            "Are you highly sensitive to arguments, shouting, or fierce competitions?",
+            "Do you look at tech tools as a creative canvas to share your inner worldview?"
         ],
         "universities": ["RISD", "CalArts", "NCA", "Harvard"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "AI Engineer": 7, "Data Scientist": 6},
-                "roadmap": ["Phase 1: Learn markdown scripting & indie design framework setups", "Phase 2: Build indie creative applications for alternative learning", "Phase 3: Develop localized community content-sharing tools", "Phase 4: Direct independent product interfaces focusing on user health"],
-                "projects": ["Indie Alternative Learning Application Mock", "Localized Community Story Sharing Tool Node"]
+                "roadmap": ["Phase 1: Learn markdown writing, text tags, and minimalist web code.", "Phase 2: Build a personal online poetry or art gallery page.", "Phase 3: Create localized chat spaces for creative student groups.", "Phase 4: Oversee product layouts that focus entirely on user peace of mind."],
+                "projects": ["Build a Minimalist Creative Writing App Prototype", "Design a Local Student Art Sharing Platform Web Node"]
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Marketing Manager": 7, "Product Manager": 6},
-                "roadmap": ["Phase 1: Research human-centric organizational work rules", "Phase 2: Strategy paths for small artisanal commerce clusters", "Phase 3: Implement authentic identity marketing metrics", "Phase 4: Counsel startup founders on mental safety systems"],
-                "projects": ["Artisanal Small Business Commerce Tracker", "Human-Centric Organizational Workplace Audit"]
+                "roadmap": ["Phase 1: Read up on supportive, stress-free workplace rules for teams.", "Phase 2: Plan business tracks for independent handmade product artists.", "Phase 3: Set up authentic brand strategies that do not use pushy sales tricks.", "Phase 4: Counsel startup business founders on keeping their staff happy and calm."],
+                "projects": ["Create a Business Tracker for Independent Handcrafted Shops", "Design an Office Wellness Environment Audit System"]
             },
             "Healthcare": {
                 "bonus": {"Medical Researcher": 10, "Doctor": 6, "Pharmacist": 5},
-                "roadmap": ["Phase 1: Study alternative holistic wellness therapy data", "Phase 2: Build simple narrative art therapy tool maps", "Phase 3: Analyze healthcare delivery accessibility in rural spots", "Phase 4: Advocate for humanitarian mental support network setups"],
-                "projects": ["Narrative Art Therapy Progress Log Matrix", "Rural Healthcare Access Data Disparity Map"]
+                "roadmap": ["Phase 1: Research how listening to music or painting can heal stress levels.", "Phase 2: Design a simple layout guide using art therapy for therapy rooms.", "Phase 3: Review health support access levels for families in tiny remote villages.", "Phase 4: Advocate for community-based emotional relief and wellness networks."],
+                "projects": ["Design an Art Therapy Progress Logging System Tracker", "Map Out Healthcare Access Differences in Remote Towns"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 8, "Professor": 6},
-                "roadmap": ["Phase 1: Author creative storytelling instructional materials", "Phase 2: Instruct alternative creative writing workshops online", "Phase 3: Model customized progress tracking maps for remote kids", "Phase 4: Build niche emotional intelligence training paths"],
-                "projects": ["Creative Storytelling Instructional Module Deck", "Emotional Intelligence Student Progress Tracker"]
+                "roadmap": ["Phase 1: Write sweet, imaginative narrative storybooks for early readers.", "Phase 2: Run your own online creative writing workshops for teenagers.", "Phase 3: Map out individualized home-study progress plans for distance learning.", "Phase 4: Build niche emotional intelligence courses to help kids understand feelings."],
+                "projects": ["Create an Illustrated Storybook Lesson Module Deck", "Build an Emotional Intelligence Goal Tracker App for Kids"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Electrical Engineer": 7, "Civil Engineer": 5},
-                "roadmap": ["Phase 1: Design biomimetic mechanical kinetic structural concepts", "Phase 2: Prototype low-cost alternative prosthetics layout models", "Phase 3: Evaluate eco-conscious passive solar heating systems", "Phase 4: Consult on localized, alternative material engineering setups"],
-                "projects": ["Biomimetic Kinetic Component Mechanism Rig", "Low-Cost Prosthetic Joint Mechanical Sandbox"]
+                "roadmap": ["Phase 1: Sketch model blueprints based on organic forms found in nature.", "Phase 2: Design affordable alternative tool concepts for low-income areas.", "Phase 3: Review how smart building layouts can capture raw morning sunlight.", "Phase 4: Consult on tiny, sustainable local engineering projects for villages."],
+                "projects": ["Build a Nature-Inspired Moving Toy Model Rig", "Design an Affordable Low-Income Mechanical Tool Concept"]
             },
             "Creative Arts": {
                 "bonus": {"Graphic Designer": 10, "Content Creator": 9, "Animator": 8},
-                "roadmap": ["Phase 1: Build deep personal artistic portfolio concept sets", "Phase 2: Code interactive storytelling multimedia apps", "Phase 3: Illustrate distinct indie character system libraries", "Phase 4: Run independent digital creative design consultancies"],
-                "projects": ["Interactive Story Visual Novel Framework", "Bespoke Digital Character Design Library Node"]
+                "roadmap": ["Phase 1: Fill up a large sketchbook with deeply personal vector artwork.", "Phase 2: Code your own visual choose-your-own-adventure story app.", "Phase 3: Draw a complete custom character library with matching descriptions.", "Phase 4: Run an independent digital illustration brand showing your art styles."],
+                "projects": ["Code an Interactive Visual Story App Blueprint", "Create a Bespoke Character Vector Asset Library Node"]
             }
         }
     },
     "ENFJ": {
-        "title": "Protagonist", "strengths": ["Charismatic", "Inspiring", "Altruistic", "Natural Leaders"], "growth": ["Overly Idealistic", "Too Selfless", "Fluctuating Self-Esteem"],
+        "title": "The Guide", "strengths": ["Charismatic", "Inspiring", "Caring", "Natural leader"], "growth": ["Expects too much", "Forgets their own needs", "Worries what peers think"],
         "questions": [
-            "Do you genuinely love guiding others to unlock their ultimate capability potentials?",
-            "Are you naturally elected to lead collaborative groups or panels?",
-            "Do you prioritize team morale and harmony over cold technical efficiency?",
-            "Can you easily communicate complex conceptual paradigms to varied crowds?",
-            "Do you thrive on receiving direct, authentic validation from communities?"
+            "Do you truly love helping your peers unlock their hidden talents?",
+            "Are you always selected to lead collaborative projects or student councils?",
+            "Do you care more about team happiness than cold, technical speed?",
+            "Can you easily explain complicated subjects to a large, confused crowd?",
+            "Do you feel energized when you receive open, honest praise from your group?"
         ],
         "universities": ["Stanford", "Harvard", "LUMS", "Oxford"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Product Manager": 10, "Software Engineer": 7, "AI Engineer": 6},
-                "roadmap": ["Phase 1: Run cross-team tech community developer meetups", "Phase 2: Manage collaborative open-source tool contributions", "Phase 3: Interface directly between technical teams and client panels", "Phase 4: Direct technology transformation consulting firms"],
-                "projects": ["Open Developer Community Collaboration Portal", "Cross-Team Tech Project Sync Dashboard"]
+                "roadmap": ["Phase 1: Run helpful software learning meetups for local high schoolers.", "Phase 2: Organize student project sign-ups for open-source code setups.", "Phase 3: Act as the main voice bridging the tech group with real-world users.", "Phase 4: Lead your own high-level technology consulting agency team."],
+                "projects": ["Design a Student Developer Collaboration Hub Platform", "Build a Cross-Team Code Project Progress Sync Dashboard"]
             },
             "Business": {
                 "bonus": {"Marketing Manager": 10, "Product Manager": 9, "Entrepreneur": 7, "Business Analyst": 6},
-                "roadmap": ["Phase 1: Direct corporate human resources training pathways", "Phase 2: Structure public relations outreach framework plans", "Phase 3: Orchestrate corporate social responsibility campaigns", "Phase 4: Executive direction of major consumer brand systems"],
-                "projects": ["Corporate HR Onboarding & Training Manual", "CSR Campaign Stakeholder Impact Tracker Matrix"]
+                "roadmap": ["Phase 1: Design fun team-building workshops for new group members.", "Phase 2: Map out friendly public relationship announcements for student clubs.", "Phase 3: Run charity events to connect local stores with schools.", "Phase 4: Act as the main manager for popular public consumer brands."],
+                "projects": ["Write a Friendly Team Member Onboarding System Manual", "Build a Charity Event Campaign Impact Tracker Sheet"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Pharmacist": 7, "Medical Researcher": 6},
-                "roadmap": ["Phase 1: Coordinate complex public health awareness drives", "Phase 2: Direct patient advocacy representative networks", "Phase 3: Manage inter-disciplinary mental health response modules", "Phase 4: Executive direction of public healthcare networks"],
-                "projects": ["Public Health Campaign Activation Playbook", "Patient Advocacy Network Tracking System"]
+                "roadmap": ["Phase 1: Organize community informational flyers about basic health tips.", "Phase 2: Coordinate student support groups for kids dealing with heavy stress.", "Phase 3: Create medical communication modules that teach helpers to listen.", "Phase 4: Manage a complete public clinical health network system."],
+                "projects": ["Create a Public Health Awareness Action Guide Book", "Build a Patient Advisory Network Tracking Layout Matrix"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 9, "Professor": 8},
-                "roadmap": ["Phase 1: Lead regional student speech and panel activities", "Phase 2: Establish institutional student mentorship system templates", "Phase 3: Manage staff developmental training workshops", "Phase 4: Preside over major alternative educational institutions"],
-                "projects": ["Institutional Student Mentorship Mapping Matrix", "Educational Professional Development Tracker"]
+                "roadmap": ["Phase 1: Lead your school's speech, debate, or presentation activities.", "Phase 2: Build a helpful older-to-younger student mentoring program.", "Phase 3: Run development workshops to help new tutors learn to teach.", "Phase 4: Serve as the principal head or president of a progressive school."],
+                "projects": ["Design an Institutional School Mentoring Match Matrix", "Create a Tutor Training Checklist Progress Application"]
             },
             "Engineering": {
                 "bonus": {"Civil Engineer": 10, "Mechanical Engineer": 7, "Electrical Engineer": 6},
-                "roadmap": ["Phase 1: Run cross-functional field engineer work cohorts", "Phase 2: Facilitate public engineering project impact hearings", "Phase 3: Negotiate safety framework consensus across stakeholders", "Phase 4: Direct international engineering client relation nodes"],
-                "projects": ["Public Infrastructure Hearing Feedback Matrix", "Cross-Functional Field Engineer Sync Hub"]
+                "roadmap": ["Phase 1: Manage workflow harmony inside a busy high school robotics team.", "Phase 2: Run a presentation to gather neighborhood thoughts on a new park layout.", "Phase 3: Resolve schedule overlaps among field crews to prevent stress.", "Phase 4: Serve as the main relations director for massive engineering firms."],
+                "projects": ["Create a Community Park Layout Feedback Collector", "Build a Multi-Crew Robotics Assignment Sync Center"]
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Marketing Manager": 9, "Graphic Designer": 6},
-                "roadmap": ["Phase 1: Direct multi-artist visual performance groups", "Phase 2: Run major collaborative community design workshops", "Phase 3: Anchor client presentation pitches for design firms", "Phase 4: Lead global media team activation operations networks"],
-                "projects": ["Collaborative Community Art Workshop Blueprint", "Creative Design Pitch Presentation Interface"]
+                "roadmap": ["Phase 1: Lead an active group of student artists on a combined mural project.", "Phase 2: Run community art creation workshops to teach illustration steps.", "Phase 3: Present design styles directly to school boards for event signs.", "Phase 4: Manage full creative content teams inside busy marketing firms."],
+                "projects": ["Design a Multi-Artist Collaborative Art Workshop Plan", "Build a Creative Presentation Interface Layout for Clients"]
             }
         }
     },
     "ENFP": {
-        "title": "Campaigner", "strengths": ["Enthusiastic", "Creative", "Excellent Communicators", "Festive"], "growth": ["Disorganized", "Overly Accommodating", "Restless"],
+        "title": "The Motivator", "strengths": ["Full of enthusiasm", "Highly creative", "Excellent speaker", "Fun to be around"], "growth": ["Can be messy", "Says yes to too many tasks", "Gets restless quickly"],
         "questions": [
-            "Do you find your mind constantly ideating vast webs of creative opportunities?",
-            "Are you energized by working dynamically across multiple distinct focus areas at once?",
-            "Do you enjoy cultivating broad networks of unique creative individuals?",
-            "Do you get bored quickly once a project enters standard execution routines?",
-            "Do you value deep personal freedom over standard structured corporate hierarchy?"
+            "Does your brain constantly flash with tons of unexpected creative project ideas?",
+            "Do you feel energized when juggling three different creative tasks at once?",
+            "Do you love making friends with unusual, uniquely artistic individuals?",
+            "Do you lose focus fast once a project gets into slow, repetitive steps?",
+            "Do you prefer absolute personal freedom over strict corporate rules?"
         ],
         "universities": ["RISD", "CalArts", "LUMS", "IBA"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Entrepreneur": 10, "Software Engineer": 7, "AI Engineer": 6},
-                "roadmap": ["Phase 1: Create interactive frontend app user journeys fast", "Phase 2: Launch emerging tech social sandbox interfaces", "Phase 3: Build gamified digital developer hackathon spaces", "Phase 4: Consult on dynamic UI user onboarding strategies"],
-                "projects": ["Emerging Tech Social UI Sandbox Concept", "Gamified Developer Onboarding User Journey"]
+                "roadmap": ["Phase 1: Design vibrant, animated web buttons and layouts using code.", "Phase 2: Build a fun online discussion space for sharing youth ideas.", "Phase 3: Enter high-energy tech hackathons and present your ideas visually.", "Phase 4: Consult on how to make apps welcoming for new young sign-ups."],
+                "projects": ["Design a Colorful Community Social App UI Concept", "Create a Visual Onboarding Flow for an Educational App"]
             },
             "Business": {
                 "bonus": {"Marketing Manager": 10, "Entrepreneur": 9, "Product Manager": 7, "Business Analyst": 5},
-                "roadmap": ["Phase 1: Run multi-channel viral branding experiments", "Phase 2: Deploy agile, creative startup validation pitches", "Phase 3: Invent alternative direct-to-consumer sales pipelines", "Phase 4: Direct hyper-growth startup incubator ecosystems"],
-                "projects": ["Multi-Channel Viral Brand Growth Sandbox", "Agile Direct-To-Consumer Sales Pipeline Model"]
+                "roadmap": ["Phase 1: Launch viral social media challenges for a school event.", "Phase 2: Practice pitching a fun business concept to mock investors.", "Phase 3: Invent alternative ways to sell custom products directly to friends.", "Phase 4: Direct a high-energy startup hub space supporting new founders."],
+                "projects": ["Build a Viral Social Media Marketing Campaign Guide", "Create a Direct-to-Consumer Custom Shop Startup Pitch"]
             },
             "Healthcare": {
                 "bonus": {"Medical Researcher": 10, "Doctor": 6, "Pharmacist": 5},
-                "roadmap": ["Phase 1: Build creative health awareness media properties", "Phase 2: Launch mobile fitness engagement app prototypes", "Phase 3: Create alternative patient community network models", "Phase 4: Direct creative strategy for healthcare platforms"],
-                "projects": ["Mobile Fitness Gamified Engagement Prototype", "Patient Community Network Connection Model"]
+                "roadmap": ["Phase 1: Create colorful health guide comics for young children.", "Phase 2: Build simple, rewarding fitness milestone app mockups.", "Phase 3: Start interactive online support channels for young patients.", "Phase 4: Lead creative marketing styles for digital modern healthcare platforms."],
+                "projects": ["Design a Gamified Mobile Fitness Goal Tracker App", "Build a Visual Patient Support Network Connection Concept"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 9, "Professor": 6},
-                "roadmap": ["Phase 1: Design highly animated dynamic learning games", "Phase 2: Host collaborative online student growth spaces", "Phase 3: Launch innovative non-traditional study communities", "Phase 4: Scale alternative virtual edutainment platform grids"],
-                "projects": ["Animated Interactive Educational Mini-Game", "Virtual Edutainment Student Activation Interface"]
+                "roadmap": ["Phase 1: Create highly energetic, game-style flashcard tools for class.", "Phase 2: Host interactive study live streams for student clubs.", "Phase 3: Start non-traditional alternative study groups on digital message apps.", "Phase 4: Scale your own cool video-based learning channel for global kids."],
+                "projects": ["Build an Animated Educational Card App Blueprint", "Design a High-Energy Student Engagement App Dashboard"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Electrical Engineer": 7, "Civil Engineer": 5},
-                "roadmap": ["Phase 1: Ideate bold futuristic consumer product concepts", "Phase 2: Incorporate recycled alternative elements into devices", "Phase 3: Pitch human-centric ergonomic structure improvements", "Phase 4: Direct rapid innovation squads at manufacturing firms"],
-                "projects": ["Ergonomic Consumer Product Layout Model", "Rapid-Innovation Hardware Device Sandbox Node"]
+                "roadmap": ["Phase 1: Sketch wild, futuristic look concepts for consumer devices.", "Phase 2: Build simple device items using clean, recycled materials.", "Phase 3: Present friendly, ergonomic layout styles for heavy tools.", "Phase 4: Lead the fast invention team inside a manufacturing product shop."],
+                "projects": ["Design an Ergonomic Student Computer Mouse Case CAD", "Build a Rapid-Invention Component Workshop Guide"]
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Graphic Designer": 9, "Animator": 8},
-                "roadmap": ["Phase 1: Build cross-platform experimental digital channels", "Phase 2: Publish highly animated interactive video series", "Phase 3: Coordinate global independent creative asset networks", "Phase 4: Manage complete independent creative visual studio networks"],
-                "projects": ["Cross-Platform Interactive Video Interface", "Independent Creative Asset Network Framework"]
+                "roadmap": ["Phase 1: Start your own experimental video channels online.", "Phase 2: Publish fun, animated storytelling video series for teens.", "Phase 3: Connect with independent digital artists to share graphic packs.", "Phase 4: Direct an entire collaborative digital entertainment creative house."],
+                "projects": ["Create a Multi-Platform Interactive Video Interface Portfolio", "Build an Art Collaboration Content Delivery Network Guide"]
             }
         }
     },
     "ISTJ": {
-        "title": "Logistician", "strengths": ["Responsible", "Dutiful", "Orderly", "Reliable"], "growth": ["Stubborn", "By-the-Book", "Judgmental"],
+        "title": "The Organizer", "strengths": ["Highly responsible", "Dutiful", "Orderly", "Very reliable"], "growth": ["Can be stubborn", "Sticks strictly to books", "Judges messy plans quickly"],
         "questions": [
-            "Do you value structural order, proven traditions, and clear regulatory guidelines?",
-            "Do you take immense pride in absolute accuracy, attention to detail, and punctuality?",
-            "Do you prefer dealing with observable facts over abstract speculative theories?",
-            "Are you highly comfortable managing deterministic, repeatable, and logical processes?",
-            "Do you consider yourself exceptionally dependable when deadlines are critical?"
+            "Do you feel best when there are clear instructions and proven routines to follow?",
+            "Do you take massive pride in being exactly on time and completely accurate?",
+            "Do you prefer handling factual, proven numbers over guessing abstract ideas?",
+            "Are you comfortable running predictable, structured, step-by-step tasks?",
+            "Can people always count on you to turn your assignments in exactly when due?"
         ],
         "universities": ["MIT", "Carnegie Mellon", "NUST", "FAST"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Cybersecurity Specialist": 10, "Software Engineer": 8, "Data Scientist": 7, "AI Engineer": 5},
-                "roadmap": ["Phase 1: Acquire professional systems compliance certifications", "Phase 2: Implement continuous integration automated test maps", "Phase 3: Conduct deep security vulnerability database parsing", "Phase 4: Oversee infrastructure compliance engineering centers"],
-                "projects": ["Automated CI/CD Test Coverage Regression Engine", "Database Access Log Vulnerability Audit Shell"]
+                "roadmap": ["Phase 1: Study official internet safety, protocol rules, and network codes.", "Phase 2: Set up automated test files to check code blocks for errors.", "Phase 3: Look through log files to spot broken entries or system leaks.", "Phase 4: Direct security compliance operations for institutional data banks."],
+                "projects": ["Build an Automated Code Bug Tester Tool", "Write a Database Access Log Safety Checker Script"]
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Product Manager": 6, "Entrepreneur": 4},
-                "roadmap": ["Phase 1: Learn operational accounting & corporate law rules", "Phase 2: Audit multi-tier inventory corporate supply charts", "Phase 3: Maintain structured financial risk ledger matrix grids", "Phase 4: Direct enterprise risk compliance divisions"],
-                "projects": ["Enterprise Corporate Inventory Flow Auditor", "Structured Financial Risk Ledger Matrix Grid"]
+                "roadmap": ["Phase 1: Learn operational accounting basics and small-business legal codes.", "Phase 2: Maintain clear, orderly inventory counting logs for a mock shop.", "Phase 3: Keep structured financial ledger record pages updated safely.", "Phase 4: Serve as the chief audit compliance officer for major corporations."],
+                "projects": ["Create a Corporate Inventory Tracking Sheet System", "Build a Structured Business Risk Audit Metric Grid"]
             },
             "Healthcare": {
                 "bonus": {"Pharmacist": 10, "Doctor": 7, "Medical Researcher": 6},
-                "roadmap": ["Phase 1: Study rigorous medical safety regulation criteria", "Phase 2: Implement auditable pharmacy distribution pipelines", "Phase 3: Audit institutional laboratory testing safety logs", "Phase 4: Direct health system data records operations networks"],
-                "projects": ["Auditable Pharmacy Distribution Tracker Core", "Laboratory Safety Compliance Log Analyzer"]
+                "roadmap": ["Phase 1: Study safety codes regarding medication labeling rules.", "Phase 2: Maintain an exact, auditable medicine supply logbook.", "Phase 3: Review hospital research records to confirm formatting rules.", "Phase 4: Manage high-level historical health records data systems."],
+                "projects": ["Build a Medicine Inventory Supply Log Tracker", "Design a Clinical Safety Compliance Log Check Tool"]
             },
             "Education": {
                 "bonus": {"Education Consultant": 10, "Professor": 7, "Teacher": 6},
-                "roadmap": ["Phase 1: Standardize school testing evaluation data sets", "Phase 2: Implement auditable student progress metric files", "Phase 3: Manage academic transcript archiving security structures", "Phase 4: Direct institutional school board accreditation audits"],
-                "projects": ["Standardized Testing Evaluation Analytics Hub", "Secure Academic Transcript Archiving System"]
+                "roadmap": ["Phase 1: Create orderly, fair spreadsheet calculators for grading scores.", "Phase 2: Run institutional study logs keeping student counts correct.", "Phase 3: Manage secure digital archiving for school report card files.", "Phase 4: Direct regional school board official qualification reviews."],
+                "projects": ["Build a Standardized Class Grade Calculator Tool", "Design a Secure School Report Card Filing Framework"]
             },
             "Engineering": {
                 "bonus": {"Civil Engineer": 10, "Electrical Engineer": 8, "Mechanical Engineer": 7},
-                "roadmap": ["Phase 1: Master regional civil construction building codes", "Phase 2: Execute rigorous hardware wiring component validation steps", "Phase 3: Audit safety load balance records for structures", "Phase 4: Direct industrial engineering quality assurance sectors"],
-                "projects": ["Civil Building Code Stress Tolerance Verifier", "Electrical Wiring Hardware Validation Matrix"]
+                "roadmap": ["Phase 1: Study regional construction safety codes and material guidelines.", "Phase 2: Run strict step-by-step circuit wiring checks on hardware pieces.", "Phase 3: Keep detailed maintenance logs for electrical gear machines.", "Phase 4: Serve as the primary quality control manager for a manufacturing center."],
+                "projects": ["Create a Civil Structural Code Strain Verifier Sheet", "Design an Electronic Wiring Quality Checklist System"]
             },
             "Creative Arts": {
                 "bonus": {"Graphic Designer": 10, "Animator": 6, "Content Creator": 4},
-                "roadmap": ["Phase 1: Organize high-volume asset production library catalogs", "Phase 2: Implement strict version control systems across files", "Phase 3: Verify exact printing and media scaling color outputs", "Phase 4: Manage technical production pipelines inside large design studios"],
-                "projects": ["High-Volume Asset Version Control Matrix", "Technical Media Output Resolution Verifier"]
+                "roadmap": ["Phase 1: Sort thousands of design asset files into clear, named folders.", "Phase 2: Use version control trackers to keep project steps neatly archived.", "Phase 3: Check screen display colors against printed ink sheets for exact matching.", "Phase 4: Manage production schedules inside professional design firms."],
+                "projects": ["Build an Art Asset Folder Version Control Grid", "Design a Media Resolution Color Output Tester Guide"]
             }
         }
     },
     "ISFJ": {
-        "title": "Defender", "strengths": ["Supportive", "Reliable", "Observant", "Hardworking"], "growth": ["Humble to a Fault", "Overload Themselves", "Resistant to Change"],
+        "title": "The Protector", "strengths": ["Super supportive", "Dependable", "Observant", "Hardworking"], "growth": ["Too humble", "Takes on too much work", "Does not like unexpected shifts"],
         "questions": [
-            "Do you prefer working behind the scenes to ensure stability and care?",
-            "Do you have a strong memory for specific personal details about people?",
-            "Do you struggle to say no when peers look to load tasks onto your schedule?",
-            "Are you highly motivated by direct loyalty and concrete helpfulness?",
-            "Do you prefer predictable schedules over volatile environments?"
+            "Do you prefer assisting behind the scenes to keep things calm and stable?",
+            "Do you easily remember personal details, birthdays, and facts about friends?",
+            "Do you find it hard to say no when peers ask you to do tasks for them?",
+            "Are you driven by a desire to be genuinely loyal and helpful to people?",
+            "Do you feel best with a clear, predictable daily schedule?"
         ],
         "universities": ["Harvard", "Johns Hopkins", "Aga Khan University", "King Edward"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "Cybersecurity Specialist": 7, "Data Scientist": 6},
-                "roadmap": ["Phase 1: Learn interface configuration standards & usability", "Phase 2: Manage inner-office software bug tracking lists", "Phase 3: Build helpful internal company guide interfaces", "Phase 4: Manage secure user data access control registries"],
-                "projects": ["Internal Corporate IT Bug Ticket Interface", "Secure User Data Access Log Registry Tracker"]
+                "roadmap": ["Phase 1: Learn how to design clean app setups that are clear for users.", "Phase 2: Maintain helpful error tracking logs for your computer science group.", "Phase 3: Build step-by-step user helper guides for everyday website pages.", "Phase 4: Handle data safety lists to keep personal user profiles secure."],
+                "projects": ["Build an Internal Tech Support Ticket Dashboard", "Create a User Access Control Registration App Log"]
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Marketing Manager": 6, "Product Manager": 5},
-                "roadmap": ["Phase 1: Coordinate team administrative support framework assets", "Phase 2: Maintain systematic client record archives neatly", "Phase 3: Monitor inner-office resource usage metric grids", "Phase 4: Direct customer satisfaction monitoring divisions"],
-                "projects": ["Systematic Client Archive & Record Hub", "Inner-Office Resource Metric Monitor Base"]
+                "roadmap": ["Phase 1: Handle notes, plans, and files neatly for your student project team.", "Phase 2: Keep orderly customer history charts for an imaginary shop.", "Phase 3: Track everyday supply counts across school offices safely.", "Phase 4: Direct team support and helpdesk divisions for large businesses."],
+                "projects": ["Design a Secure Customer Record Archiving System", "Build an Office Resource Usage Tracking Tool Sheet"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Pharmacist": 9, "Medical Researcher": 6},
-                "roadmap": ["Phase 1: Master practical bedside patient monitoring care", "Phase 2: Manage institutional medicine inventory ledger logs", "Phase 3: Keep detailed medical case history logs cleanly", "Phase 4: Direct patient welfare and support clinics networks"],
-                "projects": ["Patient Case History Information Log Hub", "Medicine Inventory Ledger Access System"]
+                "roadmap": ["Phase 1: Practice checking basic clinical sign charts for patients.", "Phase 2: Track stock numbers for essential healthcare products cleanly.", "Phase 3: Keep highly structured patient medical history journals updated.", "Phase 4: Supervise administrative care and community clinic systems."],
+                "projects": ["Build a Patient Medical History File Registry App", "Create a Pharmacy Supply Count Log Management Dashboard"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 8, "Professor": 5},
-                "roadmap": ["Phase 1: Setup classroom homework grading organization maps", "Phase 2: Design supportive secondary tutoring materials packs", "Phase 3: Monitor individual student attendance anomaly tracks", "Phase 4: Manage local school pastoral support framework setups"],
-                "projects": ["Classroom Homework Grading Management Tool", "Student Attendance Anomaly Monitor Array"]
+                "roadmap": ["Phase 1: Set up a clear daily homework logging chart for a classroom.", "Phase 2: Design friendly extra study guide packets for slow learners.", "Phase 3: Help track class attendance numbers to find kids who need help.", "Phase 4: Direct student care programs and daily support tasks at local schools."],
+                "projects": ["Build a Classroom Assignment Organizer Interface", "Create a Student Attendance Status Monitor Tool"]
             },
             "Engineering": {
                 "bonus": {"Civil Engineer": 10, "Electrical Engineer": 7, "Mechanical Engineer": 6},
-                "roadmap": ["Phase 1: Draft blueprint documentation formatting charts", "Phase 2: Verify structural maintenance checklist parameters grids", "Phase 3: Monitor hardware stress fatigue warning records", "Phase 4: Supervise facility engineering maintenance work divisions"],
-                "projects": ["Engineering Blueprint File Registry Tracker", "Facility Maintenance Schedule Verification Grid"]
+                "roadmap": ["Phase 1: Keep engineering diagram data files organized in order.", "Phase 2: Run a structural maintenance checklist loop for equipment parts.", "Phase 3: Watch instrument metrics to catch machine tiredness signs early.", "Phase 4: Supervise the everyday infrastructure maintenance crew inside a plant."],
+                "projects": ["Design a Blueprint File Record Tracking Application", "Create a Structural Maintenance Milestone Verification Sheet"]
             },
             "Creative Arts": {
                 "bonus": {"Graphic Designer": 10, "Animator": 6, "Content Creator": 5},
-                "roadmap": ["Phase 1: Deliver customized layout adjustments for client briefs", "Phase 2: Maintain extensive corporate design templates sets", "Phase 3: Archive production artwork legacy libraries cleanly", "Phase 4: Manage internal asset quality checks at creative labs"],
-                "projects": ["Corporate Brand Design Template Archive", "Creative Asset Quality Verification Checklist"]
+                "roadmap": ["Phase 1: Apply small, specific layout edits from your art manager's notes.", "Phase 2: Create a deep vault of pre-made templates for company files.", "Phase 3: Catalog old artwork library sets so they are safe and clean.", "Phase 4: Review project visuals to ensure they match company quality rules."],
+                "projects": ["Build a Corporate Graphic Template Storage Hub", "Design an Art Project Quality Sign-Off Checklist"]
             }
         }
     },
     "ESTJ": {
-        "title": "Executive", "strengths": ["Dedicated", "Direct", "Organized", "Excellent Administrators"], "growth": ["Inflexible", "Uncomfortable with Unconventionality", "Too Focused on Status"],
+        "title": "The Manager", "strengths": ["Very dedicated", "Direct speaker", "Super organized", "Excellent administrator"], "growth": ["Not very flexible", "Dislikes unusual approaches", "Focuses too much on ranks"],
         "questions": [
-            "Do you actively create clear frameworks, rules, and structures inside unstructured groups?",
-            "Is objective truth and direct truthfulness your core baseline for professional debate?",
-            "Do you find chaotic, disorganized environments incredibly frustrating to operate within?",
-            "Do you excel at organizing logistics, parameters, and structural deployment grids?",
-            "Do you evaluate task execution strictly based on historical performance metrics?"
+            "Do you instantly create clear rules and task lists for messy groups?",
+            "Do you value cold, unvarnished facts over theoretical or vague ideas?",
+            "Do you find disorganized, chaotic workspaces deeply frustrating?",
+            "Do you excel at coordinating timetables, tools, and delivery grids?",
+            "Do you judge an assignment's success strictly by real past outcomes?"
         ],
         "universities": ["Stanford", "Wharton", "LUMS", "IBA"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "Cybersecurity Specialist": 9, "Data Scientist": 7},
-                "roadmap": ["Phase 1: Implement strict project issue hierarchy maps", "Phase 2: Enforce precise code merge governance metrics", "Phase 3: Supervise internal engineering operations sprint tracking", "Phase 4: Command corporate enterprise IT infrastructure sectors"],
-                "projects": ["Git Merge Request Governance Guard Shell", "Engineering Workspace Sprint Allocation Tool"]
+                "roadmap": ["Phase 1: Build clear task priority boards for your programming group.", "Phase 2: Enforce precise rules for combining code blocks safely.", "Phase 3: Run quick sprint review timers for student code assignments.", "Phase 4: Command the primary operational IT architecture system for an enterprise."],
+                "projects": ["Build a Code Approval Rules Enforcement Script", "Create a Team Programming Sprint Allocation Interface"]
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Product Manager": 8, "Marketing Manager": 7, "Entrepreneur": 6},
-                "roadmap": ["Phase 1: Systematize sales operations funnel analytics steps", "Phase 2: Execute clear performance evaluation team benchmarks", "Phase 3: Manage comprehensive corporate supply procurement loops", "Phase 4: Preside as Chief Operations Officer inside target markets"],
-                "projects": ["Sales Operations Funnel Analytics Manager", "Corporate Procurement Lifecycle Tracker Deck"]
+                "roadmap": ["Phase 1: Organize sales numbers into highly structured tracking steps.", "Phase 2: Create clear checklist target marks to review team progress fairly.", "Phase 3: Coordinate purchasing paths to buy assets for your project.", "Phase 4: Act as the Chief Operating Officer running market production flows."],
+                "projects": ["Build a Sales Performance Pipeline Analyzer", "Create a Business Asset Procurement Lifecycle Tracker"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Pharmacist": 8, "Medical Researcher": 5},
-                "roadmap": ["Phase 1: Enforce clinical hygiene and protocol safety codes", "Phase 2: Manage hospital inventory supply-chain routing grids", "Phase 3: Supervise emergency medical shifts shift rosters", "Phase 4: Direct regional public hospital operations networks"],
-                "projects": ["Clinical Protocol Safety Verification Shell", "Hospital Shift Roster Optimization Engine"]
+                "roadmap": ["Phase 1: Put clear hygiene rules and room guidelines into actions.", "Phase 2: Plan precise truck supply schedules for medical supply units.", "Phase 3: Manage daily work calendars for massive teams of clinic assistants.", "Phase 4: Direct total administrative operations for regional public hospitals."],
+                "projects": ["Design a Clinical Protocol Safety Check Application", "Build a Hospital Staff Shift Scheduling Matrix Tool"]
             },
             "Education": {
                 "bonus": {"Education Consultant": 10, "Teacher": 7, "Professor": 6},
-                "roadmap": ["Phase 1: Implement rigorous school behavioral policy models", "Phase 2: Direct school examination process safety plans", "Phase 3: Enforce strict faculty reporting metrics requirements", "Phase 4: Preside as Superintendent across school network systems"],
-                "projects": ["School Examination Security Procedure Matrix", "Faculty Reporting Lifecycle Metric Tracker"]
+                "roadmap": ["Phase 1: Put strong, organized school conduct rules into action plans.", "Phase 2: Direct secure exam delivery workflows to prevent cheating.", "Phase 3: Set up strict data reporting templates for class teachers.", "Phase 4: Preside as the administrative superintendent over school systems."],
+                "projects": ["Design a School Exam Delivery Security Blueprint", "Build a Teacher Reporting Metric System App Interface"]
             },
             "Engineering": {
                 "bonus": {"Civil Engineer": 10, "Mechanical Engineer": 8, "Electrical Engineer": 7},
-                "roadmap": ["Phase 1: Supervise field site construction safety protocol charts", "Phase 2: Enforce assembly-line manufacturing volume targets", "Phase 3: Monitor engineering equipment operational longevity logs", "Phase 4: Direct major manufacturing plant engineering divisions"],
-                "projects": ["Assembly-Line Manufacturing Volume Monitor", "Field Site Safety Protocol Compliance Matrix"]
+                "roadmap": ["Phase 1: Enforce clear, strict helmet and safety rule posters on a worksite.", "Phase 2: Track manufacturing output metrics against daily factory goals.", "Phase 3: Review equipment data logs to spot aging parts that need repairs.", "Phase 4: Serve as the lead plant director for giant production setups."],
+                "projects": ["Build a Factory Assembly Line Output Tracking Sheet", "Design a Site Safety Protocol Compliance Verification Grid"]
             },
             "Creative Arts": {
                 "bonus": {"Marketing Manager": 10, "Graphic Designer": 7, "Content Creator": 5},
-                "roadmap": ["Phase 1: Enforce creative commercial client delivery deadline codes", "Phase 2: Manage complex design production vendor arrays", "Phase 3: Direct operational billing metrics across studio accounts", "Phase 4: Direct project management offices at major advertising labs"],
-                "projects": ["Creative Studio Client Billing Metric Interface", "Design Production Vendor Alignment Tracker"]
+                "roadmap": ["Phase 1: Set up strict delivery calendar goals for media designers.", "Phase 2: Coordinate work contracts across external printing centers.", "Phase 3: Keep direct billing and hours logs updated for studio clients.", "Phase 4: Manage the central project management office at major ad firms."],
+                "projects": ["Create a Creative Studio Client Billing Monitor App", "Build a Graphic Design Printing Vendor Alignment Tracker"]
             }
         }
     },
     "ESFJ": {
-        "title": "Consul", "strengths": ["Loyal", "Social", "Warm", "Connecting"], "growth": ["Worried About Social Status", "Inflexible", "Vulnerable to Criticism"],
+        "title": "The Connector", "strengths": ["Loyal teammate", "Very social", "Warm personality", "Brings people together"], "growth": ["Worries about fitting in", "Dislikes sudden changes", "Sensitive to criticism"],
         "questions": [
-            "Do you enjoy organizing interactive social activities for your peers?",
-            "Do you consider the direct practical needs of your community your personal mandate?",
-            "Do you feel highly motivated when group settings feel genuinely unified?",
-            "Do you value active community recognition and visible social status indicators?",
-            "Are you highly skilled at managing conflict resolutions gracefully?"
+            "Do you love planning group parties, games, or events for your classmates?",
+            "Do you view helping with the practical needs of your friends as your job?",
+            "Do you feel incredibly happy when your group functions in total harmony?",
+            "Do you enjoy being noticed and appreciated for your community work?",
+            "Are you skilled at calming arguments and helping friends get along?"
         ],
         "universities": ["LUMS", "IBA", "Stanford", "Harvard"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "Product Manager": 8, "Cybersecurity Specialist": 5},
-                "roadmap": ["Phase 1: Coordinate regional developer community outreach tracks", "Phase 2: Manage internal product beta testing feedback loops", "Phase 3: Oversee user-facing technology support response groups", "Phase 4: Direct customer onboarding modules for software groups"],
-                "projects": ["Product Beta Feedback User Loop Sync", "User Technical Support Response Interface"]
+                "roadmap": ["Phase 1: Organize welcoming local student user group meetups for tech.", "Phase 2: Manage survey reviews from testing real student users on an app.", "Phase 3: Oversee customer help desks answering student software problems.", "Phase 4: Direct user onboarding support systems for software firms."],
+                "projects": ["Build a Product Testing User Review Form Collector", "Create an App Technical Help Desk Response Interface"]
             },
             "Business": {
                 "bonus": {"Marketing Manager": 10, "Product Manager": 8, "Business Analyst": 6, "Entrepreneur": 5},
-                "roadmap": ["Phase 1: Run comprehensive corporate event schedule frameworks", "Phase 2: Manage local client relations support communication portals", "Phase 3: Orchestrate brand community engagement program charts", "Phase 4: Direct customer experience networks at consumer firms"],
-                "projects": ["Corporate Event Scheduling Framework Manual", "Client Relations Communication Sync Portal"]
+                "roadmap": ["Phase 1: Run comprehensive event schedules for local student business fairs.", "Phase 2: Set up friendly communication portals to speak with project clients.", "Phase 3: Coordinate loyal user appreciation programs for local brands.", "Phase 4: Direct central customer experience setups at major consumer stores."],
+                "projects": ["Design a Store Event Planning Framework Guide", "Build a Client Relations Communication Sync Portal Box"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Pharmacist": 8, "Medical Researcher": 5},
-                "roadmap": ["Phase 1: Direct public outpatient greeting care structures", "Phase 2: Manage local community clinic outreach activities", "Phase 3: Run healthcare event coordination program grids", "Phase 4: Oversee regional patient relations network facilities"],
-                "projects": ["Community Clinic Outreach Activation Portal", "Patient Experience Feedback Collection Hub"]
+                "roadmap": ["Phase 1: Help greet and settle arriving guests nicely at health centers.", "Phase 2: Manage welcoming information booths at student health camps.", "Phase 3: Help organize clinic scheduling tables to make visits relaxing.", "Phase 4: Serve as the main patient relations director for a clinical setup."],
+                "projects": ["Create a Local Health Camp Event Activation Portal", "Build a Patient Care Feedback Collection Dashboard Hub"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 9, "Professor": 6},
-                "roadmap": ["Phase 1: Direct parent-teacher association dialogue setups", "Phase 2: Organize institutional student celebrations & panels", "Phase 3: Manage local school counseling communication files", "Phase 4: Run regional student enrichment program networks"],
-                "projects": ["Parent-Teacher Association Communication Matrix", "Student Enrichment Program Registration Portal"]
+                "roadmap": ["Phase 1: Set up open dialogue circles between parents and student mentors.", "Phase 2: Coordinate high school graduation parties and award panels.", "Phase 3: Manage helpful peer interaction files for school advisors.", "Phase 4: Lead community engagement programs across regional school groups."],
+                "projects": ["Design a Parent-Teacher Council Communication Sheet System", "Build a Student Event Enrichment Registration Web Portal"]
             },
             "Engineering": {
                 "bonus": {"Civil Engineer": 10, "Mechanical Engineer": 7, "Electrical Engineer": 6},
-                "roadmap": ["Phase 1: Coordinate safety briefing programs for field crews", "Phase 2: Manage community land usage feedback panels", "Phase 3: Maintain inter-office technical crew deployment schedules", "Phase 4: Oversee public engineering infrastructure relation networks"],
-                "projects": ["Field Crew Safety Briefing Program Schedule", "Community Infrastructure Impact Survey Sync"]
+                "roadmap": ["Phase 1: Plan morning safety summary talks for vocational work teams.", "Phase 2: Coordinate community surveys asking neighbors about a new bridge layout.", "Phase 3: Track crew scheduling logs to prevent shift overlap confusion.", "Phase 4: Lead public interaction and support branches for civil engineering firms."],
+                "projects": ["Design a Building Project Morning Briefing Schedule", "Build a Community Land Impact Survey Review Sheet"]
             },
             "Creative Arts": {
                 "bonus": {"Marketing Manager": 10, "Graphic Designer": 7, "Content Creator": 6},
-                "roadmap": ["Phase 1: Direct multi-client creative pitch account loops", "Phase 2: Organize design exhibition community events", "Phase 3: Maintain cross-departmental creative studio calendars", "Phase 4: Direct visual project onboarding operations sets"],
-                "projects": ["Design Exhibition Event Management Tracker", "Creative Studio Account Sync Onboarding Interface"]
+                "roadmap": ["Phase 1: Manage welcoming team introductory calls for creative projects.", "Phase 2: Organize friendly local visual art showcases for student makers.", "Phase 3: Keep shared master calendars organized across creative teams.", "Phase 4: Lead client onboarding groups inside busy web design houses."],
+                "projects": ["Design an Art Exhibition Event Schedule Tracker", "Build a Creative Studio Account Onboarding Interface Grid"]
             }
         }
     },
     "ISTP": {
-        "title": "Virtuoso", "strengths": ["Practical", "Optimistic", "Spontaneous", "Great in Crises"], "growth": ["Private", "Insensitive", "Easily Bored"],
+        "title": "The Builder", "strengths": ["Hands-on helper", "Always optimistic", "Adapts quickly", "Calm in emergencies"], "growth": ["Very quiet", "Can overlook feelings", "Gets bored by theory lessons"],
         "questions": [
-            "Do you learn best by modifying, constructing, and testing physical or software assets directly?",
-            "Do you thrive during real-time systems failures or high-pressure emergencies?",
-            "Do you hate restrictive micro-management and rigid bureaucratic rules?",
-            "Do you look to understand how systems operate fundamentally under the hood?",
-            "Do you value practical utility far more than aesthetic design?"
+            "Do you learn best by taking apart, repairing, and building gadgets or code systems?",
+            "Do you feel focused and ready when tools break down or unexpected tech glitches occur?",
+            "Do you dislike micromanagement, rules, and endless paperwork?",
+            "Do you always want to figure out how a machine operates under the hood?",
+            "Do you value practical, useful tools much more than decorative styles?"
         ],
         "universities": ["MIT", "ETH Zurich", "NUST", "UET"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Cybersecurity Specialist": 10, "Software Engineer": 9, "AI Engineer": 6, "Data Scientist": 5},
-                "roadmap": ["Phase 1: Master raw hardware debugging & network routing commands", "Phase 2: Build high-performance terminal utility applications", "Phase 3: Script automated threat response server tools", "Phase 4: Direct incident response technical recovery teams"],
-                "projects": ["Bare-Metal Terminal Utility Script Core", "Real-Time Server Threat Response Script Tool"]
+                "roadmap": ["Phase 1: Master raw computer terminal inputs and router internet commands.", "Phase 2: Build swift, terminal-based tools to clean text data lists.", "Phase 3: Code scripts that act instantly to close broken background server ports.", "Phase 4: Lead immediate emergency digital security recovery teams."],
+                "projects": ["Build a Command-Line Text Utility Tool Core", "Write a Server Threat Response Emergency Script Tool"]
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Product Manager": 6, "Entrepreneur": 5},
-                "roadmap": ["Phase 1: Learn relational data modeling commands & SQL scripts", "Phase 2: Build custom transaction tracing dashboard systems", "Phase 3: Extract transactional bottleneck anomalies manually", "Phase 4: Direct data infrastructure diagnostic operations sectors"],
-                "projects": ["SQL Transaction Tracing Data Dashboard", "Transactional Bottleneck Anomaly Extractor"]
+                "roadmap": ["Phase 1: Master database spreadsheet formulas and code scripts.", "Phase 2: Build a personal dashboard app to chart product purchase trends.", "Phase 3: Sift through raw transaction sheets to spot math inconsistencies.", "Phase 4: Direct operational data troubleshooting branches for data hubs."],
+                "projects": ["Build a Spreadsheets Trend Visualization Dashboard", "Create a Transaction Balance Data Error Extractor Tool"]
             },
             "Healthcare": {
                 "bonus": {"Pharmacist": 10, "Doctor": 7, "Medical Researcher": 6},
-                "roadmap": ["Phase 1: Study bio-telemetry micro-sensor tracking hardware", "Phase 2: Calibrate specialized laboratory diagnostics machinery", "Phase 3: Maintain real-time medical device network connections", "Phase 4: Manage technical support networks inside trauma fields"],
-                "projects": ["Bio-Telemetry Sensor Calibration System", "Medical Device Local Network Sync Core"]
+                "roadmap": ["Phase 1: Explore hardware wires inside modern biometric measuring items.", "Phase 2: Calibrate precision gears on clinical fluid tracking items.", "Phase 3: Fix background network wire errors for medical imaging rooms.", "Phase 4: Manage engineering support repairs inside critical trauma fields."],
+                "projects": ["Design a Patient Sensor Calibration System Script", "Build a Medical Device Local Network Sync Core Module"]
             },
             "Education": {
                 "bonus": {"Professor": 10, "Teacher": 7, "Education Consultant": 5},
-                "roadmap": ["Phase 1: Prototype practical hardware learning logic blocks", "Phase 2: Script simple code evaluation automation shells", "Phase 3: Run interactive computing training lab rooms", "Phase 4: Oversee applied technical engineering trade tracks"],
-                "projects": ["Automated Code Homework Evaluation Shell", "Applied Tech Logic Block Circuit Mockup"]
+                "roadmap": ["Phase 1: Construct manual wooden or wire block logic toys for young kids.", "Phase 2: Code your own lightweight computer program that auto-grades simple text files.", "Phase 3: Run interactive, physical training workshops inside computer lab spaces.", "Phase 4: Supervise real technical training setups at hardware trade programs."],
+                "projects": ["Write an Automated Homework Grading Code script", "Build an Electronic Logic Block Learning Board Mockup"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Electrical Engineer": 9, "Civil Engineer": 7},
-                "roadmap": ["Phase 1: Code embedded engine diagnostic firmware files", "Phase 2: Wire real-world micro-sensor component arrays manually", "Phase 3: Stress-test structural metal stress failure limits", "Phase 4: Direct immediate on-site hardware emergency engineering centers"],
-                "projects": ["Embedded Engine Diagnostic Firmware Module", "Micro-Sensor Hardware Array Wiring Grid"]
+                "roadmap": ["Phase 1: Write microcode programs for mechanical test engine meters.", "Phase 2: Connect real wires and chips on circuit testing rows by hand.", "Phase 3: Put structural alloys under heavy physical weight to record snap points.", "Phase 4: Direct urgent field repair work at broken hardware facilities."],
+                "projects": ["Code an Embedded Machine Diagnostics Program File", "Build an Electronic Sensor Component Wiring Grid Board"]
             },
             "Creative Arts": {
                 "bonus": {"Animator": 10, "Graphic Designer": 7, "Content Creator": 5},
-                "roadmap": ["Phase 1: Master complex 3D tracking software and rig controllers", "Phase 2: Code alternative digital visual video editing tools", "Phase 3: Construct bespoke custom camera rigging systems manually", "Phase 4: Manage engineering layout operations inside media houses"],
-                "projects": ["3D Animation Rig Skeleton Bone Matrix", "Custom Video Filter Processing Pipeline Node"]
+                "roadmap": ["Phase 1: Master digital bone anchor rigs inside 3D software items.", "Phase 2: Write lightweight script utilities to chop up video frames fast.", "Phase 3: Put together physical camera stands and light mounts manually.", "Phase 4: Direct technical file compilation pipelines at video game studios."],
+                "projects": ["Build a 3D Character Rig Bone Skeletal Matrix", "Write a Video Frame Filter Processing Pipeline Script"]
             }
         }
     },
     "ISFP": {
-        "title": "Adventurer", "strengths": ["Artistic", "Imaginative", "Passionate", "Curious"], "growth": ["Fiercely Independent", "Unpredictable", "Easily Stressed"],
+        "title": "The Artist", "strengths": ["Deeply creative", "Highly imaginative", "True passion", "Very curious"], "growth": ["Extremely private", "Hard to predict", "Stresses out easily"],
         "questions": [
-            "Do you view your workspace as an open canvas for artistic expression?",
-            "Do you follow spontaneous creative tangents rather than structured plans?",
-            "Do you feel intensely restricted when locked into repetitive analytical processes?",
-            "Is sensory design harmony a crucial metric for your creations?",
-            "Do you require complete independence over your artistic production cycles?"
+            "Do you see your workspace as a clean blank page to show your style?",
+            "Do you prefer following unexpected creative ideas rather than checking timeline plans?",
+            "Do you feel trapped and tired when locked into heavy math tables?",
+            "Is visual color harmony and beautiful styling a massive goal for you?",
+            "Do you need full independence over when and how you build your art?"
         ],
         "universities": ["RISD", "CalArts", "NCA", "AIVA"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "AI Engineer": 6, "Data Scientist": 5},
-                "roadmap": ["Phase 1: Study modern dynamic CSS frameworks & style tags", "Phase 2: Build high-fidelity web mockup interface pages", "Phase 3: Design alternative visual asset icons portfolios", "Phase 4: Run frontend asset design system architecture tracks"],
-                "projects": ["Modern CSS Framework Theme System Deck", "High-Fidelity UI Presentation Web Mockup"]
+                "roadmap": ["Phase 1: Study beautiful CSS style formatting codes and graphic design themes.", "Phase 2: Build pixel-perfect visual website sample page views on your laptop.", "Phase 3: Design a portfolio of custom app icon drawings and vector packs.", "Phase 4: Serve as the central creative look designer for client app interfaces."],
+                "projects": ["Design a Beautiful Web App CSS Visual Theme System", "Build a Gorgeous Front-Page User Experience Mockup UI"]
             },
             "Business": {
                 "bonus": {"Marketing Manager": 10, "Product Manager": 6, "Business Analyst": 4},
-                "roadmap": ["Phase 1: Learn boutique brand system creation rules", "Phase 2: Craft beautiful custom commercial box packaging files", "Phase 3: Setup bespoke point-of-sale product showroom layouts", "Phase 4: Consult on experiential corporate image assets"],
-                "projects": ["Boutique Brand System Visual Identity Deck", "Commercial Product Box Packaging File System"]
+                "roadmap": ["Phase 1: Discover how trendy, minimalist brand logos are created.", "Phase 2: Create beautiful boxes and custom wrappers for a luxury store idea.", "Phase 3: Build elegant product shelf displays for a mockup storefront row.", "Phase 4: Consult on look themes for active corporate media campaigns."],
+                "projects": ["Create a Boutique Store Brand Visual Identity Manual", "Design a Creative Commercial Box Packaging Layout System"]
             },
             "Healthcare": {
                 "bonus": {"Medical Researcher": 10, "Doctor": 6, "Pharmacist": 4},
-                "roadmap": ["Phase 1: Research medical illustration formatting frameworks", "Phase 2: Design soothing pediatric care interior color mockups", "Phase 3: Build human anatomy visual study layout cards", "Phase 4: Consult on spatial layout design inside recovery spaces"],
-                "projects": ["Anatomy Visual Identification Flashcard Deck", "Pediatric Care Room Spatial Color Palette Mock"]
+                "roadmap": ["Phase 1: Practice drawing accurate, detailed scientific human anatomy shapes.", "Phase 2: Select beautiful, relaxing wall color tones for a kids' clinic sketch.", "Phase 3: Create colorful study flashcards for learning medical cell names.", "Phase 4: Consult on sensory lighting layout patterns for quiet health rooms."],
+                "projects": ["Build a Human Anatomy Study Flashcard Graphic Deck", "Design a Pediatric Care Clinic Room Color Theme Sketch"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 7, "Professor": 5},
-                "roadmap": ["Phase 1: Illustrate engaging primary school book page systems", "Phase 2: Setup virtual whiteboard presentation layouts", "Phase 3: Create alternative sensory tactile craft project tutorials", "Phase 4: Manage aesthetic visual choices at ed-tech platform teams"],
-                "projects": ["Primary School Textbook Page Layout Matrix", "Tactile Craft Project Sensory Guide Book"]
+                "roadmap": ["Phase 1: Draw high-quality, friendly cartoon pages for basic school books.", "Phase 2: Organize clean, colored formatting layouts for online school boards.", "Phase 3: Build hands-on, touch-based crafts tutorials for student activities.", "Phase 4: Handle artistic layout choices for educational smartphone apps."],
+                "projects": ["Design an Illustrated Primary Textbook Page Layout Grid", "Create a Tactile Art Craft Project Lesson Worksheet Book"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Civil Engineer": 7, "Electrical Engineer": 6},
-                "roadmap": ["Phase 1: Draft organic aesthetic product enclosure geometry", "Phase 2: Model detailed 3D spatial architectural concepts", "Phase 3: Construct beautiful ergonomic physical device mockups", "Phase 4: Oversee styling decisions inside commercial tech divisions"],
-                "projects": ["Organic Product Enclosure Shell Geometry CAD", "3D Spatial Architectural Layout Concept Rig"]
+                "roadmap": ["Phase 1: Sketch smooth, organic protective outer plastic sheets for gadgets.", "Phase 2: Model beautiful 3D digital home views using architectural packages.", "Phase 3: Construct comfortable, smooth model bodies for handmade consumer products.", "Phase 4: Direct outer look styling choices inside major device testing rooms."],
+                "projects": ["Design an Organic Product Outer Case Shell using CAD", "Build a 3D Architectural Home Spatial Layout Concept Rig"]
             },
             "Creative Arts": {
                 "bonus": {"Graphic Designer": 10, "Animator": 9, "Content Creator": 8},
-                "roadmap": ["Phase 1: Create beautiful original digital painting canvas layers", "Phase 2: Build immersive hand-drawn vector scene layouts", "Phase 3: Author distinct alternative typography style books", "Phase 4: Launch premium independent digital fine arts studio brands"],
-                "projects": ["Immersive Hand-Drawn Scene Canvas Layout", "Custom Visual Typography System Style Book"]
+                "roadmap": ["Phase 1: Create beautiful original painting canvases using a drawing tablet.", "Phase 2: Build high-quality vector scenes showing wonderful landscapes.", "Phase 3: Write your own original style booklet exploring clean font pairs.", "Phase 4: Launch your own high-end online fine arts studio shop showing your pieces."],
+                "projects": ["Paint a Rich Immersive Digital Landscape Canvas Layout", "Design a Bespoke Typography Font Pair System Style Book"]
             }
         }
     },
     "ESTP": {
-        "title": "Entrepreneur", "strengths": ["Bold", "Direct", "Rational", "Action-Oriented"], "growth": ["Impatient", "Risk-Prone", "Misses Big Picture"],
+        "title": "The Doer", "strengths": ["Bold actions", "Direct speaker", "Very realistic", "Focused on results"], "growth": ["Loses patience easily", "Takes reckless risks", "Misses long-term trends"],
         "questions": [
-            "Do you enjoy taking direct calculation risks to capture market wins?",
-            "Do you operate best in hyper-fast, dynamic, non-linear environments?",
-            "Do you favor immediate real-world testing over exhaustive planning documentation?",
-            "Are you highly persuasive when managing real-time human negotiations?",
-            "Do you lose motivation quickly when locked into theoretical whiteboard setups?"
+            "Do you enjoy taking quick, calculated risks to win competitions?",
+            "Do you feel most awake in hyper-fast settings where things shift instantly?",
+            "Do you prefer jumping into direct tests over reading long instruction manuals?",
+            "Are you highly persuasive when speaking with people to make quick group choices?",
+            "Do you lose total motivation when stuck listening to abstract whiteboard history?"
         ],
         "universities": ["Stanford", "Wharton", "LUMS", "IBA"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "Cybersecurity Specialist": 8, "AI Engineer": 7},
-                "roadmap": ["Phase 1: Run crash server deployment load testing matrices", "Phase 2: Deploy agile network firewall block overrides manually", "Phase 3: Build quick cross-platform field tracking app modules", "Phase 4: Command technical systems live restoration units"],
-                "projects": ["Server Traffic Crash Load Generator Matrix", "Agile Cross-Platform Field Tracker Application"]
+                "roadmap": ["Phase 1: Run crash load tests on servers to see when they break down.", "Phase 2: Turn off malfunctioning software blocks instantly inside code rows.", "Phase 3: Build simple, fast mobile checklist tracker apps for field teams.", "Phase 4: Command real-time systems emergency tech restoration squads."],
+                "projects": ["Build a Server Traffic Crash Load Generator Tool", "Create a Fast-Track Mobile Field Asset Logging App Module"]
             },
             "Business": {
                 "bonus": {"Entrepreneur": 10, "Marketing Manager": 9, "Product Manager": 8, "Business Analyst": 6},
-                "roadmap": ["Phase 1: Close time-sensitive strategic sales pipelines", "Phase 2: Negotiate direct live seed round capitalization terms", "Phase 3: Execute fast pivot user conversion campaigns", "Phase 4: Run disruptive corporate venture creation spaces"],
-                "projects": ["Live Strategic Sales Pipeline Tracker Node", "Disruptive Venture Pivot Conversion Tracker"]
+                "roadmap": ["Phase 1: Negotiate deals directly with student event organizers.", "Phase 2: Pitch a fast project concept to grab seed money slots.", "Phase 3: Shift store strategies instantly to sell product stocks out fast.", "Phase 4: Run your own disruptive startup lab building trendy ventures."],
+                "projects": ["Create a Live Sales Deal Flow Milestone Tracker", "Build a Startup Pivot Conversion Strategy Metrics App"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Pharmacist": 7, "Medical Researcher": 5},
-                "roadmap": ["Phase 1: Train in high-velocity trauma care operations", "Phase 2: Direct emergency triage sorting coordination systems", "Phase 3: Optimize medical response helicopter equipment setups", "Phase 4: Command urgent clinical response operations networks"],
-                "projects": ["Trauma Field Triage Logic Routing Manual", "Urgent Response Helicopter Equipment Matrix"]
+                "roadmap": ["Phase 1: Train in high-velocity emergency room triage operations.", "Phase 2: Manage urgent traffic flows sorting patients arriving in a crisis.", "Phase 3: Pick fast equipment choices for emergency care transport boxes.", "Phase 4: Lead high-pressure rapid response medical crew lines dynamically."],
+                "projects": ["Write an Emergency Triage Patient Sorting Logic Manual", "Design a Rapid-Response Medical Transport Case Equipment Layout Matrix"]
             },
             "Education": {
                 "bonus": {"Education Consultant": 10, "Teacher": 7, "Professor": 5},
-                "roadmap": ["Phase 1: Build immersive alternative outdoor logic bootcamps", "Phase 2: Direct action-oriented vocational training modules", "Phase 3: Host fast experimental competitive panel formats", "Phase 4: Lead corporate fast-track professional training systems"],
-                "projects": ["Vocational Action-Oriented Course Module App", "Outdoor Tactical Logic Bootcamp Program Schedule"]
+                "roadmap": ["Phase 1: Build high-energy outdoor team problem-solving camps.", "Phase 2: Design swift hands-on trade skills building courses.", "Phase 3: Host fast-paced live panel quiz challenge nights for peers.", "Phase 4: Lead corporate fast-track professional career bootcamps."],
+                "projects": ["Build an Action-Oriented Trade Course Mobile App Prototype", "Design a High-Energy Problem Solving Field Camp Schedule"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Electrical Engineer": 8, "Civil Engineer": 7},
-                "roadmap": ["Phase 1: Calibrate extreme racing mechanical motor layouts", "Phase 2: Field repair heavy operational machinery faults fast", "Phase 3: Run immediate high-voltage circuit power connections", "Phase 4: Command immediate field engineering rescue systems"],
-                "projects": ["Mechanical Racing Motor Performance Tuner", "High-Voltage Circuit Power Connection Board"]
+                "roadmap": ["Phase 1: Adjust motor limits on model racing engine frames.", "Phase 2: Fix heavy tool issues directly on active field floors.", "Phase 3: Connect thick wire connections safely for heavy power boxes.", "Phase 4: Lead critical engineering response crews inside active facilities."],
+                "projects": ["Build a Model Racing Motor Performance Tuning Tool", "Create a High-Voltage Circuit Connection Box Model Layout"]
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Marketing Manager": 9, "Graphic Designer": 6},
-                "roadmap": ["Phase 1: Direct fast immersive public experiential media stunts", "Phase 2: Script dynamic gorilla marketing activation events", "Phase 3: Run live high-stakes video media production arrays", "Phase 4: Lead hyper-growth media project activation taskforces"],
-                "projects": ["Gorilla Marketing Stunt Activation Blueprint", "Live High-Stakes Media Production System Console"]
+                "roadmap": ["Phase 1: Run quick, eye-catching surprise pop-up art show events.", "Phase 2: Design energetic guerrilla advertising ideas for school games.", "Phase 3: Run live video switching decks for action-packed media channels.", "Phase 4: Command high-growth creative activation crews for major media houses."],
+                "projects": ["Design a Guerrilla Marketing Campaign Activation Playbook", "Build a Live Media Production Panel System Console Board"]
             }
         }
     },
     "ESFP": {
-        "title": "Entertainer", "strengths": ["Bold", "Original", "Practical", "Excellent Social Skills"], "growth": ["Easily Bored", "Poor Long-Term Planner", "Unfocused"],
+        "title": "The Performer", "strengths": ["Bold spirit", "Original style", "Very practical", "Wonderful people skills"], "growth": ["Gets bored instantly", "Weak long-term planning", "Loses focus easily"],
         "questions": [
-            "Do you naturally command the energy and excitement of social settings?",
-            "Do you find collaborative creative workshops highly empowering?",
-            "Do you view the entire world as an open stage for interactive experiences?",
-            "Do you prioritize immediate sensory excitement over long-term tracking routines?",
-            "Are you exceptionally skilled at styling presentation aesthetics for high user engagement?"
+            "Do you naturally lift up the energy and excitement of your full friend circle?",
+            "Do you find creative group workshops highly empowering and fun?",
+            "Do you look at the entire world as an open stage to make memories?",
+            "Do you prioritize immediate fun and action over long-term tracking routines?",
+            "Are you exceptionally skilled at styling visuals for high user engagement?"
         ],
         "universities": ["CalArts", "RISD", "LUMS", "IBA"],
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "Product Manager": 7, "AI Engineer": 6},
-                "roadmap": ["Phase 1: Learn rich multimedia canvas render animations", "Phase 2: Design highly interactive consumer gaming apps frontend", "Phase 3: Run tech conference product feature launch presentations", "Phase 4: Consult on consumer viral game mechanics design arrays"],
-                "projects": ["Multimedia Canvas Render Animation Module", "Interactive Consumer Game UI Frontend Layout"]
+                "roadmap": ["Phase 1: Learn how to code smooth canvas frame color changes and animations.", "Phase 2: Design custom, colorful button screens for gaming software pages.", "Phase 3: Present feature announcements live at school technology showcases.", "Phase 4: Consult on making app features highly entertaining for young consumers."],
+                "projects": ["Code an Animated Web Canvas Graphic Visual Module", "Design a Colorful Mobile Game User Interface Layout Prototype"]
             },
             "Business": {
                 "bonus": {"Marketing Manager": 10, "Entrepreneur": 8, "Product Manager": 8, "Business Analyst": 5},
-                "roadmap": ["Phase 1: Orchestrate major brand activation launch galas", "Phase 2: Create high-impact video advertising assets decks", "Phase 3: Direct social media celebrity promotion strategies", "Phase 4: Lead comprehensive creative lifestyle brand system offices"],
-                "projects": ["Brand Activation Gala Launch Playbook", "High-Impact Video Ad Campaign Storyboard Deck"]
+                "roadmap": ["Phase 1: Host spectacular celebration launches for student products.", "Phase 2: Put together beautiful video pitch reels using energetic styles.", "Phase 3: Connect with micro-influencers to showcase a startup brand.", "Phase 4: Serve as the primary lifestyle creative head for modern stores."],
+                "projects": ["Write a Brand Product Launch Party Activation Playbook", "Create a High-Impact Video Ad Campaign Storyboard Layout Deck"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Pharmacist": 6, "Medical Researcher": 5},
-                "roadmap": ["Phase 1: Direct youth hospital entertainment activity schedules", "Phase 2: Launch interactive digital medical awareness campaigns", "Phase 3: Coordinate high-energy rehabilitation group sessions", "Phase 4: Manage public relations for healthcare network alliances"],
-                "projects": ["Youth Hospital Entertainment Activity Tracker", "Digital Health Awareness Campaign Asset Layout"]
+                "roadmap": ["Phase 1: Run happy, active exercise games for pediatric patient groups.", "Phase 2: Launch bright, animated digital flyers teaching health rules.", "Phase 3: Coordinate active group encouragement workouts for clinic visitors.", "Phase 4: Manage friendly media and public communication lines for healthcare hubs."],
+                "projects": ["Design a Pediatric Patient Activity Schedule Application", "Create a Digital Health Information Social Media Asset Layout Grid"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 9, "Professor": 6},
-                "roadmap": ["Phase 1: Author active dramatic classroom interaction scripts", "Phase 2: Host major regional student competition award nights", "Phase 3: Deploy animated video study guides globally online", "Phase 4: Lead modern educational entertainment content platforms"],
-                "projects": ["Dramatic Classroom Interaction Script Playbook", "Animated Online Study Video Content Segment"]
+                "roadmap": ["Phase 1: Write interactive, theater-style educational acting play sheets.", "Phase 2: Host massive student academic challenge award show stages.", "Phase 3: Publish highly animated history or math summary clips online.", "Phase 4: Direct progressive, video-first edutainment study platform hubs."],
+                "projects": ["Write an Interactive Classroom Drama Lesson Playbook", "Create a Fun Educational Video Segment Media Portfolio Asset"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Civil Engineer": 6, "Electrical Engineer": 6},
-                "roadmap": ["Phase 1: Design interactive electronic consumer device exterior shells", "Phase 2: Plan immersive theme park structural attraction concepts", "Phase 3: Present bold conceptual car design presentations layouts", "Phase 4: Direct industrial design product demonstration groups"],
-                "projects": ["Theme Park Structural Attraction Concept Rig", "Electronic Consumer Device Enclosure CAD Design"]
+                "roadmap": ["Phase 1: Design glossy, high-style outer plastic layers for consumer devices.", "Phase 2: Sketch out immersive theme park ride entry structures using 3D layouts.", "Phase 3: Put together stylish conceptual car body model layouts using modeling tools.", "Phase 4: Lead live device performance showcase groups at trade shows."],
+                "projects": ["Design a Theme Park Immersive Attraction Concept Model Layout", "Build an Electronic Device Enclosure CAD Design Case Study"]
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Graphic Designer": 9, "Animator": 8},
-                "roadmap": ["Phase 1: Produce high-fidelity interactive media channel grids", "Phase 2: Orchestrate spectacular dynamic lighting visual sets", "Phase 3: Direct large-scale digital video cast production sets", "Phase 4: Command major contemporary digital entertainment studio houses"],
-                "projects": ["Interactive Media Grid Video Production Array", "Dynamic Lighting Stage Visual Set Architecture"]
+                "roadmap": ["Phase 1: Start your own vibrant streaming video entertainment platforms.", "Phase 2: Program gorgeous automated background stage lights grids.", "Phase 3: Act as the lead presenter for team digital art showcases.", "Phase 4: Manage whole creative content studios for entertainment networks."],
+                "projects": ["Create an Interactive Streaming Media Channel Content Grid", "Design a Dynamic Stage Lighting Visual Set Architecture Project"]
             }
         }
     }
@@ -746,56 +874,53 @@ PATHWAYS = {
     "Technology": {
         "careers": {"AI Engineer": 82, "Software Engineer": 78, "Data Scientist": 75, "Cybersecurity Specialist": 72},
         "dream": ["MIT", "Stanford"], "strong": ["NUST", "FAST"], "affordable": ["COMSATS", "Air University"],
-        "skills": ["Python", "Git", "Data Structures", "Machine Learning"],
-        "resources": ["CS50", "freeCodeCamp", "Kaggle", "Andrew Ng"],
-        "projects": ["AI Career Mentor", "Expense Tracker", "Study Planner"],
-        "opportunities": ["Hackathons", "Coding Competitions"]
+        "skills": ["Coding with Python", "Using Git Version Control", "Sorting Data Structures", "Understanding Machine Learning"],
+        "resources": ["CS50 — Learn computer science foundations from Harvard University.", "freeCodeCamp — Practice coding with free interactive lessons and projects.", "Kaggle — Work on fun data puzzles and test out machine learning models.", "Andrew Ng Courses — Follow super simple video guides to understand AI secrets."],
+        "projects": ["AI Career Assistant", "Personal Expense Calculator App", "Digital Homework Study Planner"],
+        "opportunities": ["Weekend Hackathons", "School Coding Challenges"]
     },
     "Business": {
         "careers": {"Entrepreneur": 85, "Product Manager": 80, "Business Analyst": 74, "Marketing Manager": 70},
         "dream": ["Stanford", "Wharton"], "strong": ["LUMS", "IBA"], "affordable": ["COMSATS", "IQRA"],
-        "skills": ["Leadership", "Marketing", "Communication", "Finance"],
-        "resources": ["Y Combinator School", "HubSpot Academy", "Coursera"],
-        "projects": ["Startup Idea Validator", "Business Planner"],
-        "opportunities": ["Startup Weekends", "Business Challenges"]
+        "skills": ["Team Leadership", "Brand Marketing", "Public Speaking", "Money Management"],
+        "resources": ["Y Combinator Startup School — Learn how to pitch and launch your own company from tech leaders.", "HubSpot Academy — Take free certificates to learn digital social media marketing.", "Coursera Business — Discover how global markets and business managers think."],
+        "projects": ["Startup Venture Idea Validator Tool", "Mini Shop Strategy Business Planner"],
+        "opportunities": ["Startup Creation Weekends", "Youth Business Pitch Contests"]
     },
     "Healthcare": {
         "careers": {"Doctor": 88, "Medical Researcher": 82, "Pharmacist": 71},
         "dream": ["Harvard", "Johns Hopkins"], "strong": ["Aga Khan University", "King Edward"], "affordable": ["Public Medical Colleges"],
-        "skills": ["Biology", "Research", "Clinical Communication"],
-        "resources": ["Khan Academy", "PubMed", "Coursera Health"],
-        "projects": ["Nutrition Tracker", "Medical Info Portal"],
-        "opportunities": ["Science Olympiads", "Medical Campaigns"]
+        "skills": ["Human Biology basics", "Scientific Lab Research", "Empathetic Patient Communication"],
+        "resources": ["Khan Academy Health — Discover clear videos on anatomy and human cell operations.", "PubMed Archive — Read real scientific studies on medicine advances.", "Coursera Health — Learn simple definitions of medicine terms used by real clinics."],
+        "projects": ["Daily Nutrition Tracker Sheet", "Clean Family Medical Information Website Portal"],
+        "opportunities": ["Science Knowledge Olympiads", "Community Clinic Awareness Drives"]
     },
     "Education": {
         "careers": {"Teacher": 80, "Professor": 78, "Education Consultant": 71},
         "dream": ["Harvard", "Oxford"], "strong": ["LUMS", "NUST"], "affordable": ["Public Universities"],
-        "skills": ["Teaching", "Communication", "Curriculum Design"],
-        "resources": ["Coursera", "edX", "Teaching Channel"],
-        "projects": ["Quiz Gamified App", "Learning Management System"],
-        "opportunities": ["Teaching Workshops", "Community Tutoring"]
+        "skills": ["Teaching Techniques", "Confident Public Speaking", "Lesson and Quiz Design"],
+        "resources": ["Coursera Education — Learn how professional teachers design fun workshops.", "edX Learning — Review courses on how text rules are explained to students.", "Teaching Channel — Watch videos of teachers using creative games in modern school spaces."],
+        "projects": ["Gamified Revision Quiz App", "Mini Classroom Learning Management Portal"],
+        "opportunities": ["Student Teaching Workshops", "Free Community Peer Tutoring Groups"]
     },
     "Engineering": {
         "careers": {"Mechanical Engineer": 80, "Electrical Engineer": 82, "Civil Engineer": 73},
         "dream": ["MIT", "Stanford"], "strong": ["NUST", "UET"], "affordable": ["COMSATS", "Air University"],
-        "skills": ["Physics", "Mathematics", "CAD Modeling", "Design Thinking"],
-        "resources": ["MIT OpenCourseWare", "Khan Academy", "Engineering Explained"],
-        "projects": ["Smart Traffic System", "IoT Micro-grid Tracker"],
-        "opportunities": ["Robotics Competitions", "Science Exhibitions"]
+        "skills": ["Physics Rules", "Mathematics formulas", "3D CAD Modeling software", "Design Problem Solving"],
+        "resources": ["MIT OpenCourseWare — Download free lecture notebooks from top college math courses.", "Khan Academy Physics — Review simple video modules to understand force rules.", "Engineering Explained — Watch animations showing how sports cars and engines operate."],
+        "projects": ["Smart Traffic Flow Matrix Simulator", "IoT Home Sensor Asset Collector Tracker"],
+        "opportunities": ["Robotics Engineering Competitions", "Science and Design Invention Fairs"]
     },
     "Creative Arts": {
         "careers": {"Graphic Designer": 85, "Animator": 80, "Content Creator": 78},
         "dream": ["RISD", "CalArts"], "strong": ["NCA", "AIVA"], "affordable": ["Local Design Institutes"],
-        "skills": ["UI/UX Design", "Visual Storytelling", "Adobe Creative Suite"],
-        "resources": ["Canva Design School", "Figma Learn", "Behance Showcase"],
-        "projects": ["Interactive Portfolio Website", "3D Motion Design Deck"],
-        "opportunities": ["Design Competitions", "Art Exhibitions"]
+        "skills": ["User Experience UI Design", "Visual Graphic Storytelling", "Adobe Creative Suite Software"],
+        "resources": ["Canva Design School — Learn simple layout rules and color matching basics.", "Figma Learn — Follow free step-by-step guides to design clean user interfaces.", "Behance Showcase — Look at portfolios of master artists to gain creative ideas."],
+        "projects": ["Interactive Portfolio Web Page Mock", "3D Moving Typography Design Frame Deck"],
+        "opportunities": ["Logo Creation Design Contests", "Youth Art and Drawing Exhibitions"]
     }
 }
 
-# ==============================================================================
-# REBRANDED APPLICATION HEADER ELEMENTS (No Decorative Emojis)
-# ==============================================================================
 # ==============================================================================
 # REBRANDED APPLICATION HEADER ELEMENTS (Centered Top Heading Only)
 # ==============================================================================
@@ -812,16 +937,16 @@ st.markdown(
 st.markdown("""
 ### Helping Students Discover Their Future with AI
 
-HELP AI analyzes your interests, strengths, personality, and goals to recommend:
+HELP AI looks at your interests, top strengths, personality, and personal goals to find:
 
-- Careers
-- Universities
-- Skills to Learn
-- Projects
-- Opportunities
-- Personalized Guidance
+- Fun careers you will love
+- Great universities to look into
+- High-value skills to master early
+- Awesome beginner portfolio projects
+- Exciting local competitions
+- Personalized guidance from your mentor
 
-Start your journey below.
+Let's find your perfect track below.
 """)
 # ==============================================================================
 # EXPORT ARCHITECTURE CODE DOWNLOAD ACCESS PIN
@@ -855,14 +980,14 @@ if not st.session_state.report_generated:
     # Step 1: Base Core Metrics
     if st.session_state.step == 1:
         with st.container(border=True):
-            st.markdown("#### Academic Foundations")
-            grade = st.selectbox("Current Academic Tier", ["O-Level", "A-Level", "FSc", "Matric", "Other"], index=0)
-            interest = st.selectbox("Main Interest Core Focus Area", list(PATHWAYS.keys()), index=0)
-            goal = st.text_input("What is your North Star Dream Career or Goal? (e.g., Build an AI SaaS, Eradicate Disease)")
+            st.markdown("#### School Foundations")
+            grade = st.selectbox("What is your current school tier?", ["O-Level", "A-Level", "FSc", "Matric", "Other"], index=0)
+            interest = st.selectbox("Pick an industry that sounds exciting to you:", list(PATHWAYS.keys()), index=0)
+            goal = st.text_input("What is your dream future goal? (e.g., Build a creative app, Cure illness, Run a cool shop)")
         
         if st.button("Continue", use_container_width=True):
             if goal.strip() == "":
-                st.warning("Please outline your target North Star Dream Career or Goal to initialize routing.")
+                st.warning("Please share a quick dream target goal to start your learning path planner.")
             else:
                 st.session_state.grade = grade
                 st.session_state.interest = interest
@@ -873,14 +998,14 @@ if not st.session_state.report_generated:
     # Step 2: Traits & Multi-Select Matrices
     elif st.session_state.step == 2:
         with st.container(border=True):
-            st.markdown("#### Skills & Core Competencies Matrix")
-            subjects = st.multiselect("Favorite Subjects", ["Computer Science", "Mathematics", "Physics", "Chemistry", "Biology", "Business", "Economics", "Art"], default=["Computer Science", "Mathematics"])
-            strengths = st.multiselect("Superpowers (Your Top Strengths)", ["Problem Solving", "Creativity", "Leadership", "Communication", "Analytical Thinking", "Teamwork"], default=["Problem Solving"])
-            weaknesses = st.multiselect("Growth Areas (Skills to Level Up)", ["Programming", "Public Speaking", "Mathematics", "Time Management", "Confidence", "Writing"], default=["Time Management"])
-            activities = st.multiselect("High-Energy Activities You Vibe With", ["Coding", "Building Projects", "Research", "Reading", "Business", "Teaching", "Designing"], default=["Building Projects"])
+            st.markdown("#### Skills & Core Strengths Checklist")
+            subjects = st.multiselect("Pick your favorite subjects to study:", ["Computer Science", "Mathematics", "Physics", "Chemistry", "Biology", "Business", "Economics", "Art"], default=["Computer Science", "Mathematics"])
+            strengths = st.multiselect("Superpowers (What are you naturally great at?):", ["Problem Solving", "Creativity", "Leadership", "Communication", "Analytical Thinking", "Teamwork"], default=["Problem Solving"])
+            weaknesses = st.multiselect("Growth Areas (What skills would you like to build up?):", ["Programming", "Public Speaking", "Mathematics", "Time Management", "Confidence", "Writing"], default=["Time Management"])
+            activities = st.multiselect("What high-energy projects sound fun to try?", ["Coding", "Building Projects", "Research", "Reading", "Business", "Teaching", "Designing"], default=["Building Projects"])
             
-            leadership_raw = st.radio("Do You Vibe With Leading Teams?", ["Love It", "Down for it sometimes", "Prefer execution over coordination"])
-            st.session_state.leadership = "Yes" if "Love" in leadership_raw else ("Sometimes" if "Down" in leadership_raw else "No")
+            leadership_raw = st.radio("Do you enjoy leading teams and guiding group assignments?", ["I love it!", "I'm open to it sometimes.", "I prefer executing solo tasks."])
+            st.session_state.leadership = "Yes" if "love" in leadership_raw else ("Sometimes" if "sometimes" in leadership_raw else "No")
         
         col_back, col_next = st.columns(2)
         with col_back:
@@ -899,12 +1024,12 @@ if not st.session_state.report_generated:
     # Step 3: Personality Mode Route Selection
     elif st.session_state.step == 3:
         with st.container(border=True):
-            st.markdown("#### Personality Intelligence Engine Activation")
-            st.write("Unlock dynamic archetype behavioral profiling to refine your mentoring metrics.")
+            st.markdown("#### Personality Tracker Activation")
+            st.write("Let's activate your behavioral style evaluation tool to discover your mentoring track adjustments.")
             
-            p_route = st.radio("Choose onboarding method:", [
-                "Option A: I already know my personality type.",
-                "Option B: I don't know my personality (Take Mini Diagnostics Assessment)."
+            p_route = st.radio("How would you like to set up your personality module?", [
+                "Option A: I already know my four-letter personality type signature.",
+                "Option B: I don't know my type (Take our quick mini student quiz)."
             ])
             st.session_state.p_route = "A" if "Option A" in p_route else "B"
             
@@ -922,11 +1047,11 @@ if not st.session_state.report_generated:
     elif st.session_state.step == 4:
         if st.session_state.p_route == "A":
             with st.container(border=True):
-                st.markdown("#### Archetype Verification Tracking Pipeline")
-                selected_type = st.selectbox("Select explicit structural personality signature:", list(PERSONALITY_REGISTRY.keys()))
+                st.markdown("#### Personality Type Input Verification")
+                selected_type = st.selectbox("Pick your four-letter personality signature:", list(PERSONALITY_REGISTRY.keys()))
                 
-                st.markdown(f"##### Context Verification Diagnostics for {selected_type} Profile")
-                st.caption("Fine-tune your parameter scales below:")
+                st.markdown(f"##### Quick Verification Checks for the {selected_type} Profile")
+                st.caption("Slide these toggles to match how you feel on a level from 1 to 10:")
                 
                 q_list = PERSONALITY_REGISTRY[selected_type]["questions"]
                 
@@ -942,37 +1067,37 @@ if not st.session_state.report_generated:
                     st.session_state.step = 3
                     st.rerun()
             with col_submit:
-                if st.button("🚀 Generate My AI Career Report", type="primary", use_container_width=True):
+                if st.button("Generate My AI Career Report", type="primary", use_container_width=True):
                     st.session_state.selected_personality = selected_type
                     st.session_state.p_confidence = 100
-                    st.session_state.p_rationale = "Self-reported profile validated via contextual metric verification parameters tracking grids."
+                    st.session_state.p_rationale = "We processed your self-reported profile signature and loaded your customized student data settings safely."
                     st.session_state.report_generated = True
                     st.rerun()
 
         else:
             with st.container(border=True):
-                st.markdown("#### Cognitive Distribution Analysis Portal")
-                st.caption("Answer cleanly based on authentic operational defaults to map traits.")
+                st.markdown("#### Student Trait Questionnaire Dashboard")
+                st.caption("Answer these questions naturally based on how you usually think, study, and behave.")
                 
-                st.markdown("**Section 1: Energy Recharge Configurations**")
-                ie1 = st.radio("Q1: After processing a highly intense week, your default method to refresh is:", ["Spend time alone in focus windows", "Sync with peer networks / group interactions"])
-                ie2 = st.radio("Q2: In active design workspace sprints, you prefer:", ["Reflecting deeply in solo design periods", "Expressing concepts in open group circles"])
-                ie3 = st.radio("Q3: When introduced to unvetted large networks, you typically:", ["Observe from a safe distance first", "Engage instantly with multiple nodes"])
+                st.markdown("**Section 1: How do you recharge your batteries?**")
+                ie1 = st.radio("Q1: After a long, busy week at school, what sounds most relaxing?", ["Spending quiet time alone to focus on independent hobbies", "Hanging out with groups of friends and joining social networks"])
+                ie2 = st.radio("Q2: When building a class project challenge, what role sounds best?", ["Thinking quietly by myself to outline concepts first", "Sharing ideas instantly inside an open group circle"])
+                ie3 = st.radio("Q3: When arriving at a huge student event filled with new faces, you usually:", ["Observe from a safe distance before introducing yourself", "Jump right into the crowd to start conversations instantly"])
                 
-                st.markdown("**Section 2: Data Processing Defaults**")
-                sn1 = st.radio("Q4: When processing clean information assets, you are instinctively drawn to:", ["Observable real-world metrics & facts", "Vast abstract future concepts & macro systems"])
-                sn2 = st.radio("Q5: If learning an advanced technology infrastructure track, you favor:", ["Clear real-world execution code recipes", "First-principles engineering architecture books"])
-                sn3 = st.radio("Q6: Your peers value your output vectors primarily due to your:", ["Grounded functional reliability", "Unconventional innovative vision options"])
+                st.markdown("**Section 2: How do you look at data?**")
+                sn1 = st.radio("Q4: When reading a data spreadsheet report or project brief, you look for:", ["Real-world observable facts, figures, and true metrics", "Abstract conceptual ideas, future strategies, and macro patterns"])
+                sn2 = st.radio("Q5: If learning an advanced technology infrastructure track, you favor:", ["Clear real-world execution recipes and simple functional code blocks", "First-principles engineering architecture books and structural blueprints"])
+                sn3 = st.radio("Q6: Your classmates appreciate your study work vectors primarily because you are:", ["Grounded, practical, and highly reliable at getting tasks completed", "Unconventional, creative, and full of imaginative future options"])
                 
-                st.markdown("**Section 3: Evaluation Engine Priorities**")
-                tf1 = st.radio("Q7: When resolving critical strategic bottlenecks, your primary anchor metric is:", ["Cold objective tracking logic structures", "Human collaborative alignment variables"])
-                tf2 = st.radio("Q8: If delivering a high-impact course critique, you emphasize:", ["Strict unvarnished error diagnosis truth", "Constructive empathetic coaching loops"])
-                tf3 = st.radio("Q9: You are driven to complete assignments based on a desire for:", ["Systemic elite technical performance", "Deep personal authenticity and validation"])
+                st.markdown("**Section 3: How do you make tough choices?**")
+                tf1 = st.radio("Q7: When sorting out a major bottleneck or team argument, you anchor on:", ["Cold objective logic structures, data rules, and factual logs", "Human alignment variables, group kindness, and community feelings"])
+                tf2 = st.radio("Q8: If giving feedback on a partner's project assignment, you prioritize:", ["Direct, completely unvarnished error diagnostic truth", "Constructive, warm, empathetic coaching cycles and friendly loops"])
+                tf3 = st.radio("Q9: You feel highly motivated to finish tough assignments because you want:", ["Elite technical performance scores and structural perfection wins", "Authentic personal validation and a deep alignment with your values"])
                 
-                st.markdown("**Section 4: Project Lifecycle Execution Styles**")
-                jp1 = st.radio("Q10: Your operational calendars are typically handled via:", ["Strict predictive block planning schedules", "Dynamic fluid real-time priority adaptations"])
-                jp2 = st.radio("Q11: When starting long-term technical deployments, you:", ["Map all modular sub-components beforehand", "Jump straight into implementation code blocks layout"])
-                jp3 = st.radio("Q12: Deadlines make you feel most optimized when they are:", ["Vetted milestones tracked well ahead", "Urgent catalysts triggering fast output at the end"])
+                st.markdown("**Section 4: How do you handle school deadlines?**")
+                jp1 = st.radio("Q10: Your personal school calendar and agenda tracker is handled via:", ["Strict predictive block planning schedules and preset milestones", "Dynamic fluid adjustments based on immediate runtime priorities"])
+                jp2 = st.radio("Q11: When starting long-term technical project deployments, you:", ["Map all modular sub-component paths out neatly beforehand", "Jump right into creating layouts and editing functional code blocks"])
+                jp3 = st.radio("Q12: System deadlines make you feel most optimized when they are:", ["Vetted target milestones tracked well ahead of the final stop", "Urgent high-stakes catalysts forcing fast creation steps at the tail end"])
 
             col_back, col_submit = st.columns(2)
             with col_back:
@@ -980,7 +1105,7 @@ if not st.session_state.report_generated:
                     st.session_state.step = 3
                     st.rerun()
             with col_submit:
-                if st.button("🚀 Generate My AI Career Report", type="primary", use_container_width=True):
+                if st.button("Generate My AI Career Report", type="primary", use_container_width=True):
                     i_score = sum([1 for x in [ie1, ie2, ie3] if "alone" in x or "solo" in x or "Observe" in x])
                     n_score = sum([1 for x in [sn1, sn2, sn3] if "abstract" in x or "architecture" in x or "innovative" in x])
                     t_score = sum([1 for x in [tf1, tf2, tf3] if "logic" in x or "unvarnished" in x or "performance" in x])
@@ -991,7 +1116,7 @@ if not st.session_state.report_generated:
                     vec_max = max(i_score, 3-i_score) + max(n_score, 3-n_score) + max(t_score, 3-t_score) + max(j_score, 3-j_score)
                     st.session_state.p_confidence = int((vec_max / 12) * 100)
                     st.session_state.selected_personality = computed_type
-                    st.session_state.p_rationale = f"Profile mapped via consistent processing nodes tracking. Metrics indicate alignment with {'Introverted' if 'I' in computed_type else 'Extraverted'} {'Intuitive' if 'N' in computed_type else 'Observant'} processing paradigms."
+                    st.session_state.p_rationale = f"Your traits mapped perfectly. Our math tracking shows your preferences align closely with the {'Introverted' if 'I' in computed_type else 'Extraverted'} {'Intuitive' if 'N' in computed_type else 'Observant'} student profile group rules."
                     st.session_state.report_generated = True
                     st.rerun()
 
@@ -1037,133 +1162,133 @@ if st.session_state.report_generated:
     readiness_score = min(40 + (len(st.session_state.strengths) * 8) + (len(st.session_state.activities) * 5), 100)
     workspace_tier = "Explorer Level 1" if readiness_score < 60 else ("Builder Level 2" if readiness_score < 80 else "Specialist Level 3")
 
-    st.success("Your HELP AI Personalized Report")
-    st.info(f"Active Workspace Platform: {workspace_tier} | Archetype Signature Matrix Key: {p_code} - {p_meta['title']}")
+    st.success("Your HELP AI Personalized Learning Plan is Ready!")
+    st.info(f"Student Track Status: {workspace_tier} | Personality Code Result: {p_code} — {p_meta['title']}")
 
     # ==========================================================================
     # VISUAL RENDER NODES: 3-TAB BENTO SYSTEM LAYOUT (Clean Text Headings)
     # ==========================================================================
     tab_insights, tab_personality, tab_system_map = st.tabs([
-        "Unified Career Matrix Insights", 
-        "Personality Intelligence Engine", 
-        "System Execution Roadmap Maps"
+        "Your Personalized Career Matches", 
+        "Your Personality Style Breakdown", 
+        "Your Step-by-Step Learning Plan"
     ])
 
     with tab_insights:
         col_c1, col_c2 = st.columns([1, 1])
         with col_c1:
             with st.container(border=True):
-                st.markdown("#### Primary Vector Match Resolution")
-                st.metric(label="Calculated Profile Match Index", value=f"{top_score}% Confidence")
-                st.markdown(f"**Top Recommended Target Path:** `{top_career}`")
-                st.markdown(f"**North Star Mission Alignment Tag:** *\"{st.session_state.goal}\"*")
+                st.markdown("#### Top Job Match Analysis")
+                st.metric(label="Calculated Profile Match Index", value=f"{top_score}% Match Confidence")
+                st.markdown(f"**Our Top Recommended Future Career Track:** `{top_career}`")
+                st.markdown(f"**Your Personal Goal Goal Indicator:** *\"{st.session_state.goal}\"*")
             
             with st.container(border=True):
-                st.markdown("##### Target Technical Skills Baseline Repositories")
+                st.markdown("##### Essential Skills to Start Learning Now")
                 for skill in interest_data["skills"]:
-                    st.markdown(f"- ` {skill}`")
+                    st.markdown(f"- `{skill}`")
         
         with col_c2:
             with st.container(border=True):
-                st.markdown("#### Top Integrated Competitive Match Vectors")
-                st.caption("Baseline metrics altered dynamically by deep-dive personality weights maps")
+                st.markdown("#### Your Complete Career Score Rankings")
+                st.caption("We combined your basic interests with your personality modifiers to build this accurate scorecard matrix list:")
                 for career, score in final_ranked_careers[:3]:
-                    st.markdown(f"**{career}** • Evaluation Score: `{score}`")
+                    st.markdown(f"**{career}** • Total Match Index Point Score: `{score}`")
                     st.progress(min(score, 100) / 100)
 
             with st.container(border=True):
-                st.markdown("#### Profile Milestone Credentials Status")
+                st.markdown("#### Achievement Milestone Status")
                 col_m1, col_m2 = st.columns(2)
-                with col_m1: st.markdown("**AI Pioneer Match**\n\n`ACTIVE`")
-                with col_m2: st.markdown(f"**{p_meta['title']} Badge**\n\n`UNLOCKED`")
+                with col_m1: st.markdown("**Future Pioneer Track**\n\n`ACTIVE`")
+                with col_m2: st.markdown(f"**{p_meta['title']} Style Profile**\n\n`UNLOCKED`")
 
     with tab_personality:
         col_p1, col_p2 = st.columns([1, 1])
         with col_p1:
             with st.container(border=True):
-                st.markdown(f"### Archetype Profile: {p_code} — {p_meta['title']}")
-                st.metric(label="Archetype Detection Alignment Confidence", value=f"{st.session_state.p_confidence}%")
-                st.write(f"**Diagnostic Pipeline Log:** *{st.session_state.p_rationale}*")
+                st.markdown(f"### Character Archetype Analysis: {p_code} — {p_meta['title']}")
+                st.metric(label="Personality Tracker Calculation Certainty", value=f"{st.session_state.p_confidence}%")
+                st.write(f"**System Diagnostic Notes:** *{st.session_state.p_rationale}*")
             
             with st.container(border=True):
-                st.markdown("#### Cognitive Superpowers Mapping Tracker")
+                st.markdown("#### Core Strengths Mapping Tracker")
                 for strength in p_meta["strengths"]:
-                    st.markdown(f"` {strength}`")
+                    st.markdown(f"- **{strength}**")
                     
             with st.container(border=True):
-                st.markdown("#### Growth Vectors & Mitigation Flags")
+                st.markdown("#### Growth Vectors & Tips to Balance Out")
                 for growth in p_meta["growth"]:
-                    st.markdown(f"`• {growth}`")
+                    st.markdown(f"- *{growth}*")
 
         with col_p2:
             with st.container(border=True):
-                st.markdown(f"#### Archetype Bonus Metrics Mapped to {st.session_state.interest}")
-                st.caption("Points explicitly appended directly into this core interest vertical focus area:")
+                st.markdown(f"#### Personality Match Modifiers Added to {st.session_state.interest}")
+                st.caption("Because of your natural personality strengths, we added bonus score weights to these specialized jobs:")
                 for b_career, b_val in p_bonus_map.items():
-                    st.markdown(f"*{b_career}:* **+{b_val} Weight Target Modifier**")
+                    st.markdown(f"- *{b_career}:* **+{b_val} Point Weight Modifier Applied**")
 
             with st.container(border=True):
-                st.markdown("#### Targeted Portfolio Project Directives")
-                st.caption(f"Bespoke validation prompts explicitly customized for a {p_code} tracking {st.session_state.interest} paths:")
+                st.markdown("#### Beginner Portfolio Project Blueprints")
+                st.caption(f"Fun builder ideas explicitly customized for an **{p_code}** checking out **{st.session_state.interest}** paths:")
                 for project in p_diverse["projects"]:
-                    st.markdown(f"**{project}**")
+                    st.markdown(f"- **{project}**")
 
     with tab_system_map:
         col_r1, col_r2 = st.columns([1, 1])
         with col_r1:
             with st.container(border=True):
-                st.markdown(f"### Custom Timeline Roadmap Architecture for {p_code} inside {st.session_state.interest}")
+                st.markdown(f"### Custom Action Timeline for {p_code} in {st.session_state.interest}")
                 for step in p_diverse["roadmap"]:
                     with st.status(step, state="complete"):
-                        st.write("Milestone metrics verified and updated natively.")
+                        st.write("We verified this action path blueprint configuration check against standard metrics logs.")
 
         with col_r2:
             with st.container(border=True):
-                st.markdown("### Adaptive Institutional Systems Alignment Placement")
-                st.markdown("**Tier 1 Placement Matrix (Dream Focus Systems)**")
-                for uni in modified_dream: st.markdown(f"`{uni}`")
+                st.markdown("### Top Tier University Brackets")
+                st.markdown("**Tier 1 Options (Dream Target Allocations)**")
+                for uni in modified_dream: st.markdown(f"- `{uni}`")
                 
-                st.markdown("**Tier 2 Competitive Options (High Match Foundations)**")
-                for uni in modified_strong: st.markdown(f"`{uni}`")
+                st.markdown("**Tier 2 Options (High Affinity Foundations)**")
+                for uni in modified_strong: st.markdown(f"- `{uni}`")
                 
-                st.markdown("**Tier 3 Operational Value Matrices**")
-                for uni in interest_data["affordable"]: st.markdown(f"`{uni}`")
+                st.markdown("**Tier 3 Options (Affordable Academic Values)**")
+                for uni in interest_data["affordable"]: st.markdown(f"- `{uni}`")
 
             with st.container(border=True):
-                st.markdown("#### Curated Open Learning Resource Vectors")
+                st.markdown("#### Curated Open Learning Resource Links")
                 for res in interest_data["resources"]:
-                    st.markdown(f"*[{res} Portal Connection Link](https://www.google.com/search?q={res.replace(' ', '+')}+course)*")
+                    st.markdown(f"- *{res}*")
 
     # ==========================================================================
     # MENTOR INSIGHTS BLOCK
     # ==========================================================================
     st.markdown("---")
     with st.container(border=True):
-        st.markdown("### Advice from your AI Mentor")
+        st.markdown("### Friendly Guidance from your AI Success Mentor")
         
-        weaknesses_joined = ", ".join(st.session_state.weaknesses) if st.session_state.weaknesses else "None identified"
-        subjects_joined = ", ".join(st.session_state.subjects) if st.session_state.subjects else "General Syllabus Core"
-        strengths_joined = ", ".join(st.session_state.strengths) if st.session_state.strengths else "General Adaptability"
+        weaknesses_joined = ", ".join(st.session_state.weaknesses) if st.session_state.weaknesses else "None listed"
+        subjects_joined = ", ".join(st.session_state.subjects) if st.session_state.subjects else "General Foundation Curriculum"
+        strengths_joined = ", ".join(st.session_state.strengths) if st.session_state.strengths else "General Adaptability Traits"
         
         paragraph_1 = f"""
-        Greetings. Looking closely at your validated academic configuration track framework tracking across `{st.session_state.grade}`, 
-        your primary interest profile orientation toward {st.session_state.interest} matches seamlessly with your mapped 
-        behavioral footprint signature token {p_code} ({p_meta['title']}). The core diagnostic execution engine indicates that your clear baseline strength markers 
-        in `{strengths_joined}` provide an excellent infrastructure advantage to drive execution loops toward your explicit goal milestone destination: *\"{st.session_state.goal}\"*. 
-        However, to prevent standard optimization execution failures, your identified growth tracking gaps in `{weaknesses_joined}` must be addressed through targeted technical resource allocations.
+        Hello there! Let's examine your school tracking statistics across your active grade bracket `{st.session_state.grade}`. 
+        Your primary interest focus in **{st.session_state.interest}** creates an amazing combination with your calculated 
+        personality archetype **{p_code} ({p_meta['title']})**. Our matching calculations prove that your awesome core skills 
+        in `{strengths_joined}` give you a fantastic foundation advantage to work toward your dream milestone goal: *\"{st.session_state.goal}\"*. 
+        To make sure your growth timeline runs without any hitches, let's practice adding training steps to strengthen your listed improvement needs in `{weaknesses_joined}`.
         """
         
         paragraph_2 = f"""
-        To achieve high proficiency conversion status, execute your customized {p_code} timeline deployment pipeline meticulously. Your personality's focus 
-        profile suggests that your top strategic target path matching {top_career} with an integrated match index metric of `{top_score}` is highly accurate. 
-        Focus your upcoming developmental sprints on executing high-value portfolio frameworks such as *\"{p_diverse['projects'][0]}\"*. This method ensures you establish distinct 
-        portfolio verification weight configurations when applying for admission allocations across top-tier institutional networks like {", ".join(modified_dream[:2])}.
+        To build high confidence scores, follow through with your specialized **{p_code}** action roadmap carefully. Your profile scores 
+        indicate that your highest-probability primary career track is **{top_career}** with a final integrated confidence indicator level of `{top_score}`. 
+        Focus your upcoming study windows on launching your very first portfolio project framework blueprint, such as *\"{p_diverse['projects'][0]}\"*. Building high-quality projects 
+        is the smartest way to accumulate evaluation record points when you submit your name to entry lists at dream universities like **{", ".join(modified_dream[:2])}**.
         """
         
         paragraph_3 = f"""
-        AI Operational Directive Notes: Leverage your inherent cognitive traits while reinforcing your core academic foundation pillars in `{subjects_joined}`. 
-        Do not let structural constraints or operational tasks stall your forward velocity. Initialize Phase 1 of your personalized roadmap strategy track today, 
-        maintain strict discipline throughout validation cycles, and focus your efforts on the highest-priority targets. You have the structural blueprints; now, go build.
+        **AI Mentor Operational Reminder Notes:** Lean on your awesome natural personality traits while keeping your school marks high in your core focus subjects inside `{subjects_joined}`. 
+        Do not let short, routine assignments stall your forward velocity parameters. Initialize Phase 1 of your personalized roadmap tracking strategies today, keep up a fantastic 
+        disciplined effort throughout your learning circles, and tackle your highest-priority milestones first. You have the structural blueprints in front of you; now, let's go build your future!
         """
         
         st.markdown(f"> *{paragraph_1}*")
