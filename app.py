@@ -8,7 +8,7 @@ st.set_page_config(
     page_title="HELP AI",
     page_icon="🧭",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # Custom injection to enforce the Apple/Linear light aesthetic across native widgets
@@ -77,15 +77,6 @@ custom_css = """
         background-color: #FFFFFF !important;
         border: 1px solid #E5E7EB !important;
         border-radius: 8px !important;
-        color: #111827 !important;
-    }
-    
-    /* Clean Sidebar Customization */
-    [data-testid="stSidebar"] {
-        background-color: #FFFFFF !important;
-        border-right: 1px solid #E5E7EB !important;
-    }
-    [data-testid="stSidebar"] .stMarkdown, [data-testid="stSidebar"] label {
         color: #111827 !important;
     }
 
@@ -324,7 +315,7 @@ PERSONALITY_REGISTRY = {
                 "projects": ["Build a Virtual School Budget Tracker App", "Design an Academic Performance Score Grid"]
             },
             "Engineering": {
-                "bonus": {"Civil Engineer": 10, "Mechanical Engineer": 8, "Electrical Engineer": 7},
+                "bonus": {"Civil Engineer": 10, "Mechanical Engineer": 8, "Civil Engineer": 7},
                 "roadmap": [
                     "Phase 1: Supervise timelines for a large building development sandbox project.", 
                     "Phase 2: Put manufacturing speed targets into action for factory product builds.", 
@@ -463,7 +454,6 @@ PERSONALITY_REGISTRY = {
             }
         }
     },
-    "INFA": { "title": "The Dreamer", "strengths": ["Kind-hearted", "Generous", "Very imaginative", "Open-minded"], "growth": ["Can be unrealistic", "Stays alone too much", "Gets feelings hurt easily"], "questions": ["Do you choose your class tracks based on how well they match your personal morals?", "Do you find creative storytelling, poetry, or sketching deeply comforting?", "Do you need lots of quiet, alone time to recharge your mental battery?", "Are you highly sensitive to arguments, shouting, or fierce competitions?", "Do you look at tech tools as a creative canvas to share your inner worldview?"], "universities": ["RISD", "CalArts", "NCA", "Harvard"], "diversity_map": { "Technology": { "bonus": {"Software Engineer": 10, "AI Engineer": 7, "Data Scientist": 6}, "roadmap": ["Phase 1: Learn markdown writing, text tags, and minimalist web code.", "Phase 2: Build a personal online poetry or art gallery page.", "Phase 3: Create localized chat spaces for creative student groups.", "Phase 4: Oversee product layouts that focus entirely on user peace of mind."], "projects": ["Build a Minimalist Creative Writing App Prototype", "Design a Local Student Art Sharing Platform Web Node"] }, "Business": { "bonus": {"Business Analyst": 10, "Marketing Manager": 7, "Product Manager": 6}, "roadmap": ["Phase 1: Read up on supportive, stress-free workplace rules for teams.", "Phase 2: Plan business tracks for independent handmade product artists.", "Phase 3: Set up authentic brand strategies that do not use pushy sales tricks.", "Phase 4: Counsel startup business founders on keeping their staff happy and calm."], "projects": ["Create a Business Tracker for Independent Handcrafted Shops", "Design an Office Wellness Environment Audit System"] }, "Healthcare": { "bonus": {"Medical Researcher": 10, "Doctor": 6, "Pharmacist": 5}, "roadmap": ["Phase 1: Research how listening to music or painting can heal stress levels.", "Phase 2: Design a simple layout guide using art therapy for therapy rooms.", "Phase 3: Review health support access levels for families in tiny remote villages.", "Phase 4: Advocate for community-based emotional relief and wellness networks."], "projects": ["Design an Art Therapy Progress Logging System Tracker", "Map Out Healthcare Access Differences in Remote Towns"] }, "Education": { "bonus": {"Teacher": 10, "Education Consultant": 8, "Professor": 6}, "roadmap": ["Phase 1: Write sweet, imaginative narrative storybooks for early readers.", "Phase 2: Run your own online creative writing workshops for teenagers.", "Phase 3: Map out individualized home-study progress plans for distance learning.", "Phase 4: Build niche emotional intelligence courses to help kids understand feelings."], "projects": ["Create an Illustrated Storybook Lesson Module Deck", "Build an Emotional Intelligence Goal Tracker App for Kids"] }, "Engineering": { "bonus": {"Mechanical Engineer": 10, "Electrical Engineer": 7, "Civil Engineer": 5}, "roadmap": ["Phase 1: Sketch model blueprints based on organic forms found in nature.", "Phase 2: Design affordable alternative tool concepts for low-income areas.", "Phase 3: Review how smart building layouts can capture raw morning sunlight.", "Phase 4: Consult on tiny, sustainable local engineering projects for villages."], "projects": ["Build a Nature-Inspired Moving Toy Model Rig", "Design an Affordable Low-Income Mechanical Tool Concept"] }, "Creative Arts": { "bonus": {"Graphic Designer": 10, "Content Creator": 9, "Animator": 8}, "roadmap": ["Phase 1: Fill up a large sketchbook with deeply personal vector artwork.", "Phase 2: Code your own visual choose-your-own-adventure story app.", "Phase 3: Draw a complete custom character library with matching descriptions.", "Phase 4: Run an independent digital illustration brand showing your art styles."], "projects": ["Code an Interactive Visual Story App Blueprint", "Create a Bespoke Character Vector Asset Library Node"] } } },
     "INFP": {
         "title": "The Dreamer", "strengths": ["Kind-hearted", "Generous", "Very imaginative", "Open-minded"], "growth": ["Can be unrealistic", "Stays alone too much", "Gets feelings hurt easily"],
         "questions": [
@@ -610,7 +600,7 @@ PERSONALITY_REGISTRY = {
                 "projects": ["Build an Automated Code Bug Tester Tool", "Write a Database Access Log Safety Checker Script"]
             },
             "Business": {
-                "bonus": {"Business Analyst": 10, "Product Manager": 6, "Entrepreneur": 4},
+                "bonus": {"Cybersecurity Specialist": 10, "Software Engineer": 8, "Data Scientist": 7, "AI Engineer": 5},
                 "roadmap": ["Phase 1: Learn operational accounting basics and small-business legal codes.", "Phase 2: Maintain clear, orderly inventory counting logs for a mock shop.", "Phase 3: Keep structured financial ledger record pages updated safely.", "Phase 4: Serve as the chief audit compliance officer for major corporations."],
                 "projects": ["Create a Corporate Inventory Tracking Sheet System", "Build a Structured Business Risk Audit Metric Grid"]
             },
@@ -783,7 +773,7 @@ PERSONALITY_REGISTRY = {
             },
             "Business": {
                 "bonus": {"Business Analyst": 10, "Product Manager": 6, "Entrepreneur": 5},
-                "roadmap": ["Phase 1: Master database spreadsheet formulas and code scripts.", "Phase 2: Build a personal dashboard app to chart product purchase trends.", "Phase 3: Sift through raw transaction sheets to spot math inconsistencies.", "Phase 4: Direct operational data troubleshooting branches for data hubs."],
+                "roadmap": ["Phase 1: Master database spreadsheet formulas and code scripts.", "Phase 2: Build a personal dashboard app to chart product purchase trends.", "Phase 3: Sift through raw transaction sheets to spot math inconsistencies.", "Phase 4: Direct data infrastructure troubleshooting branches for data hubs."],
                 "projects": ["Build a Spreadsheets Trend Visualization Dashboard", "Create a Transaction Balance Data Error Extractor Tool"]
             },
             "Healthcare": {
@@ -841,8 +831,8 @@ PERSONALITY_REGISTRY = {
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Civil Engineer": 7, "Electrical Engineer": 6},
-                "roadmap": ["Phase 1: Draft smooth, organic protective outer plastic sheets for gadgets.", "Phase 2: Model beautiful 3D digital home views using architectural packages.", "Phase 3: Construct comfortable, smooth model bodies for handmade consumer products.", "Phase 4: Direct outer look styling choices inside major device testing rooms."],
-                "projects": ["Design an Organic Product Outer Case Shell using CAD", "Build a 3D Architectural Home Spatial Layout Concept Rig"]
+                "roadmap": ["Phase 1: Draft organic aesthetic product enclosure geometry.", "Phase 2: Model detailed 3D digital home views using architectural packages.", "Phase 3: Construct beautiful ergonomic physical device mockups.", "Phase 4: Oversee styling decisions inside commercial tech divisions."],
+                "projects": ["Organic Product Enclosure Shell Geometry CAD", "3D Spatial Architectural Layout Concept Rig"]
             },
             "Creative Arts": {
                 "bonus": {"Graphic Designer": 10, "Animator": 9, "Content Creator": 8},
@@ -864,33 +854,33 @@ PERSONALITY_REGISTRY = {
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "Cybersecurity Specialist": 8, "AI Engineer": 7},
-                "roadmap": ["Phase 1: Run crash load tests on servers to see when they break down.", "Phase 2: Turn off malfunctioning software blocks instantly inside code rows.", "Phase 3: Build simple, fast mobile checklist tracker apps for field teams.", "Phase 4: Command real-time systems emergency tech restoration squads."],
-                "projects": ["Build a Server Traffic Crash Load Generator Tool", "Create a Fast-Track Mobile Field Asset Logging App Module"]
+                "roadmap": ["Phase 1: Run crash server deployment load testing matrices.", "Phase 2: Deploy agile network firewall block overrides manually.", "Phase 3: Build quick cross-platform field tracking app modules.", "Phase 4: Command technical systems live restoration units."],
+                "projects": ["Server Traffic Crash Load Generator Matrix", "Agile Cross-Platform Field Tracker Application"]
             },
             "Business": {
                 "bonus": {"Entrepreneur": 10, "Marketing Manager": 9, "Product Manager": 8, "Business Analyst": 6},
-                "roadmap": ["Phase 1: Negotiate deals directly with student event organizers.", "Phase 2: Pitch a fast project concept to grab seed money slots.", "Phase 3: Shift store strategies instantly to sell product stocks out fast.", "Phase 4: Run your own disruptive startup lab building trendy ventures."],
-                "projects": ["Create a Live Sales Deal Flow Milestone Tracker", "Build a Startup Pivot Conversion Strategy Metrics App"]
+                "roadmap": ["Phase 1: Close time-sensitive strategic sales pipelines.", "Phase 2: Negotiate direct live seed round capitalization terms.", "Phase 3: Execute fast pivot user conversion campaigns.", "Phase 4: Run disruptive corporate venture creation spaces."],
+                "projects": ["Live Strategic Sales Pipeline Tracker Node", "Disruptive Venture Pivot Conversion Tracker"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Pharmacist": 7, "Medical Researcher": 5},
-                "roadmap": ["Phase 1: Train in high-velocity emergency room triage operations.", "Phase 2: Manage urgent traffic flows sorting patients arriving in a crisis.", "Phase 3: Pick fast equipment choices for emergency care transport boxes.", "Phase 4: Lead high-pressure rapid response medical crew lines dynamically."],
-                "projects": ["Write an Emergency Triage Patient Sorting Logic Manual", "Design a Rapid-Response Medical Transport Case Equipment Layout Matrix"]
+                "roadmap": ["Phase 1: Train in high-velocity trauma care operations.", "Phase 2: Direct emergency triage sorting coordination systems.", "Phase 3: Optimize medical response helicopter equipment setups.", "Phase 4: Command urgent clinical response operations networks."],
+                "projects": ["Trauma Field Triage Logic Routing Manual", "Urgent Response Helicopter Equipment Matrix"]
             },
             "Education": {
                 "bonus": {"Education Consultant": 10, "Teacher": 7, "Professor": 5},
-                "roadmap": ["Phase 1: Build high-energy outdoor team problem-solving camps.", "Phase 2: Design swift hands-on trade skills building courses.", "Phase 3: Host fast-paced live panel quiz challenge nights for peers.", "Phase 4: Lead corporate fast-track professional career bootcamps."],
-                "projects": ["Build an Action-Oriented Trade Course Mobile App Prototype", "Design a High-Energy Problem Solving Field Camp Schedule"]
+                "roadmap": ["Phase 1: Build immersive alternative outdoor logic bootcamps.", "Phase 2: Direct action-oriented vocational training modules.", "Phase 3: Host fast experimental competitive panel formats.", "Phase 4: Lead corporate fast-track professional training systems."],
+                "projects": ["Vocational Action-Oriented Course Module App", "Outdoor Tactical Logic Bootcamp Program Schedule"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Electrical Engineer": 8, "Civil Engineer": 7},
-                "roadmap": ["Phase 1: Adjust motor limits on model racing engine frames.", "Phase 2: Fix heavy tool issues directly on active field floors.", "Phase 3: Connect thick wire connections safely for heavy power boxes.", "Phase 4: Lead critical engineering response crews inside active facilities."],
-                "projects": ["Build a Model Racing Motor Performance Tuning Tool", "Create a High-Voltage Circuit Connection Box Model Layout"]
+                "roadmap": ["Phase 1: Calibrate extreme racing mechanical motor layouts.", "Phase 2: Field repair heavy operational machinery faults fast.", "Phase 3: Run immediate high-voltage circuit power connections.", "Phase 4: Command immediate field engineering rescue systems."],
+                "projects": ["Mechanical Racing Motor Performance Tuner", "High-Voltage Circuit Power Connection Board"]
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Marketing Manager": 9, "Graphic Designer": 6},
-                "roadmap": ["Phase 1: Run quick, eye-catching surprise pop-up art show events.", "Phase 2: Design energetic guerrilla advertising ideas for school games.", "Phase 3: Run live video switching decks for action-packed media channels.", "Phase 4: Command high-growth creative activation crews for major media houses."],
-                "projects": ["Design a Guerrilla Marketing Campaign Activation Playbook", "Build a Live Media Production Panel System Console Board"]
+                "roadmap": ["Phase 1: Direct fast immersive public experiential media stunts.", "Phase 2: Script dynamic gorilla marketing activation events.", "Phase 3: Run live high-stakes video media production arrays.", "Phase 4: Lead hyper-growth media project activation taskforces."],
+                "projects": ["Gorilla Marketing Stunt Activation Blueprint", "Live High-Stakes Media Production System Console"]
             }
         }
     },
@@ -898,7 +888,7 @@ PERSONALITY_REGISTRY = {
         "title": "The Performer", "strengths": ["Bold spirit", "Original style", "Very practical", "Wonderful people skills"], "growth": ["Gets bored instantly", "Weak long-term planning", "Loses focus easily"],
         "questions": [
             "Do you naturally lift up the energy and excitement of your full friend circle?",
-            "Do you find creative group workshops highly empowering and fun?",
+            "Do you find collaborative creative workshops highly empowering and fun?",
             "Do you look at the entire world as an open stage to make memories?",
             "Do you prioritize immediate fun and action over long-term tracking routines?",
             "Are you exceptionally skilled at styling visuals for high user engagement?"
@@ -907,28 +897,28 @@ PERSONALITY_REGISTRY = {
         "diversity_map": {
             "Technology": {
                 "bonus": {"Software Engineer": 10, "Product Manager": 7, "AI Engineer": 6},
-                "roadmap": ["Phase 1: Learn how to code smooth canvas frame color changes and animations.", "Phase 2: Design custom, colorful button screens for gaming software pages.", "Phase 3: Present feature announcements live at school technology showcases.", "Phase 4: Consult on making app features highly entertaining for young consumers."],
-                "projects": ["Code an Animated Web Canvas Graphic Visual Module", "Design a Colorful Mobile Game User Interface Layout Prototype"]
+                "roadmap": ["Phase 1: Learn rich multimedia canvas render animations", "Phase 2: Design highly interactive consumer gaming apps frontend", "Phase 3: Run tech conference product feature launch presentations", "Phase 4: Consult on consumer viral game mechanics design arrays"],
+                "projects": ["Multimedia Canvas Render Animation Module", "Interactive Consumer Game UI Frontend Layout"]
             },
             "Business": {
                 "bonus": {"Marketing Manager": 10, "Entrepreneur": 8, "Product Manager": 8, "Business Analyst": 5},
-                "roadmap": ["Phase 1: Host spectacular celebration launches for student products.", "Phase 2: Put together beautiful video pitch reels using energetic styles.", "Phase 3: Connect with micro-influencers to showcase a startup brand.", "Phase 4: Serve as the primary lifestyle creative head for modern stores."],
-                "projects": ["Write a Brand Product Launch Party Activation Playbook", "Create a High-Impact Video Ad Campaign Storyboard Layout Deck"]
+                "roadmap": ["Phase 1: Orchestrate major brand activation launch galas", "Phase 2: Create high-impact video advertising assets decks", "Phase 3: Direct social media celebrity promotion strategies", "Phase 4: Lead comprehensive creative lifestyle brand system offices"],
+                "projects": ["Brand Activation Gala Launch Playbook", "High-Impact Video Ad Campaign Storyboard Deck"]
             },
             "Healthcare": {
                 "bonus": {"Doctor": 10, "Pharmacist": 6, "Medical Researcher": 5},
-                "roadmap": ["Phase 1: Run happy, active exercise games for pediatric patient groups.", "Phase 2: Launch bright, animated digital flyers teaching health rules.", "Phase 3: Coordinate active group encouragement workouts for clinic visitors.", "Phase 4: Manage friendly media and public communication lines for healthcare hubs."],
-                "projects": ["Design a Pediatric Patient Activity Schedule Application", "Create a Digital Health Information Social Media Asset Layout Grid"]
+                "roadmap": ["Phase 1: Direct youth hospital entertainment activity schedules", "Phase 2: Launch interactive digital medical awareness campaigns", "Phase 3: Coordinate high-energy rehabilitation group sessions", "Phase 4: Manage public relations for healthcare network alliances"],
+                "projects": ["Youth Hospital Entertainment Activity Tracker", "Digital Health Awareness Campaign Asset Layout"]
             },
             "Education": {
                 "bonus": {"Teacher": 10, "Education Consultant": 9, "Professor": 6},
-                "roadmap": ["Phase 1: Write interactive, theater-style educational acting play sheets.", "Phase 2: Host massive student academic challenge award show stages.", "Phase 3: Publish highly animated history or math summary clips online.", "Phase 4: Direct progressive, video-first edutainment study platform hubs."],
-                "projects": ["Write an Interactive Classroom Drama Lesson Playbook", "Create a Fun Educational Video Segment Media Portfolio Asset"]
+                "roadmap": ["Phase 1: Author active dramatic classroom interaction scripts", "Phase 2: Host major regional student competition award nights", "Phase 3: Deploy animated video study guides globally online", "Phase 4: Lead modern educational entertainment content platforms"],
+                "projects": ["Dramatic Classroom Interaction Script Playbook", "Animated Online Study Video Content Segment"]
             },
             "Engineering": {
                 "bonus": {"Mechanical Engineer": 10, "Civil Engineer": 6, "Electrical Engineer": 6},
-                "roadmap": ["Phase 1: Design glossy, high-style outer plastic layers for consumer devices.", "Phase 2: Sketch out immersive theme park ride entry structures using 3D layouts.", "Phase 3: Put together stylish conceptual car body model layouts using modeling tools.", "Phase 4: Lead live device performance showcase groups at trade shows."],
-                "projects": ["Design a Theme Park Immersive Attraction Concept Model Layout", "Build an Electronic Device Enclosure CAD Design Case Study"]
+                "roadmap": ["Phase 1: Design interactive electronic consumer device exterior shells", "Phase 2: Plan immersive theme park structural attraction concepts", "Phase 3: Present bold conceptual car design presentations layouts", "Phase 4: Direct industrial design product demonstration groups"],
+                "projects": ["Theme Park Structural Attraction Concept Rig", "Electronic Consumer Device Enclosure CAD Design"]
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Graphic Designer": 9, "Animator": 8},
@@ -939,137 +929,56 @@ PERSONALITY_REGISTRY = {
     }
 }
 
-# Static Academic-Career Knowledge Graphs
-PATHWAYS = {
-    "Technology": {
-        "careers": {"AI Engineer": 82, "Software Engineer": 78, "Data Scientist": 75, "Cybersecurity Specialist": 72},
-        "dream": ["MIT", "Stanford"], "strong": ["NUST", "FAST"], "affordable": ["COMSATS", "Air University"],
-        "skills": ["Coding with Python", "Using Git Version Control", "Sorting Data Structures", "Understanding Machine Learning"],
-        "resources": ["CS50 — Learn computer science foundations from Harvard University.", "freeCodeCamp — Practice coding with free interactive lessons and projects.", "Kaggle — Work on fun data puzzles and test out machine learning models.", "Andrew Ng Courses — Follow super simple video guides to understand AI secrets."],
-        "projects": ["AI Career Assistant", "Personal Expense Calculator App", "Digital Homework Study Planner"],
-        "opportunities": ["Weekend Hackathons", "School Coding Challenges"]
-    },
-    "Business": {
-        "careers": {"Entrepreneur": 85, "Product Manager": 80, "Business Analyst": 74, "Marketing Manager": 70},
-        "dream": ["Stanford", "Wharton"], "strong": ["LUMS", "IBA"], "affordable": ["COMSATS", "IQRA"],
-        "skills": ["Team Leadership", "Brand Marketing", "Public Speaking", "Money Management"],
-        "resources": ["Y Combinator Startup School — Learn how to pitch and launch your own company from tech leaders.", "HubSpot Academy — Take free certificates to learn digital social media marketing.", "Coursera Business — Discover how global markets and business managers think."],
-        "projects": ["Startup Venture Idea Validator Tool", "Mini Shop Strategy Business Planner"],
-        "opportunities": ["Startup Creation Weekends", "Youth Business Pitch Contests"]
-    },
-    "Healthcare": {
-        "careers": {"Doctor": 88, "Medical Researcher": 82, "Pharmacist": 71},
-        "dream": ["Harvard", "Johns Hopkins"], "strong": ["Aga Khan University", "King Edward"], "affordable": ["Public Medical Colleges"],
-        "skills": ["Human Biology basics", "Scientific Lab Research", "Empathetic Patient Communication"],
-        "resources": ["Khan Academy Health — Discover clear videos on anatomy and human cell operations.", "PubMed Archive — Read real scientific studies on medicine advances.", "Coursera Health — Learn simple definitions of medicine terms used by real clinics."],
-        "projects": ["Daily Nutrition Tracker Sheet", "Clean Family Medical Information Website Portal"],
-        "opportunities": ["Science Knowledge Olympiads", "Community Clinic Awareness Drives"]
-    },
-    "Education": {
-        "careers": {"Teacher": 80, "Professor": 78, "Education Consultant": 71},
-        "dream": ["Harvard", "Oxford"], "strong": ["LUMS", "NUST"], "affordable": ["Public Universities"],
-        "skills": ["Teaching Techniques", "Confident Public Speaking", "Lesson and Quiz Design"],
-        "resources": ["Coursera Education — Learn how professional teachers design fun workshops.", "edX Learning — Review courses on how text rules are explained to students.", "Teaching Channel — Watch videos of teachers using creative games in modern school spaces."],
-        "projects": ["Gamified Revision Quiz App", "Mini Classroom Learning Management Portal"],
-        "opportunities": ["Student Teaching Workshops", "Free Community Peer Tutoring Groups"]
-    },
-    "Engineering": {
-        "careers": {"Mechanical Engineer": 80, "Electrical Engineer": 82, "Civil Engineer": 73},
-        "dream": ["MIT", "Stanford"], "strong": ["NUST", "UET"], "affordable": ["COMSATS", "Air University"],
-        "skills": ["Physics Rules", "Mathematics formulas", "3D CAD Modeling software", "Design Problem Solving"],
-        "resources": ["MIT OpenCourseWare — Download free lecture notebooks from top college math courses.", "Khan Academy Physics — Review simple video modules to understand force rules.", "Engineering Explained — Watch animations showing how sports cars and engines operate."],
-        "projects": ["Smart Traffic Flow Matrix Simulator", "IoT Home Sensor Asset Collector Tracker"],
-        "opportunities": ["Robotics Engineering Competitions", "Science and Design Invention Fairs"]
-    },
-    "Creative Arts": {
-        "careers": {"Graphic Designer": 85, "Animator": 80, "Content Creator": 78},
-        "dream": ["RISD", "CalArts"], "strong": ["NCA", "AIVA"], "affordable": ["Local Design Institutes"],
-        "skills": ["User Experience UI Design", "Visual Graphic Storytelling", "Adobe Creative Suite Software"],
-        "resources": ["Canva Design School — Learn simple layout rules and color matching basics.", "Figma Learn — Follow free step-by-step guides to design clean user interfaces.", "Behance Showcase — Look at portfolios of master artists to gain creative ideas."],
-        "projects": ["Interactive Portfolio Web Page Mock", "3D Moving Typography Design Frame Deck"],
-        "opportunities": ["Logo Creation Design Contests", "Youth Art and Drawing Exhibitions"]
-    }
-}
+# ==============================================================================
+# REBRANDED APPLICATION HEADER ELEMENTS (Centered Top Heading Only)
+# ==============================================================================
+st.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 20px;">
+        <h1 style="margin-bottom: 0px; padding-bottom: 0px; color: #111827;">HELP AI</h1>
+        <h3 style="margin-top: 5px; font-weight: 500; color: #4B5563;">Higher Education Learning Path</h3>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown("""
+### Discover Your Future with AI
+
+HELP AI looks at your choices, top strengths, personality, and personal goals to find your ideal academic and career path setup.
+
+---
+""")
 
 # ==============================================================================
-# LEFT SIDE NAVIGATION PANEL (Collapsible Sidebar Navigation Blueprint)
+# DOWNLOAD COMPLETE ENGINE ARTIFACTS
 # ==============================================================================
-with st.sidebar:
-    st.markdown("<h2 style='color: #111827; margin-bottom: 4px; font-weight:700;'>HELP AI</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='color: #6B7280; font-size:12px; margin-bottom:24px;'>Higher Education Learning Path</p>", unsafe_allow_html=True)
-    
-    st.markdown("### Navigation")
-    nav_selection = st.radio(
-        "Go to page:",
-        ["Home Dashboard", "Profile Setup Assessment", "Personalized Report Card", "My Learning Plan Timeline", "Resource Explorer"],
-        label_visibility="collapsed"
-    )
-    
-    st.markdown("---")
-    st.markdown("<p style='color: #9CA3AF; font-size:11px;'>HELP AI Platform v2.0<br/>Premium EdTech Engine</p>", unsafe_allow_html=True)
+with open(__file__, "r", encoding="utf-8") as f:
+    code_content = f.read()
 
-# Synchronize Sidebar options with existing session state state-machines smoothly
-if "app_mode" not in st.session_state:
-    st.session_state.app_mode = "Home"
-
-if nav_selection == "Home Dashboard":
-    st.session_state.app_mode = "Home"
-elif nav_selection == "Profile Setup Assessment":
-    st.session_state.app_mode = "Assessment"
-elif nav_selection == "Personalized Report Card":
-    st.session_state.app_mode = "Report"
-elif nav_selection == "My Learning Plan Timeline":
-    st.session_state.app_mode = "Timeline"
-elif nav_selection == "Resource Explorer":
-    st.session_state.app_mode = "Resources"
-
-# Initialize global workflow markers securely
-if "wizard_active" not in st.session_state:
-    st.session_state.wizard_active = False
+st.download_button(
+    label="Download Complete app.py File",
+    data=code_content,
+    file_name="app.py",
+    mime="text/plain"
+)
 
 # ==============================================================================
-# VIEW ROUTER NODE: MODE 1 — STARTUP PRODUCT LANDING HERO PAGE
+# CORE WORKFLOW ROUTING ENGINE (Safe Initializing Sequence)
 # ==============================================================================
-if st.session_state.app_mode == "Home" and not st.session_state.wizard_active and not st.session_state.report_generated:
-    st.markdown("<div style='text-align: center; padding: 60px 0 20px 0;'>", unsafe_allow_html=True)
-    st.markdown("<h1 style='font-size: 52px; font-weight: 800; color: #111827; letter-spacing: -0.03em; margin-bottom: 8px;'>Discover Your True Path Forward</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='font-size: 20px; color: #4F8EF7; font-weight: 500; margin-bottom: 24px;'>Higher Education Learning Path AI</p>", unsafe_allow_html=True)
-    st.markdown("<p style='font-size: 16px; color: #6B7280; max-width: 600px; margin: 0 auto 40px auto; line-height: 1.6;'>HELP AI maps your high school profile choices, custom skills balance points, and optional personality structures directly to personalized career metrics dashboards, timeline roadmaps, and college tiers.</p>", unsafe_allow_html=True)
-    
-    col_btn_center, _ = st.columns([1, 1])
-    with col_btn_center:
-        if st.button("Start My Assessment →", use_container_width=True):
-            st.session_state.wizard_active = True
-            st.rerun()
-            
-    st.markdown("<p style='font-size: 13px; color: #9CA3AF; margin-top: 12px; margin-bottom: 60px;'>Takes less than 4 minutes • Rules-Based Intelligence Engine Enabled</p>", unsafe_allow_html=True)
-    st.markdown("</div>", unsafe_allow_html=True)
-    
-    st.markdown("---")
-    st.markdown("<p style='text-align: center; color: #9CA3AF; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 24px;'>Trusted by builders at modern schools</p>", unsafe_allow_html=True)
-    
-    col_f1, col_f2, col_f3, col_f4 = st.columns(4)
-    with col_f1: st.markdown("<p style='text-align: center; color: #6B7280; font-weight: 600;'>O-Level Hubs</p>", unsafe_allow_html=True)
-    with col_f2: st.markdown("<p style='text-align: center; color: #6B7280; font-weight: 600;'>A-Level tracks</p>", unsafe_allow_html=True)
-    with col_f3: st.markdown("<p style='text-align: center; color: #6B7280; font-weight: 600;'>FSc Colleges</p>", unsafe_allow_html=True)
-    with col_f4: st.markdown("<p style='text-align: center; color: #6B7280; font-weight: 600;'>Matric Platforms</p>", unsafe_allow_html=True)
+if "step" not in st.session_state:
+    st.session_state.step = 1
+if "report_generated" not in st.session_state:
+    st.session_state.report_generated = False
 
-# ==============================================================================
-# VIEW ROUTER NODE: MODE 2 — MULTI-STEP ASSESSMENT WIZARD MODULE
-# ==============================================================================
-elif st.session_state.wizard_active or st.session_state.app_mode == "Assessment" if not st.session_state.report_generated else False:
-    st.markdown("<h2 style='font-weight:700; letter-spacing:-0.02em;'>Profile Assessment Engine</h2>", unsafe_allow_html=True)
-    st.markdown(f"<p style='color: #6B7280;'>Step {st.session_state.step} of 4</p>", unsafe_allow_html=True)
-    
-    # Modern horizontal segmented line layout progress tracker
+# ONBOARDING SURVEY WIZARD
+if not st.session_state.report_generated:
+    st.markdown(f"### Profile Assessment Engine • Step {st.session_state.step} of 4")
     progress_bar_html = "".join([
         f"<div style='flex: 1; height: 4px; background-color: {'#4F8EF7' if i+1 <= st.session_state.step else '#E5E7EB'}; margin-right: 4px; border-radius: 2px;'></div>"
         for i in range(4)
     ])
     st.markdown(f"<div style='display: flex; width: 100%; margin-bottom: 32px;'>{progress_bar_html}</div>", unsafe_allow_html=True)
-
-    if "step" not in st.session_state:
-        st.session_state.step = 1
 
     # Step 1: Base Core Metrics Card Layout
     if st.session_state.step == 1:
@@ -1166,8 +1075,6 @@ elif st.session_state.wizard_active or st.session_state.app_mode == "Assessment"
                     st.session_state.p_confidence = 100
                     st.session_state.p_rationale = "We processed your self-reported profile signature and loaded your customized student data settings safely."
                     st.session_state.report_generated = True
-                    st.session_state.wizard_active = False
-                    st.session_state.app_mode = "Report"
                     st.rerun()
 
         else:
@@ -1214,197 +1121,177 @@ elif st.session_state.wizard_active or st.session_state.app_mode == "Assessment"
                     st.session_state.selected_personality = computed_type
                     st.session_state.p_rationale = f"Your traits mapped perfectly. Our math tracking shows your preferences align closely with the {'Introverted' if 'I' in computed_type else 'Extraverted'} {'Intuitive' if 'N' in computed_type else 'Observant'} student profile group rules."
                     st.session_state.report_generated = True
-                    st.session_state.wizard_active = False
-                    st.session_state.app_mode = "Report"
                     st.rerun()
 
 # ==============================================================================
-# VIEW ROUTER NODE: REAL-TIME ANALYTICAL REPORTS & DATA DASHBOARDS
+# REPORT RENDER DASHBOARDS MODES
 # ==============================================================================
 else:
-    # Safe checks if user visits reports tabs via sidebar navigation panel before finishing inputs quiz
-    if not st.session_state.report_generated:
-        st.warning("Please complete the Profile Assessment questionnaire tool first to compile analytics logs context.")
-        if st.button("Go to Assessment Wizard"):
-            st.session_state.wizard_active = True
-            st.rerun()
-    else:
-        # Load scoring engine variables from datasets without modifying formula scales
-        interest_data = PATHWAYS[st.session_state.interest]
-        career_base_scores = interest_data["careers"].copy()
-        p_code = st.session_state.selected_personality
-        p_meta = PERSONALITY_REGISTRY[p_code]
-        p_diverse = p_meta["diversity_map"][st.session_state.interest]
+    # Load parameters configuration loop logic securely
+    interest_data = PATHWAYS[st.session_state.interest]
+    career_base_scores = interest_data["careers"].copy()
+    p_code = st.session_state.selected_personality
+    p_meta = PERSONALITY_REGISTRY[p_code]
+    p_diverse = p_meta["diversity_map"][st.session_state.interest]
 
-        integrated_scores = {}
-        for c, base in career_base_scores.items():
-            integrated_scores[c] = base
+    integrated_scores = {}
+    for c, base in career_base_scores.items():
+        integrated_scores[c] = base
 
-        if "Problem Solving" in st.session_state.strengths:
-            for c in integrated_scores: integrated_scores[c] += 5
-        if "Analytical Thinking" in st.session_state.strengths:
-            for c in integrated_scores: integrated_scores[c] += 4
-        if st.session_state.leadership == "Yes":
-            for c in integrated_scores: integrated_scores[c] += 6
+    if "Problem Solving" in st.session_state.strengths:
+        for c in integrated_scores: integrated_scores[c] += 5
+    if "Analytical Thinking" in st.session_state.strengths:
+        for c in integrated_scores: integrated_scores[c] += 4
+    if st.session_state.leadership == "Yes":
+        for c in integrated_scores: integrated_scores[c] += 6
 
-        p_bonus_map = p_diverse["bonus"]
-        for c in integrated_scores:
-            if c in p_bonus_map:
-                integrated_scores[c] += p_bonus_map[c]
+    p_bonus_map = p_diverse["bonus"]
+    for c in integrated_scores:
+        if c in p_bonus_map:
+            integrated_scores[c] += p_bonus_map[c]
 
-        final_ranked_careers = sorted(integrated_scores.items(), key=lambda x: x[1], reverse=True)
-        top_career, top_score = final_ranked_careers[0][0], final_ranked_careers[0][1]
+    final_ranked_careers = sorted(integrated_scores.items(), key=lambda x: x[1], reverse=True)
+    top_career, top_score = final_ranked_careers[0][0], final_ranked_careers[0][1]
 
-        raw_dream_unis = interest_data["dream"]
-        raw_strong_unis = interest_data["strong"]
-        p_preferred_unis = p_meta["universities"]
+    raw_dream_unis = interest_data["dream"]
+    raw_strong_unis = interest_data["strong"]
+    p_preferred_unis = p_meta["universities"]
 
-        modified_dream = list(dict.fromkeys(p_preferred_unis + raw_dream_unis))
-        modified_strong = list(dict.fromkeys(raw_strong_unis))
+    modified_dream = list(dict.fromkeys(p_preferred_unis + raw_dream_unis))
+    modified_strong = list(dict.fromkeys(raw_strong_unis))
 
-        readiness_score = min(40 + (len(st.session_state.strengths) * 8) + (len(st.session_state.activities) * 5), 100)
-        workspace_tier = "Explorer Level 1" if readiness_score < 60 else ("Builder Level 2" if readiness_score < 80 else "Specialist Level 3")
+    readiness_score = min(40 + (len(st.session_state.strengths) * 8) + (len(st.session_state.activities) * 5), 100)
+    workspace_tier = "Explorer Level 1" if readiness_score < 60 else ("Builder Level 2" if readiness_score < 80 else "Specialist Level 3")
 
-        # ----------------------------------------------------------------------
-        # MODE 3A: MAIN PERSONALIZED MATRICES TAB
-        # ----------------------------------------------------------------------
-        if st.session_state.app_mode == "Report":
-            st.markdown("<h2 style='font-weight:700; letter-spacing:-0.02em;'>Personalized Career Matrix</h2>", unsafe_allow_html=True)
+    st.success("Your HELP AI Personalized Insights Report is Ready!")
+
+    # Bento Top Metrics Hero Row Layout Cards
+    col_b1, col_b2, col_b3 = st.columns(3)
+    with col_b1:
+        st.metric("Primary Match Vector", top_career)
+    with col_b2:
+        st.metric("Match Index Rating", f"{top_score}% Confidence")
+    with col_b3:
+        st.metric("Workspace Platform Status", workspace_tier)
+
+    # 3-Tab Content layout block
+    tab_report, tab_timeline, tab_resources = st.tabs([
+        "Personalized Career Matches", 
+        "Your Step-by-Step Learning Roadmap", 
+        "Resource Explorer & Projects"
+    ])
+
+    with tab_report:
+        col_dash1, col_dash2 = st.columns([1, 1])
+        with col_dash1:
+            with st.container(border=True):
+                st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Top Industry Matches</h4>", unsafe_allow_html=True)
+                for career, score in final_ranked_careers[:3]:
+                    st.markdown(f"**{career}** • Match Level `{score}%`")
+                    st.progress(min(score, 100) / 100)
+                    st.markdown("<div style='margin-bottom:12px;'></div>", unsafe_allow_html=True)
+                    
+        with col_dash2:
+            with st.container(border=True):
+                st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Personality Attribute Discovery</h4>", unsafe_allow_html=True)
+                st.markdown(f"**Style Type signature:** `{p_code}` — *{p_meta['title']}*")
+                st.caption(f"Certainty level calculated at {st.session_state.p_confidence}% via analytical trait matrices checking metrics loops.")
+                st.markdown("---")
+                st.markdown("**Character Strengths Vectors:**")
+                for s in p_meta["strengths"]:
+                    st.markdown(f"- {s}")
+
+    with tab_timeline:
+        col_r1, col_r2 = st.columns([7, 5])
+        with col_r1:
+            st.markdown("<div class='timeline-container'>", unsafe_allow_html=True)
+            for step in p_diverse["roadmap"]:
+                st.markdown(f"""
+                <div class='timeline-step'>
+                    <h5 style='font-weight:600; margin-bottom:4px; color:#111827;'>{step.split(':')[0]}</h5>
+                    <p style='color:#6B7280; font-size:14px; margin:0;'>{step.split(':')[1] if ':' in step else step}</p>
+                </div>
+                """, unsafe_allow_html=True)
+            st.markdown("</div>", unsafe_allow_html=True)
             
-            # Premium Bento Top Executive Hero Layout Cards Row
-            col_b1, col_b2, col_b3 = st.columns(3)
-            with col_b1:
-                st.metric("Primary Match Vector", top_career)
-            with col_b2:
-                st.metric("Match Index Rating", f"{top_score}%")
-            with col_b3:
-                st.metric("Workspace Platform Status", workspace_tier)
-                
-            st.markdown("<br/>", unsafe_allow_html=True)
-            
-            col_dash1, col_dash2 = st.columns([1, 1])
-            with col_dash1:
-                with st.container(border=True):
-                    st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Top Industry Matches</h4>", unsafe_allow_html=True)
-                    for career, score in final_ranked_careers[:3]:
-                        st.markdown(f"**{career}** • Match Level `{score}%`")
-                        st.progress(min(score, 100) / 100)
-                        st.markdown("<div style='margin-bottom:12px;'></div>", unsafe_allow_html=True)
-                        
-            with col_dash2:
-                with st.container(border=True):
-                    st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Personality Attribute Discovery</h4>", unsafe_allow_html=True)
-                    st.markdown(f"**Style Type:** `{p_code}` — *{p_meta['title']}*")
-                    st.caption(f"Confidence Level Mapped at {st.session_state.p_confidence}% based on verification parameters logging data loops.")
-                    st.markdown("---")
-                    st.markdown("**Character Strengths Vectors:**")
-                    for s in p_meta["strengths"]:
-                        st.markdown(f"- {s}")
+        with col_r2:
+            with st.container(border=True):
+                st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Tiered Institutional Alignment Placement Matrix</h4>", unsafe_allow_html=True)
+                st.markdown("<p style='color:#4F8EF7; font-weight:600; font-size:13px; text-transform:uppercase;'>Tier 1 Placement Matrix (Dream Systems)</p>", unsafe_allow_html=True)
+                for u in modified_dream[:2]:
+                    st.markdown(f"- `{u}`")
+                st.markdown("<br/>", unsafe_allow_html=True)
+                st.markdown("<p style='color:#6B7280; font-weight:600; font-size:13px; text-transform:uppercase;'>Tier 2 Options (High Affinity Foundations)</p>", unsafe_allow_html=True)
+                for u in modified_strong[:2]:
+                    st.markdown(f"- `{u}`")
+                st.markdown("<br/>", unsafe_allow_html=True)
+                st.markdown("<p style='color:#9CA3AF; font-weight:600; font-size:13px; text-transform:uppercase;'>Tier 3 Operational Value Matrices</p>", unsafe_allow_html=True)
+                for u in interest_data["affordable"][:2]:
+                    st.markdown(f"- `{u}`")
 
-        # ----------------------------------------------------------------------
-        # MODE 3B: STEP BY STEP ROADMAP TIMELINES
-        # ----------------------------------------------------------------------
-        elif st.session_state.app_mode == "Timeline":
-            st.markdown("<h2 style='font-weight:700; letter-spacing:-0.02em;'>Your Execution Roadmap</h2>", unsafe_allow_html=True)
-            st.markdown(f"<p style='color:#6B7280; margin-bottom:32px;'>Chronological action blueprint path designed dynamically for an active {p_code} profile inside {st.session_state.interest} tracks.</p>", unsafe_allow_html=True)
-            
-            col_r1, col_r2 = st.columns([7, 5])
-            with col_r1:
-                st.markdown("<div class='timeline-container'>", unsafe_allow_html=True)
-                for step in p_diverse["roadmap"]:
+    with tab_resources:
+        col_res1, col_res2 = st.columns(2)
+        with col_res1:
+            with st.container(border=True):
+                st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Targeted Project Directives</h4>", unsafe_allow_html=True)
+                for p in p_diverse["projects"]:
                     st.markdown(f"""
-                    <div class='timeline-step'>
-                        <h5 style='font-weight:600; margin-bottom:4px; color:#111827;'>{step.split(':')[0]}</h5>
-                        <p style='color:#6B7280; font-size:14px; margin:0;'>{step.split(':')[1] if ':' in step else step}</p>
+                    <div style='background-color:#F9FAFB; padding:16px; border-radius:8px; border:1px solid #E5E7EB; margin-bottom:12px;'>
+                        <p style='font-weight:600; color:#111827; margin:0 0 4px 0;'>{p}</p>
+                        <span style='color:#4F8EF7; font-size:12px; font-weight:500;'>Bespoke Validation Prompt Active</span>
                     </div>
                     """, unsafe_allow_html=True)
-                st.markdown("</div>", unsafe_allow_html=True)
-                
-            with col_r2:
-                with st.container(border=True):
-                    st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Tiered Institutional Alignment Placement Matrix</h4>", unsafe_allow_html=True)
-                    st.markdown("<p style='color:#4F8EF7; font-weight:600; font-size:13px; text-transform:uppercase;'>Tier 1 Placement Matrix (Dream Systems)</p>", unsafe_allow_html=True)
-                    for u in modified_dream[:2]:
-                        st.markdown(f"- `{u}`")
-                    st.markdown("<br/>", unsafe_allow_html=True)
-                    st.markdown("<p style='color:#6B7280; font-weight:600; font-size:13px; text-transform:uppercase;'>Tier 2 Options (High Affinity Foundations)</p>", unsafe_allow_html=True)
-                    for u in modified_strong[:2]:
-                        st.markdown(f"- `{u}`")
-                    st.markdown("<br/>", unsafe_allow_html=True)
-                    st.markdown("<p style='color:#9CA3AF; font-weight:600; font-size:13px; text-transform:uppercase;'>Tier 3 Operational Value Matrices</p>", unsafe_allow_html=True)
-                    for u in interest_data["affordable"][:2]:
-                        st.markdown(f"- `{u}`")
+                    
+        with col_res2:
+            with st.container(border=True):
+                st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Curated Learning Resource Hub Connectors</h4>", unsafe_allow_html=True)
+                for res in interest_data["resources"]:
+                    clean_name = res.split(" — ")[0] if " — " in res else res
+                    clean_desc = res.split(" — ")[1] if " — " in res else "Open interactive curriculum portal vertical tracking links."
+                    st.markdown(f"**{clean_name}**")
+                    st.caption(clean_desc)
+                    st.markdown(f"[Launch External Connection Matrix Link](https://www.google.com/search?q={clean_name.replace(' ', '+')}+course)")
+                    st.markdown("<div style='margin-bottom:16px;'></div>", unsafe_allow_html=True)
 
-        # ----------------------------------------------------------------------
-        # MODE 3C: PORTFOLIO REPOSITORIES & OPEN CONNECTIONS LINKS
-        # ----------------------------------------------------------------------
-        elif st.session_state.app_mode == "Resources":
-            st.markdown("<h2 style='font-weight:700; letter-spacing:-0.02em;'>Resource Explorer & Project Repositories</h2>", unsafe_allow_html=True)
-            
-            col_res1, col_res2 = st.columns(2)
-            with col_res1:
-                with st.container(border=True):
-                    st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Targeted Project Directives</h4>", unsafe_allow_html=True)
-                    for p in p_diverse["projects"]:
-                        st.markdown(f"""
-                        <div style='background-color:#F9FAFB; padding:16px; border-radius:8px; border:1px solid #E5E7EB; margin-bottom:12px;'>
-                            <p style='font-weight:600; color:#111827; margin:0 0 4px 0;'>{p}</p>
-                            <span style='color:#4F8EF7; font-size:12px; font-weight:500;'>Bespoke Validation Prompt Active</span>
-                        </div>
-                        """, unsafe_allow_html=True)
-                        
-            with col_res2:
-                with st.container(border=True):
-                    st.markdown("<h4 style='font-weight:600; margin-bottom:16px;'>Curated Learning Resource Hub Connectors</h4>", unsafe_allow_html=True)
-                    for res in interest_data["resources"]:
-                        clean_name = res.split(" — ")[0] if " — " in res else res
-                        clean_desc = res.split(" — ")[1] if " — " in res else "Open interactive curriculum portal vertical tracking links."
-                        st.markdown(f"**{clean_name}**")
-                        st.caption(clean_desc)
-                        st.markdown(f"[Launch External Connection Matrix Link](https://www.google.com/search?q={clean_name.replace(' ', '+')}+course)")
-                        st.markdown("<div style='margin-bottom:16px;'></div>", unsafe_allow_html=True)
+    # Advanced Mentor Insight Blocks Appended to Base
+    st.markdown("---")
+    with st.container(border=True):
+        st.markdown("<h4 style='font-weight:600; color:#111827;'>Master AI Success Mentor Guidance Directives</h4>", unsafe_allow_html=True)
+        
+        weaknesses_joined = ", ".join(st.session_state.weaknesses) if st.session_state.weaknesses else "None listed"
+        subjects_joined = ", ".join(st.session_state.subjects) if st.session_state.subjects else "General Foundation Curriculum"
+        strengths_joined = ", ".join(st.session_state.strengths) if st.session_state.strengths else "General Adaptability Traits"
+        
+        paragraph_1 = f"""
+        Hello there! Let's examine your school tracking statistics across your active grade bracket `{st.session_state.grade}`. 
+        Your primary interest focus in **{st.session_state.interest}** creates an amazing combination with your calculated 
+        personality archetype **{p_code} ({p_meta['title']})**. Our matching calculations prove that your awesome core skills 
+        in `{strengths_joined}` give you a fantastic foundation advantage to work toward your dream milestone goal: *\"{st.session_state.goal}\"*. 
+        To make sure your growth timeline runs without any hitches, let's practice adding training steps to strengthen your listed improvement needs in `{weaknesses_joined}`.
+        """
+        
+        paragraph_2 = f"""
+        To build high confidence scores, follow through with your specialized **{p_code}** action roadmap carefully. Your profile scores 
+        indicate that your highest-probability primary career track is **{top_career}** with a final integrated confidence indicator level of `{top_score}`. 
+        Focus your upcoming study windows on launching your very first portfolio project framework blueprint, such as *\"{p_diverse['projects'][0]}\"*. Building high-quality projects 
+        is the smartest way to accumulate evaluation record points when you submit your name to entry lists at dream universities like **{", ".join(modified_dream[:2])}**.
+        """
+        
+        paragraph_3 = f"""
+        **AI Mentor Operational Reminder Notes:** Lean on your awesome natural personality traits while keeping your school marks high in your core focus subjects inside `{subjects_joined}`. 
+        Do not let short, routine assignments stall your forward velocity parameters. Initialize Phase 1 of your personalized roadmap tracking strategies today, keep up a fantastic 
+        disciplined effort throughout your learning circles, and tackle your highest-priority milestones first. You have the structural blueprints in front of you; now, let's go build your future!
+        """
+        
+        st.markdown(f"<p style='line-height:1.6; color:#374151; font-style:italic; margin-bottom:16px;'>{paragraph_1}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='line-height:1.6; color:#374151; font-style:italic; margin-bottom:16px;'>{paragraph_2}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='line-height:1.6; color:#374151; font-style:italic;'>{paragraph_3}</p>", unsafe_allow_html=True)
 
-        # ----------------------------------------------------------------------
-        # ADVANCED MENTOR COGNITIVE INFERENCE COUNCILS (Always Appended at Base)
-        # ----------------------------------------------------------------------
-        st.markdown("---")
-        with st.container(border=True):
-            st.markdown("<h4 style='font-weight:600; color:#111827;'>Master AI Success Mentor Guidance Directives</h4>", unsafe_allow_html=True)
-            
-            weaknesses_joined = ", ".join(st.session_state.weaknesses) if st.session_state.weaknesses else "None listed"
-            subjects_joined = ", ".join(st.session_state.subjects) if st.session_state.subjects else "General Foundation Curriculum"
-            strengths_joined = ", ".join(st.session_state.strengths) if st.session_state.strengths else "General Adaptability Traits"
-            
-            paragraph_1 = f"""
-            Hello there! Let's examine your school tracking statistics across your active grade bracket `{st.session_state.grade}`. 
-            Your primary interest focus in **{st.session_state.interest}** creates an amazing combination with your calculated 
-            personality archetype **{p_code} ({p_meta['title']})**. Our matching calculations prove that your awesome core skills 
-            in `{strengths_joined}` give you a fantastic foundation advantage to work toward your dream milestone goal: *\"{st.session_state.goal}\"*. 
-            To make sure your growth timeline runs without any hitches, let's practice adding training steps to strengthen your listed improvement needs in `{weaknesses_joined}`.
-            """
-            
-            paragraph_2 = f"""
-            To build high confidence scores, follow through with your specialized **{p_code}** action roadmap carefully. Your profile scores 
-            indicate that your highest-probability primary career track is **{top_career}** with a final integrated confidence indicator level of `{top_score}`. 
-            Focus your upcoming study windows on launching your very first portfolio project framework blueprint, such as *\"{p_diverse['projects'][0]}\"*. Building high-quality projects 
-            is the smartest way to accumulate evaluation record points when you submit your name to entry lists at dream universities like **{", ".join(modified_dream[:2])}**.
-            """
-            
-            paragraph_3 = f"""
-            **AI Mentor Operational Reminder Notes:** Lean on your awesome natural personality traits while keeping your school marks high in your core focus subjects inside `{subjects_joined}`. 
-            Do not let short, routine assignments stall your forward velocity parameters. Initialize Phase 1 of your personalized roadmap tracking strategies today, keep up a fantastic 
-            disciplined effort throughout your learning circles, and tackle your highest-priority milestones first. You have the structural blueprints in front of you; now, let's go build your future!
-            """
-            
-            st.markdown(f"<p style='line-height:1.6; color:#374151; font-style:italic; margin-bottom:16px;'>{paragraph_1}</p>", unsafe_allow_html=True)
-            st.markdown(f"<p style='line-height:1.6; color:#374151; font-style:italic; margin-bottom:16px;'>{paragraph_2}</p>", unsafe_allow_html=True)
-            st.markdown(f"<p style='line-height:1.6; color:#374151; font-style:italic;'>{paragraph_3}</p>", unsafe_allow_html=True)
-
-        st.markdown("<br/>", unsafe_allow_html=True)
-        if st.button("Reset State Profile Parameters & Cache Systems", use_container_width=True):
-            for key in list(st.session_state.keys()):
-                del st.session_state[key]
-            st.rerun()
+    st.markdown("<br/>", unsafe_allow_html=True)
+    if st.button("Reset State Profile Parameters & Cache Systems", use_container_width=True):
+        for key in list(st.session_state.keys()):
+            del st.session_state[key]
+        st.rerun()
 
 # ==============================================================================
 # PREMIUM MINIMAL BRAND FOOTER SYSTEM
