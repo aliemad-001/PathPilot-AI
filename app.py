@@ -578,8 +578,8 @@ PERSONALITY_REGISTRY = {
             },
             "Creative Arts": {
                 "bonus": {"Content Creator": 10, "Graphic Designer": 9, "Animator": 8},
-                "roadmap": ["Phase 1: Start your own experimental video channels online.", "Phase 2: Publish fun, animated storytelling video series for teens.", "Phase 3: Connect with independent digital artists to share graphic packs.", "Phase 4: Direct an entire collaborative digital entertainment creative house."],
-                "projects": ["Create a Multi-Platform Interactive Video Interface Portfolio", "Build an Art Collaboration Content Delivery Network Guide"]
+                "roadmap": ["Phase 1: Produce high-fidelity interactive media channel grids", "Phase 2: Orchestrate spectacular dynamic lighting visual sets", "Phase 3: Direct large-scale digital video cast production sets", "Phase 4: Command major contemporary digital entertainment studio houses"],
+                "projects": ["Interactive Media Grid Video Production Array", "Dynamic Lighting Stage Visual Set Architecture"]
             }
         }
     },
@@ -929,6 +929,58 @@ PERSONALITY_REGISTRY = {
     }
 }
 
+# Static Academic-Career Knowledge Graphs
+PATHWAYS = {
+    "Technology": {
+        "careers": {"AI Engineer": 82, "Software Engineer": 78, "Data Scientist": 75, "Cybersecurity Specialist": 72},
+        "dream": ["MIT", "Stanford"], "strong": ["NUST", "FAST"], "affordable": ["COMSATS", "Air University"],
+        "skills": ["Coding with Python", "Using Git Version Control", "Sorting Data Structures", "Understanding Machine Learning"],
+        "resources": ["CS50 — Learn computer science foundations from Harvard University.", "freeCodeCamp — Practice coding with free interactive lessons and projects.", "Kaggle — Work on fun data puzzles and test out machine learning models.", "Andrew Ng Courses — Follow super simple video guides to understand AI secrets."],
+        "projects": ["AI Career Assistant", "Personal Expense Calculator App", "Digital Homework Study Planner"],
+        "opportunities": ["Weekend Hackathons", "School Coding Challenges"]
+    },
+    "Business": {
+        "careers": {"Entrepreneur": 85, "Product Manager": 80, "Business Analyst": 74, "Marketing Manager": 70},
+        "dream": ["Stanford", "Wharton"], "strong": ["LUMS", "IBA"], "affordable": ["COMSATS", "IQRA"],
+        "skills": ["Team Leadership", "Brand Marketing", "Public Speaking", "Money Management"],
+        "resources": ["Y Combinator Startup School — Learn how to pitch and launch your own company from tech leaders.", "HubSpot Academy — Take free certificates to learn digital social media marketing.", "Coursera Business — Discover how global markets and business managers think."],
+        "projects": ["Startup Venture Idea Validator Tool", "Mini Shop Strategy Business Planner"],
+        "opportunities": ["Startup Creation Weekends", "Youth Business Pitch Contests"]
+    },
+    "Healthcare": {
+        "careers": {"Doctor": 88, "Medical Researcher": 82, "Pharmacist": 71},
+        "dream": ["Harvard", "Johns Hopkins"], "strong": ["Aga Khan University", "King Edward"], "affordable": ["Public Medical Colleges"],
+        "skills": ["Human Biology basics", "Scientific Lab Research", "Empathetic Patient Communication"],
+        "resources": ["Khan Academy Health — Discover clear videos on anatomy and human cell operations.", "PubMed Archive — Read real scientific studies on medicine advances.", "Coursera Health — Learn simple definitions of medicine terms used by real clinics."],
+        "projects": ["Daily Nutrition Tracker Sheet", "Clean Family Medical Information Website Portal"],
+        "opportunities": ["Science Knowledge Olympiads", "Community Clinic Awareness Drives"]
+    },
+    "Education": {
+        "careers": {"Teacher": 80, "Professor": 78, "Education Consultant": 71},
+        "dream": ["Harvard", "Oxford"], "strong": ["LUMS", "NUST"], "affordable": ["Public Universities"],
+        "skills": ["Teaching Techniques", "Confident Public Speaking", "Lesson and Quiz Design"],
+        "resources": ["Coursera Education — Learn how professional teachers design fun workshops.", "edX Learning — Review courses on how text rules are explained to students.", "Teaching Channel — Watch videos of teachers using creative games in modern school spaces."],
+        "projects": ["Gamified Revision Quiz App", "Mini Classroom Learning Management Portal"],
+        "opportunities": ["Student Teaching Workshops", "Free Community Peer Tutoring Groups"]
+    },
+    "Engineering": {
+        "careers": {"Mechanical Engineer": 80, "Electrical Engineer": 82, "Civil Engineer": 73},
+        "dream": ["MIT", "Stanford"], "strong": ["NUST", "UET"], "affordable": ["COMSATS", "Air University"],
+        "skills": ["Physics Rules", "Mathematics formulas", "3D CAD Modeling software", "Design Problem Solving"],
+        "resources": ["MIT OpenCourseWare — Download free lecture notebooks from top college math courses.", "Khan Academy Physics — Review simple video modules to understand force rules.", "Engineering Explained — Watch animations showing how sports cars and engines operate."],
+        "projects": ["Smart Traffic Flow Matrix Simulator", "IoT Home Sensor Asset Collector Tracker"],
+        "opportunities": ["Robotics Engineering Competitions", "Science and Design Invention Fairs"]
+    },
+    "Creative Arts": {
+        "careers": {"Graphic Designer": 85, "Animator": 80, "Content Creator": 78},
+        "dream": ["RISD", "CalArts"], "strong": ["NCA", "AIVA"], "affordable": ["Local Design Institutes"],
+        "skills": ["User Experience UI Design", "Visual Graphic Storytelling", "Adobe Creative Suite Software"],
+        "resources": ["Canva Design School — Learn simple layout rules and color matching basics.", "Figma Learn — Follow free step-by-step guides to design clean user interfaces.", "Behance Showcase — Look at portfolios of master artists to gain creative ideas."],
+        "projects": ["Interactive Portfolio Web Page Mock", "3D Moving Typography Design Frame Deck"],
+        "opportunities": ["Logo Creation Design Contests", "Youth Art and Drawing Exhibitions"]
+    }
+}
+
 # ==============================================================================
 # REBRANDED APPLICATION HEADER ELEMENTS (Centered Top Heading Only)
 # ==============================================================================
@@ -1170,7 +1222,7 @@ else:
     with col_b1:
         st.metric("Primary Match Vector", top_career)
     with col_b2:
-        st.metric("Match Index Rating", f"{top_score}% Confidence")
+        st.metric("Match Index Rating", f"{top_score}%")
     with col_b3:
         st.metric("Workspace Platform Status", workspace_tier)
 
